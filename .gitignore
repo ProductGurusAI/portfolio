@@ -1,0 +1,7 @@
+# OS files
+.DS_Store
+
+# Working/scratch files — never meant to be published
+uploads/
+*.docx
+*.zip

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 180" width="768" height="180" fill="none">
+  <rect x="0" y="0" width="768" height="180" rx="18" fill="#0e0e11"></rect>
+  <text x="24" y="34" font-family="&#39;Plus Jakarta Sans&#39;,sans-serif" font-size="15" font-weight="700" fill="#FFC321">Abhay Kumar — Project Logo System</text>
+  <g transform="translate(32,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><path d="M11 15H27" stroke="#FFC321" stroke-width="3.5"></path><path d="M16 24H34" stroke="#79D0BF" stroke-width="3.5"></path><path d="M34 20l5 4-5 4" stroke="#79D0BF" stroke-width="3.5"></path><path d="M11 33H24" stroke="#FFC321" stroke-width="3.5"></path></g>
+  <text x="64" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">ShiftFlow</text>
+  <g transform="translate(160,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24q14-13 28 0" stroke="#FFC321" stroke-width="3.5"></path><path d="M10 24q14 13 28 0" stroke="#FFC321" stroke-width="3.5"></path><circle cx="24" cy="24" r="4.2" fill="#79D0BF"></circle></g>
+  <text x="192" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">Squint</text>
+  <g transform="translate(288,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l13 5v10c0 8-6 13-13 16-7-3-13-8-13-16V13z" stroke="#FFC321" stroke-width="3.5"></path><path d="M18 24l4.5 4.5L31 20" stroke="#79D0BF" stroke-width="3.5"></path></g>
+  <text x="320" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">Scrutas</text>
+  <g transform="translate(416,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><path d="M15 39L21 11" stroke="#FFC321" stroke-width="3.5"></path><path d="M33 39L27 11" stroke="#FFC321" stroke-width="3.5"></path><path d="M24 35v-4M24 27v-4M24 19v-3" stroke="#79D0BF" stroke-width="3.5"></path><circle cx="24" cy="9" r="2.6" fill="#FFC321"></circle></g>
+  <text x="448" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">PavIQ</text>
+  <g transform="translate(544,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="28" r="7" stroke="#FFC321" stroke-width="3.5"></circle><path d="M25 24l-3.5 5H24l-1.2 4" stroke="#79D0BF" stroke-width="3.5"></path><path d="M15 17q9-8 18 0" stroke="#FFC321" stroke-width="3.5"></path><path d="M18.5 20.5q5.5-5 11 0" stroke="#79D0BF" stroke-width="3.5"></path></g>
+  <text x="576" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">GridSentinel</text>
+  <g transform="translate(672,36) scale(1.333)" stroke-linecap="round" stroke-linejoin="round"><path d="M12 25L24 13l12 12" stroke="#FFC321" stroke-width="3.5"></path><path d="M15 22v14h18V22" stroke="#FFC321" stroke-width="3.5"></path><path d="M19 30l3.5 3.5L29 27" stroke="#79D0BF" stroke-width="3.5"></path></g>
+  <text x="704" y="148" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;,ui-monospace,monospace" font-size="13" fill="#b6b6c0">Dwell</text>
+</svg>
