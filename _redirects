@@ -18,6 +18,14 @@
 /about        /about.html   200
 /about.html   /about        301
 
+# Work index clean URL
+/work         /work.html    200
+/work.html    /work         301
+
+# What-we-do clean URL
+/what-we-do        /what-we-do.html   200
+/what-we-do.html   /what-we-do        301
+
 # Kill the duplicate homepage
 /Portfolio.dc.html   /   301
 
