@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N7PBH45QNY');
+</script>
+<title>Insights — Product Decisions, Teardowns & Field Notes | ProductGurus</title>
+<meta name="description" content="Field notes from shipping six products: the decision moments, flow teardowns, and BA artifacts behind the case studies. New posts most weeks.">
+<link rel="canonical" href="https://productgurus.ai/insights">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Insights — Product Decisions, Teardowns & Field Notes | ProductGurus">
+<meta property="og:description" content="Field notes from shipping six products: decision moments, flow teardowns, and BA artifacts behind the case studies.">
+<meta property="og:url" content="https://productgurus.ai/insights">
+<meta property="og:image" content="https://productgurus.ai/assets/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Insights — Product Decisions, Teardowns & Field Notes | ProductGurus">
+<meta name="twitter:description" content="Field notes from shipping six products: decision moments, flow teardowns, and BA artifacts.">
+<meta name="twitter:image" content="https://productgurus.ai/assets/og-card.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "url": "https://productgurus.ai/insights",
+  "name": "Insights — ProductGurus",
+  "about": { "@type": "Organization", "name": "ProductGurus", "url": "https://productgurus.ai/" }
+}
+</script>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(255,195,33,.26);color:#fff}
+  a{transition:color .2s,border-color .2s,transform .25s}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .jak{font-family:'Plus Jakarta Sans',sans-serif}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .navlink{color:#cfcfd6;text-decoration:none}
+  .navlink:hover{color:#FFC321}
+  .pcard{display:block;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:30px 34px;text-decoration:none;color:inherit;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .4s}
+  .pcard:hover{transform:translateY(-4px);border-color:rgba(255,195,33,.35)}
+  .ptag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.28);color:#8fe0cf}
+  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#82828c;letter-spacing:.04em}
+  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  [data-reveal].in{opacity:1;transform:none}
+  @media (max-width:640px){.pcard{padding:24px 22px}}
+  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
+  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="assets/logo.svg" alt="ProductGurus logo" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
+      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
+    </a>
+    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
+      <a class="navlink" href="about">About</a>
+      <a class="navlink" href="work">Work</a>
+      <a class="navlink" href="what-we-do">What we do</a>
+      <a class="navlink" href="insights" style="color:#FFC321;">Insights</a>
+    </div>
+    <a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;">Get in touch</a>
+  </div>
+</nav>
+
+<header style="position:relative;padding:90px 0 46px;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 75% 0%,rgba(255,195,33,.08),transparent 55%);"></div>
+  <div class="wrap" style="position:relative;">
+    <div data-reveal><span class="badge">Insights</span></div>
+    <h1 data-reveal class="jak" style="font-size:clamp(2.4rem,5.2vw,3.8rem);line-height:1.06;margin:22px 0 18px;font-weight:800;letter-spacing:-.035em;max-width:780px;">Field notes from <span class="grad">the build</span></h1>
+    <p data-reveal style="font-size:clamp(1rem,1.5vw,1.15rem);color:#bcbcc6;max-width:620px;line-height:1.7;margin:0;">The decision moments, flow teardowns, and artifacts behind the case studies — written by the human, fact-checked against what actually shipped. New posts most weeks.</p>
+  </div>
+</header>
+
+<section style="padding:20px 0 90px;">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:20px;max-width:860px;">
+
+    <!-- POSTS: newest first. Copy a card, update href/tag/date/title/excerpt. -->
+    <a class="pcard" data-reveal href="insights/why-shiftflow-breaks-are-not-ai">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
+        <span class="ptag">Decision moment</span>
+        <span class="pmeta">July 6, 2026 · 4 min read</span>
+      </div>
+      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Why ShiftFlow's break planner refuses to use AI</h2>
+      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">We built an AI scheduling tool — and then deliberately kept its entire compliance layer away from the model. The rule I use to decide what AI should never touch.</p>
+    </a>
+
+  </div>
+</section>
+
+<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="assets/logo.svg" alt="ProductGurus logo" style="width:44px;height:22px;object-fit:contain;">
+      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
+    </a>
+    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
+      <a class="navlink" href="work">Work</a>
+      <a class="navlink" href="about">About</a>
+      <a class="navlink" href="what-we-do">What we do</a>
+      <a class="navlink" href="insights">Insights</a>
+      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="mono" style="font-size:.72rem;color:#5a5a62;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+  </div>
+</footer>
+
+<script>
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
+  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+</script>
+<script src="assets/atom.js" defer></script>
+</body>
+</html>

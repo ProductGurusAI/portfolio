@@ -26,6 +26,11 @@
 /what-we-do        /what-we-do.html   200
 /what-we-do.html   /what-we-do        301
 
+# Insights clean URLs
+/insights           /insights.html      200
+/insights.html      /insights           301
+/insights/*         /insights/:splat.html  200
+
 # Kill the duplicate homepage
 /Portfolio.dc.html   /   301
 

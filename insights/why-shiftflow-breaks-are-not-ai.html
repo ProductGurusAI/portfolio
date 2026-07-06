@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N7PBH45QNY');
+</script>
+<!-- ===== PER-POST: title, description, canonical slug, og:image, dates ===== -->
+<title>Why ShiftFlow's Break Planner Refuses to Use AI | ProductGurus Insights</title>
+<meta name="description" content="We built an AI scheduling tool — then deliberately kept its entire compliance layer away from the model. A rule for deciding what AI should never touch.">
+<link rel="canonical" href="https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why ShiftFlow's Break Planner Refuses to Use AI">
+<meta property="og:description" content="We built an AI scheduling tool — then deliberately kept its entire compliance layer away from the model.">
+<meta property="og:url" content="https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai">
+<meta property="og:image" content="https://productgurus.ai/assets/shiftflow-screenshot.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why ShiftFlow's Break Planner Refuses to Use AI">
+<meta name="twitter:description" content="A rule for deciding what AI should never touch.">
+<meta name="twitter:image" content="https://productgurus.ai/assets/shiftflow-screenshot.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why ShiftFlow's break planner refuses to use AI",
+      "description": "We built an AI scheduling tool — then deliberately kept its entire compliance layer away from the model.",
+      "url": "https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai",
+      "image": "https://productgurus.ai/assets/shiftflow-screenshot.png",
+      "datePublished": "2026-07-06",
+      "dateModified": "2026-07-06",
+      "author": {"@type": "Person", "name": "Abhay Kumar", "url": "https://productgurus.ai/about"},
+      "publisher": {"@type": "Organization", "name": "ProductGurus", "url": "https://productgurus.ai/", "logo": {"@type": "ImageObject", "url": "https://productgurus.ai/assets/logo.svg"}},
+      "mainEntityOfPage": "https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://productgurus.ai/"},
+        {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://productgurus.ai/insights"},
+        {"@type": "ListItem", "position": 3, "name": "Why ShiftFlow's break planner refuses to use AI", "item": "https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai"}
+      ]
+    }
+  ]
+}
+</script>
+<!-- ===== END PER-POST ===== -->
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(255,195,33,.26);color:#fff}
+  a{transition:color .2s,border-color .2s,transform .25s}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  .prose{max-width:720px;margin:0 auto;padding:0 28px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .jak{font-family:'Plus Jakarta Sans',sans-serif}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .navlink{color:#cfcfd6;text-decoration:none}
+  .navlink:hover{color:#FFC321}
+  .prose p{color:#c2c2cc;font-size:1.05rem;line-height:1.85;margin:0 0 22px}
+  .prose h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.5rem;color:#f4f4f6;margin:40px 0 16px;line-height:1.3}
+  .prose a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
+  .prose a:hover{border-bottom-color:#FFC321}
+  .pull{border-left:3px solid #79d0bf;background:rgba(121,208,191,.06);border-radius:0 14px 14px 0;padding:20px 24px;margin:30px 0;font-size:1.08rem;line-height:1.7;color:#d8d8e0;font-style:italic}
+  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#82828c;letter-spacing:.05em}
+  .backlink{font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
+  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  [data-reveal].in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
+  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="../assets/logo.svg" alt="ProductGurus logo" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
+      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
+    </a>
+    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
+      <a class="navlink" href="../about">About</a>
+      <a class="navlink" href="../work">Work</a>
+      <a class="navlink" href="../what-we-do">What we do</a>
+      <a class="navlink" href="../insights" style="color:#FFC321;">Insights</a>
+    </div>
+    <a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;">Get in touch</a>
+  </div>
+</nav>
+
+<header style="position:relative;padding:80px 0 30px;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.07),transparent 55%);"></div>
+  <div class="prose" style="position:relative;">
+    <div data-reveal style="margin-bottom:20px;"><a class="backlink" href="../insights">← All insights</a></div>
+    <!-- PER-POST: tag / date / read time -->
+    <div data-reveal class="pmeta" style="margin-bottom:16px;">DECISION MOMENT · JULY 6, 2026 · 4 MIN READ</div>
+    <h1 data-reveal class="jak" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.03em;">Why ShiftFlow's break planner <span class="grad">refuses to use AI</span></h1>
+    <div data-reveal class="pmeta">By Abhay Kumar · Founder, ProductGurus</div>
+  </div>
+</header>
+
+<article style="padding:30px 0 70px;">
+  <div class="prose" data-reveal>
+    <!-- ===== PER-POST BODY ===== -->
+    <p>ShiftFlow PRO is, by most descriptions, an AI product. It generates two-week retail rosters with an LLM at its core, designed to work across multiple providers. AI is in the pitch, the architecture, and the name of half the features. So the design decision people find most surprising is this: the break planner — the feature that decides when every employee steps away from the floor — contains no AI at all. It's deterministic, client-side code. On purpose. Forever.</p>
+
+    <h2>The stakes hiding in a fifteen-minute break</h2>
+    <p>A retail break schedule looks trivial until you read a collective agreement. Guaranteed hours differ by employment type. Two employees covering the same role can't be gone at once. An opening manager and a morning auditor have to be on the floor at specific times. Get it wrong and the cost isn't a UX bug — it's a union grievance, with real money and real trust attached.</p>
+    <p>During discovery, I sat with the store manager who rebuilt this roster from memory every two weeks. The thing she feared wasn't inefficiency — she'd survived inefficiency for years. It was the <em>silent</em> mistake: the schedule that looks fine, gets published, and turns out to have under-scheduled someone with a 40-hour guarantee.</p>
+
+    <div class="pull">That's the test I now apply to every feature: if this goes wrong silently, who pays, and how much? If the answer is "a real person, materially" — the model doesn't get the job.</div>
+
+    <h2>Where the line actually sits</h2>
+    <p>Generating a <em>draft</em> schedule is a perfect LLM task. The search space is huge, the constraints are many, and a human reviews every draft before publishing — the failure mode is "manager edits a bad suggestion," which costs minutes. So ShiftFlow happily sends roster generation to Gemini or Claude, forces the output into a strict JSON schema, and asks the model to explain its reasoning next to every decision.</p>
+    <p>Compliance is the opposite shape of problem. The rules are few, fully known, and absolute. There is no creativity to add — only correctness to lose. An LLM doing this work is a probabilistic system performing arithmetic with a liability attached, and its failure mode is invisible until someone files a grievance. So the entire compliance layer — break allocation, coverage-overlap checks, and the guaranteed-hours math — runs as plain deterministic code: same inputs, same output, every single time, immune to model drift, provider outages, and prompt regressions.</p>
+
+    <h2>The rule, portable</h2>
+    <p>Every product I've shipped since has the same split somewhere. In <a href="../projects/scrutas">Scrutas</a>, the audit modules that carry legal weight run deterministic checks; AI writes the explanations. The pattern generalizes: <strong>AI generates, code guarantees.</strong> Use the model where a wrong answer is cheap and a human is in the loop; use boring code where a wrong answer is expensive and nobody's watching.</p>
+    <p>The uncomfortable part is that this decision made the product demo <em>worse</em>. "Everything is AI" is a better pitch than "AI where appropriate." But the store manager doesn't run demos. She publishes schedules — and she's had zero guarantee-related grievances since launch. I'll take that trade every time.</p>
+    <!-- ===== END PER-POST BODY ===== -->
+
+    <div style="border-top:1px dashed rgba(255,255,255,.12);margin-top:44px;padding-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
+      <!-- PER-POST: related case study link -->
+      <a class="backlink" href="../projects/shiftflow">Read the full ShiftFlow case study →</a>
+      <a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+    </div>
+  </div>
+</article>
+
+<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
+    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="../assets/logo.svg" alt="ProductGurus logo" style="width:44px;height:22px;object-fit:contain;">
+      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
+    </a>
+    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
+      <a class="navlink" href="../work">Work</a>
+      <a class="navlink" href="../about">About</a>
+      <a class="navlink" href="../what-we-do">What we do</a>
+      <a class="navlink" href="../insights">Insights</a>
+      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="mono" style="font-size:.72rem;color:#5a5a62;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+  </div>
+</footer>
+
+<script>
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+</script>
+<script src="../assets/atom.js" defer></script>
+</body>
+</html>
