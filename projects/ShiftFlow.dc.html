@@ -67,16 +67,16 @@
 <body>
 <x-dc>
 <helmet>
-<title>ShiftFlow PRO — AI Retail Workforce Scheduler Case Study | ProductGurus</title>
-<meta name="description" content="A serverless web app built to kill hours of manual rostering at a retail store — union rules, budgets, and AI generation across three LLM providers.">
+<title>ShiftFlow PRO · AI Retail Workforce Scheduler Case Study | ProductGurus</title>
+<meta name="description" content="A serverless web app built to kill hours of manual rostering at a retail store, handling union rules, budgets, and AI-generated draft schedules.">
 <link rel="canonical" href="https://productgurus.ai/projects/shiftflow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ShiftFlow PRO — AI Retail Workforce Scheduler Case Study">
-<meta property="og:description" content="A serverless web app built to kill hours of manual rostering at a retail store — union rules, budgets, and AI generation across three LLM providers.">
+<meta property="og:title" content="ShiftFlow PRO · AI Retail Workforce Scheduler Case Study">
+<meta property="og:description" content="A serverless web app built to kill hours of manual rostering at a retail store, handling union rules, budgets, and AI-generated draft schedules.">
 <meta property="og:url" content="https://productgurus.ai/projects/shiftflow">
 <meta property="og:image" content="https://productgurus.ai/assets/shiftflow-screenshot.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ShiftFlow PRO — AI Retail Workforce Scheduler Case Study">
+<meta name="twitter:title" content="ShiftFlow PRO · AI Retail Workforce Scheduler Case Study">
 <meta name="twitter:description" content="A serverless web app built to kill hours of manual rostering at a retail store.">
 <meta name="twitter:image" content="https://productgurus.ai/assets/shiftflow-screenshot.png">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -131,7 +131,7 @@
         </div>
         <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.04;margin:0 0 18px;background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">ShiftFlow PRO</h1>
           <div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#82828c;margin-top:10px;">Case study by <a href="/about" style="color:#bcbcc6;text-decoration:none;">Abhay Kumar</a> · Updated July 2026</div>
-        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">An AI-generated scheduling tool built for a real retail store — turning hours of manual spreadsheet wrangling into a compliant, budget-aware two-week roster in minutes.</p>
+        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">An AI-generated scheduling tool built for a real retail store. It turns hours of manual spreadsheet wrangling into a compliant, budget-aware two-week roster in minutes.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;">
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">My role</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">Requirements → build</div></div>
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">Status</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">v2.5.0 · Live</div></div>
@@ -151,12 +151,12 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A schedule is a constraint-satisfaction problem, done by hand</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">Every two weeks, the store manager rebuilt the roster from scratch in a spreadsheet — reconciling contractual hour guarantees, shifting statutory-holiday hours, labor budgets, and role coverage all at once, entirely from memory and habit.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">Every two weeks, the store manager rebuilt the roster from scratch in a spreadsheet, reconciling contractual hour guarantees, shifting statutory-holiday hours, labor budgets, and role coverage all at once, entirely from memory and habit.</p>
           <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Guaranteed weekly hours differ by employment type — Regular staff need exactly 40, RPT need 32–40, PT is flexible 0–40.</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Guaranteed weekly hours differ by employment type: Regular staff need exactly 40, RPT need 32–40, PT is flexible 0–40.</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Statutory holidays shift store hours and require auto-populated <code style="background:rgba(255,255,255,.08);padding:1px 6px;border-radius:4px;font-family:'JetBrains Mono',monospace;font-size:.85em;color:#ffd45e;">STAT</code> shift codes.</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Coverage rules keep conflicting employees apart and guarantee critical roles (opening manager, morning auditor) are always staffed.</li>
-            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>A wrong guarantee can trigger a union grievance — the cost of a mistake is real, not cosmetic.</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>A wrong guarantee can trigger a union grievance: the cost of a mistake is real, not cosmetic.</li>
           </ul>
         </div>
 
@@ -229,11 +229,11 @@
               <span>Requirement</span><span>Priority</span>
             </div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Enforce REG (40h) / RPT (32–40h) / PT (0–40h) guaranteed-hour bands on every generated draft</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
-            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Force structured JSON output (schedule + reasoning) from all three LLM providers</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
+            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Force structured JSON output (schedule + reasoning) from every supported LLM provider</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Auto-populate STAT shift codes and Sunday-style hours on designated holidays</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
-            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Run break generation client-side, deterministically — never delegated to the LLM</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
+            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Run break generation client-side, deterministically, never delegated to the LLM</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Coverage finder excludes candidates already scheduled, unavailable, or over 40h for the week</span><span style="color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Should</span></div>
-            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>All API keys and roster data stay in client-side storage — no backend, no server-held PII</span><span style="color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Should</span></div>
+            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>All API keys and roster data stay in client-side storage: no backend, no server-held PII</span><span style="color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Should</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Parse historical spreadsheets client-side to extract store-specific shift trends</span><span style="color:#9a9aa3;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Could</span></div>
           </div>
         </div>
@@ -241,7 +241,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">My role</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">From the manager's actual workflow to a shipped tool</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">I sat with the scheduling process directly, translated every contractual and operational rule into an explicit constraint set, and specified how an LLM could generate a compliant draft a manager could trust. I then built the application end to end — the rules engine, the AI integration layer across three providers, and the editing surface managers actually use every two weeks.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">I sat with the scheduling process directly, translated every contractual and operational rule into an explicit constraint set, and specified how an LLM could generate a compliant draft a manager could trust. I then built the application end to end: the rules engine, the AI integration layer (designed to work across multiple model providers), and the editing surface managers actually use every two weeks.</p>
         </div>
 
         <div>
@@ -250,7 +250,7 @@
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Multi-provider AI generator</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Direct client-to-API calls to Gemini, Claude, and GPT models. Every response is forced into a structured JSON schema — a shift-code grid plus a plain-language rationale for every decision.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Direct client-to-API calls, designed to work across Gemini, Claude, and GPT models. Every response is forced into a structured JSON schema: a shift-code grid plus a plain-language rationale for every decision.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Guaranteed-hours rules engine</h3>
@@ -258,11 +258,11 @@
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Break planner &amp; conflict checker</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Break generation runs client-side rather than through the LLM — deterministic, and immune to model drift. Flags overlapping breaks for employees sharing a role.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Break generation runs client-side rather than through the LLM: deterministic, and immune to model drift. Flags overlapping breaks for employees sharing a role.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Call-in coverage finder</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">One click scans the roster for a valid replacement, respecting availability, hour caps, and time-off — then logs the absence automatically.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">One click scans the roster for a valid replacement, respecting availability, hour caps, and time-off, then logs the absence automatically.</p>
             </div>
           </div>
         </div>
@@ -270,7 +270,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Under the hood</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">The schedule is generated, not typed</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 22px;text-wrap:pretty;">Compiled store constraints — availability, holidays, budgets, roles — go to the model as a single context. It returns a shift-code grid plus its reasoning, which the manager reviews inline before publishing.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 22px;text-wrap:pretty;">Compiled store constraints (availability, holidays, budgets, roles) go to the model as a single context. It returns a shift-code grid plus its reasoning, which the manager reviews inline before publishing.</p>
           <div style="background:#0e0e12;border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:20px 22px;font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:1.7;color:#9fcabf;overflow-x:auto;">
 <span style="color:#5a5a62;">// forced structured output</span>{<br/>
 &nbsp;&nbsp;<span style="color:#FFC321;">"schedule"</span>: [<span style="color:#82828c;">{ "empId": "E014", "days": ["M","M","O","C","OFF","OFF","P"] }</span>],<br/>
@@ -282,7 +282,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A manager reviews a draft instead of building one</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 16px;text-wrap:pretty;">The manual reconciliation — hour guarantees, statutory shifts, break conflicts, budget ceilings — now happens before the manager ever opens the board. They spend their time adjusting a draft and handling call-ins, not building the schedule from a blank grid.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 16px;text-wrap:pretty;">The manual reconciliation (hour guarantees, statutory shifts, break conflicts, budget ceilings) now happens before the manager ever opens the board. They spend their time adjusting a draft and handling call-ins, not building the schedule from a blank grid.</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="background:#121216;padding:16px 18px;"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.5rem;color:#f4f4f6;">~19</div><div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#82828c;margin-top:4px;">Employees scheduled per roster</div></div>
             <div style="background:#121216;padding:16px 18px;"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.5rem;color:#f4f4f6;">Biweekly</div><div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#82828c;margin-top:4px;">Roster cadence automated</div></div>

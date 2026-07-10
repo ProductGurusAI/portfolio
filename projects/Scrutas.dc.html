@@ -67,16 +67,16 @@
 <body>
 <x-dc>
 <helmet>
-<title>Scrutas — Forensic Web Audit Platform Case Study | ProductGurus</title>
+<title>Scrutas · Forensic Web Audit Platform Case Study | ProductGurus</title>
 <meta name="description" content="A 23-module security, compliance & performance audit built on a two-stage, legally-defensible authorization model.">
 <link rel="canonical" href="https://productgurus.ai/projects/scrutas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Scrutas — Forensic Web Audit Platform Case Study">
+<meta property="og:title" content="Scrutas · Forensic Web Audit Platform Case Study">
 <meta property="og:description" content="A 23-module security, compliance & performance audit built on a two-stage, legally-defensible authorization model.">
 <meta property="og:url" content="https://productgurus.ai/projects/scrutas">
 <meta property="og:image" content="https://productgurus.ai/assets/scrutas-screenshot.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Scrutas — Forensic Web Audit Platform Case Study">
+<meta name="twitter:title" content="Scrutas · Forensic Web Audit Platform Case Study">
 <meta name="twitter:description" content="A 23-module security, compliance & performance audit platform.">
 <meta name="twitter:image" content="https://productgurus.ai/assets/scrutas-screenshot.png">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -129,7 +129,7 @@
         </div>
         <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.04;margin:0 0 18px;background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">Scrutas</h1>
           <div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#82828c;margin-top:10px;">Case study by <a href="/about" style="color:#bcbcc6;text-decoration:none;">Abhay Kumar</a> · Updated July 2026</div>
-        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">A forensic web audit platform, architected around a two-stage authorization model that earns trust before asking for access — and turns findings into a legally defensible, engineer-ready audit.</p>
+        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">A forensic web audit platform, architected around a two-stage authorization model that earns trust before asking for access, then turns findings into a legally defensible, engineer-ready audit.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;">
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">My role</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">Architecture → spec</div></div>
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">Status</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">v1.0 · Live internally</div></div>
@@ -149,13 +149,13 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Four risk domains, no single tool covers all of them</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 20px;text-wrap:pretty;">Enterprise e-commerce and SaaS platforms carry measurable risk across four domains simultaneously — revenue suppression, regulatory exposure (GDPR, PIPEDA, Quebec Law 25), security vulnerabilities, and accessibility liability. Existing tools each cover a slice.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 20px;text-wrap:pretty;">Enterprise e-commerce and SaaS platforms carry measurable risk across four domains simultaneously: revenue suppression, regulatory exposure (GDPR, PIPEDA, Quebec Law 25), security vulnerabilities, and accessibility liability. Existing tools each cover a slice.</p>
           <div style="border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="display:grid;grid-template-columns:1fr 1fr;background:#16161b;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;"><span>Tool category</span><span>What it misses</span></div>
             <div style="display:grid;grid-template-columns:1fr 1fr;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.86rem;"><span>Lighthouse / PageSpeed</span><span style="color:#9a9aa3;">Security, compliance, legal exposure</span></div>
             <div style="display:grid;grid-template-columns:1fr 1fr;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.86rem;"><span>SecurityHeaders.com</span><span style="color:#9a9aa3;">Script inventory, consent, revenue impact</span></div>
             <div style="display:grid;grid-template-columns:1fr 1fr;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.86rem;"><span>Detectify / ImmuniWeb</span><span style="color:#9a9aa3;">UX conversion impact, penalty quantification</span></div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.86rem;"><span>Manual pen-test firms</span><span style="color:#9a9aa3;">Performance, UX, SEO — cost-prohibitive for SME</span></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.86rem;"><span>Manual pen-test firms</span><span style="color:#9a9aa3;">Performance, UX, SEO: cost-prohibitive for SME</span></div>
           </div>
         </div>
 
@@ -231,7 +231,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">My role</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Resolving the authorization tension before writing a spec</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Security audit products face a structural bind: customers need to see value before committing, but running a full audit without authorization creates legal exposure for both sides. I designed the two-stage model that resolves it — modeled on patterns operators already trust (Google Search Console, Let's Encrypt ACME) — then specified the full module coverage, competitive positioning, and pricing anchor strategy end to end.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Security audit products face a structural bind: customers need to see value before committing, but running a full audit without authorization creates legal exposure for both sides. I designed the two-stage model that resolves it, modeled on patterns operators already trust (Google Search Console, Let's Encrypt ACME), then specified the full module coverage, competitive positioning, and pricing anchor strategy end to end.</p>
         </div>
 
         <div>
@@ -241,12 +241,12 @@
             <div style="background:#121216;border:1px solid rgba(255,195,33,.22);border-radius:16px;padding:22px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:#FFC321;margin-bottom:10px;">Stage 1 · Open Reconnaissance</div>
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Zero commitment, immediate value</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Runs on public HTTP responses only — headers, CSP, SSL, script inventory, WCAG contrast. Delivers 3–5 high-impact findings in under 3 minutes, no account required.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Runs on public HTTP responses only: headers, CSP, SSL, script inventory, WCAG contrast. Delivers 3–5 high-impact findings in under 3 minutes, no account required.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(121,208,191,.22);border-radius:16px;padding:22px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">Stage 2 · Verified Forensic Audit</div>
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Authorized, legally defensible, complete</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Gated behind a cryptographic domain-verification header. All 23 modules run — authenticated flows, storage analysis, credential scanning, subdomain enumeration.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Gated behind a cryptographic domain-verification header. All 23 modules run: authenticated flows, storage analysis, credential scanning, subdomain enumeration.</p>
             </div>
           </div>
         </div>
@@ -254,7 +254,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Under the hood</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">A header, not a login, becomes the audit trail</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 20px;text-wrap:pretty;">The customer adds one HTTP response header; the platform polls for it every 60 seconds and logs the detection as a timestamped, immutable authorization record — attachable to any regulatory filing or client deliverable.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 20px;text-wrap:pretty;">The customer adds one HTTP response header; the platform polls for it every 60 seconds and logs the detection as a timestamped, immutable authorization record, attachable to any regulatory filing or client deliverable.</p>
           <div style="background:#0e0e12;border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:20px 22px;font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:1.7;color:#9fcabf;overflow-x:auto;">
 <span style="color:#5a5a62;">// Nginx</span><br/>
 add_header <span style="color:#FFC321;">X-Scrutas-Verify</span> <span style="color:#82828c;">"scr_abc123_[token]"</span>;<br/><br/>
@@ -266,13 +266,13 @@ format: <span style="color:#82828c;">scr_[domain-hash]_[random-256-bit-hex]</spa
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Pricing strategy</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Anchor the price against the penalty, not the competitor</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Every Stage 2 report states the maximum statutory penalty exposure identified — for pre-consent tracking under Quebec Law 25, that figure runs to $25M CAD per violation category. Against that, a $299 audit isn't a hard sell; it's the obvious next step.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Every Stage 2 report states the maximum statutory penalty exposure identified. For pre-consent tracking under Quebec Law 25, that figure runs to $25M CAD per violation category. Against that, a $299 audit isn't a hard sell; it's the obvious next step.</p>
         </div>
 
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Live internally, running the full 23-module audit</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Scrutas is built and running internally — the two-stage authorization model, all 23 audit modules, and the verification protocol are live. That two-stage model was the hard problem to solve: it's what turns a legally risky idea (auditing a site you don't own) into a defensible, authorized audit.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Scrutas is built and running internally: the two-stage authorization model, all 23 audit modules, and the verification protocol are live. That two-stage model was the hard problem to solve: it's what turns a legally risky idea (auditing a site you don't own) into a defensible, authorized audit.</p>
         </div>
 
         <div>
@@ -289,7 +289,7 @@ format: <span style="color:#82828c;">scr_[domain-hash]_[random-256-bit-hex]</spa
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:10px;">Phase 5</div>
-              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Third-party auditor marketplace — Scrutas becomes the infrastructure layer, not just the audit tool.</p>
+              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Third-party auditor marketplace: Scrutas becomes the infrastructure layer, not just the audit tool.</p>
             </div>
           </div>
         </div>

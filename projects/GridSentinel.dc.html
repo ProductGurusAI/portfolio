@@ -67,16 +67,16 @@
 <body>
 <x-dc>
 <helmet>
-<title>GridSentinel — Self-Powered Grid Sensor Case Study | ProductGurus</title>
+<title>GridSentinel · Self-Powered Grid Sensor Case Study | ProductGurus</title>
 <meta name="description" content="Battery-free, clamp-on sensor turning the electricity grid edge into a stream of outage and fault data.">
 <link rel="canonical" href="https://productgurus.ai/projects/gridsentinel">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GridSentinel — Self-Powered Grid Sensor Case Study">
+<meta property="og:title" content="GridSentinel · Self-Powered Grid Sensor Case Study">
 <meta property="og:description" content="Battery-free, clamp-on sensor turning the electricity grid edge into a stream of outage and fault data.">
 <meta property="og:url" content="https://productgurus.ai/projects/gridsentinel">
 <meta property="og:image" content="https://productgurus.ai/assets/gridsentinel-screenshot.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GridSentinel — Self-Powered Grid Sensor Case Study">
+<meta name="twitter:title" content="GridSentinel · Self-Powered Grid Sensor Case Study">
 <meta name="twitter:description" content="Battery-free, clamp-on grid sensor for outage and fault data.">
 <meta name="twitter:image" content="https://productgurus.ai/assets/gridsentinel-screenshot.jpg">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -131,7 +131,7 @@
         </div>
         <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.04;margin:0 0 18px;background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;">GridSentinel</h1>
           <div style="font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.06em;color:#82828c;margin-top:10px;">Case study by <a href="/about" style="color:#bcbcc6;text-decoration:none;">Abhay Kumar</a> · Updated July 2026</div>
-        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">A battery-free, clamp-on sensor that turns the electricity grid edge into a live stream of outage and fault data — harvesting its own power from the line it watches.</p>
+        <p style="font-size:1.15rem;color:#c4c4cc;max-width:640px;line-height:1.65;margin:0 0 30px;text-wrap:pretty;">A battery-free, clamp-on sensor that turns the electricity grid edge into a live stream of outage and fault data. It harvests its own power from the line it watches.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;">
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">My role</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">Repositioning → spec</div></div>
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">Status</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">v0.2 · Phase 0 bench</div></div>
@@ -151,9 +151,9 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Utilities find out about outages from phone calls</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">The distribution grid edge — the actual conductors carrying power to homes and businesses — is almost entirely unmonitored. When a section goes down, utilities typically learn about it from customer calls, not sensors, and crews patrol blind to find the fault.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">The distribution grid edge (the actual conductors carrying power to homes and businesses) is almost entirely unmonitored. When a section goes down, utilities typically learn about it from customer calls, not sensors, and crews patrol blind to find the fault.</p>
           <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
-            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>No plug, no accessible power source at most points on the line — any sensor needs to power itself.</li>
+            <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>No plug, no accessible power source at most points on the line, so any sensor needs to power itself.</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Storm restoration is slow and risky without knowing which spans are damaged or safe to re-energize.</li>
             <li style="display:flex;gap:12px;align-items:flex-start;color:#a0a0a8;font-size:.96rem;line-height:1.6;"><span style="color:#FFC321;flex:none;">→</span>Electricity theft is a real cost, but the physics of proving it only close at certain points on the network.</li>
           </ul>
@@ -162,7 +162,7 @@
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Repositioning</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">The headline feature doesn't close the math on this line</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Electricity-theft detection was the original pitch — but on a medium-voltage feeder, the energy-balance equation needed to prove theft doesn't close; it only works at the low-voltage transformer secondary. Rather than ship a headline feature that can't work where it was pitched, I re-scoped the first product around what a utility ops team actively wants and has no incentive to refuse: automatic outage detection and fault localization. Theft detection moves to a planned LV variant, where the physics actually work.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Electricity-theft detection was the original pitch, but on a medium-voltage feeder, the energy-balance equation needed to prove theft doesn't close; it only works at the low-voltage transformer secondary. Rather than ship a headline feature that can't work where it was pitched, I re-scoped the first product around what a utility ops team actively wants and has no incentive to refuse: automatic outage detection and fault localization. Theft detection moves to a planned LV variant, where the physics actually work.</p>
         </div>
 
         <div>
@@ -171,11 +171,11 @@
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;"><span style="width:34px;height:34px;border-radius:50%;background:rgba(255,195,33,.14);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#FFC321;font-weight:700;">OP</span><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0;">Utility operations <span style="color:#82828c;font-weight:500;font-size:.8rem;">· Primary</span></h3></div>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Wants faster outage detection and fault localization without new truck-rolls or infrastructure to maintain — the MVN's entire value case.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Wants faster outage detection and fault localization without new truck-rolls or infrastructure to maintain: the MVN's entire value case.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;"><span style="width:34px;height:34px;border-radius:50%;background:rgba(121,208,191,.14);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#79d0bf;font-weight:700;">RP</span><h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0;">Revenue protection <span style="color:#82828c;font-weight:500;font-size:.8rem;">· Later</span></h3></div>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Cares about theft detection — served by the LV/transformer-secondary variant once the MVN has proven itself in the field.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Cares about theft detection, which is served by the LV/transformer-secondary variant once the MVN has proven itself in the field.</p>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@
             <div style="display:grid;grid-template-columns:1fr 100px;background:#16161b;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;">
               <span>Requirement</span><span>Priority</span>
             </div>
-            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Harvest 100% of operating power from line current via split-core CT — no battery replacement</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
+            <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Harvest 100% of operating power from line current via split-core CT, with no battery replacement</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Detect de-energization and send a last-gasp message from stored energy before going dark</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Localize a fault to the span between the last node that saw the surge and the first that didn't</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
             <div style="display:grid;grid-template-columns:1fr 100px;padding:15px 20px;border-top:1px solid rgba(255,255,255,.06);color:#c4c4cc;font-size:.88rem;align-items:center;"><span>Hot-stick installable on an energized MV line in under 30 seconds, no outage required</span><span style="color:#ffd45e;font-family:'JetBrains Mono',monospace;font-size:.72rem;">Must</span></div>
@@ -254,11 +254,11 @@
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Self-orienting physical design</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Clamps on as a gravity pendulum — self-orients vertically, keeps the antenna clear of the wire, hot-stick installable.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Clamps on as a gravity pendulum: it self-orients vertically, keeps the antenna clear of the wire, hot-stick installable.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
               <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700;color:#f4f4f6;margin:0 0 8px;">Detection logic</h3>
-              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Outage, fault-localization, and storm-restoration logic, all running on the same MVN hardware — no separate device for each capability.</p>
+              <p style="color:#9a9aa3;font-size:.88rem;line-height:1.6;margin:0;">Outage, fault-localization, and storm-restoration logic, all running on the same MVN hardware, with no separate device for each capability.</p>
             </div>
           </div>
         </div>
@@ -271,14 +271,14 @@
             <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#0e0e12;border-top:1px solid rgba(255,255,255,.06);"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">2</span><span style="color:#c4c4cc;font-size:.9rem;">Nodes upstream of the fault see the surge; nodes downstream don't</span></div>
             <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111116;border-top:1px solid rgba(255,255,255,.06);"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">3</span><span style="color:#c4c4cc;font-size:.9rem;">Known radial topology localizes the fault to the exact span between them</span></div>
             <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#0e0e12;border-top:1px solid rgba(255,255,255,.06);"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">4</span><span style="color:#c4c4cc;font-size:.9rem;">De-energized nodes send a last-gasp message from stored energy before going dark</span></div>
-            <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111116;border-top:1px solid rgba(255,255,255,.06);"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">5</span><span style="color:#c4c4cc;font-size:.9rem;">The mesh reports a section-level outage map — a crew drives to a span, not the whole feeder</span></div>
+            <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111116;border-top:1px solid rgba(255,255,255,.06);"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">5</span><span style="color:#c4c4cc;font-size:.9rem;">The mesh reports a section-level outage map, so a crew drives to a span, not the whole feeder</span></div>
           </div>
         </div>
 
         <div>
           <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A de-risked platform, staged for a bench prototype</h2>
-          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">GridSentinel is fully specified through Phase 0 — architecture, BOM (~CAD $95/node electronics), and a de-risked product sequence that earns a place on the line with a wedge utilities want, rather than leading with the unsolved theft-detection problem. The dominant cost and risk, correctly identified upfront, is the custom HV enclosure and installation engineering — not the electronics.</p>
+          <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">GridSentinel is fully specified through Phase 0: architecture, BOM (~CAD $95/node electronics), and a de-risked product sequence that earns a place on the line with a wedge utilities want, rather than leading with the unsolved theft-detection problem. The dominant cost and risk, correctly identified upfront, is the custom HV enclosure and installation engineering, not the electronics.</p>
         </div>
 
         <div>
@@ -287,11 +287,11 @@
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#FFC321;margin-bottom:10px;">Phase 0</div>
-              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Bench prototype — prove harvesting, last-gasp, mesh, and fault-surge detection.</p>
+              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Bench prototype: prove harvesting, last-gasp, mesh, and fault-surge detection.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">Phase 1</div>
-              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Single-feeder pilot — validate survival, outage detection, fault localization, and install time in the field.</p>
+              <p style="color:#c4c4cc;font-size:.86rem;line-height:1.55;margin:0;">Single-feeder pilot: validate survival, outage detection, fault localization, and install time in the field.</p>
             </div>
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">
               <div style="font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:10px;">Phase 2</div>
