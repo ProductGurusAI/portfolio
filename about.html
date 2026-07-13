@@ -63,8 +63,20 @@
   .badge{display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
   .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
   .teal{font-style:italic;color:#79d0bf;-webkit-text-fill-color:#79d0bf}
-  .card{background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:26px;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .4s}
-  .card:hover{transform:translateY(-4px);border-color:rgba(255,195,33,.35)}
+  .card{background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:26px;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s,box-shadow .45s;position:relative;isolation:isolate;overflow:hidden}
+  .guru-card{--accent:#79d0bf;--accent-rgb:121,208,191;cursor:default}
+  .guru-card::before{content:'';position:absolute;z-index:-1;inset:-35%;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(var(--accent-rgb),.2),transparent 32%);opacity:0;transform:scale(.72);transition:opacity .5s,transform .75s cubic-bezier(.2,.8,.2,1)}
+  .guru-card::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(110deg,transparent 38%,rgba(255,255,255,.08) 49%,transparent 61%);transform:translateX(-125%)}
+  .guru-card:hover,.guru-card:focus-within{transform:translateY(-8px);border-color:rgba(var(--accent-rgb),.6);box-shadow:0 22px 50px rgba(0,0,0,.28),0 0 0 1px rgba(var(--accent-rgb),.08)}
+  .guru-card:hover::before,.guru-card:focus-within::before{opacity:1;transform:scale(1)}
+  .guru-card:hover::after,.guru-card:focus-within::after{opacity:1;animation:cardscan 1s cubic-bezier(.2,.8,.2,1)}
+  @keyframes cardscan{to{transform:translateX(125%)}}
+  .guru-card h3{transition:color .35s}.guru-card:hover h3,.guru-card:focus-within h3{color:var(--accent)!important}
+  .card-hover{display:flex;align-items:flex-start;gap:10px;max-height:0;opacity:0;transform:translateY(8px);overflow:hidden;transition:max-height .5s cubic-bezier(.2,.8,.2,1),opacity .35s,transform .45s;margin-top:0;color:#dce8e4;font:600 .65rem/1.6 'JetBrains Mono',monospace;letter-spacing:.04em;text-transform:uppercase}
+  .card-hover::before{content:'';flex:0 0 8px;height:8px;margin-top:4px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent);animation:signal 1.8s ease-in-out infinite}
+  .guru-card:hover .card-hover,.guru-card:focus-within .card-hover{max-height:72px;opacity:1;transform:none;margin-top:16px}
+  @keyframes signal{50%{transform:scale(.55);opacity:.45}}
+  .guru-discovery{--accent:#79d0bf;--accent-rgb:121,208,191}.guru-build{--accent:#ffc321;--accent-rgb:255,195,33}.guru-data{--accent:#a9b9ff;--accent-rgb:169,185,255}.guru-pitch{--accent:#ff9b72;--accent-rgb:255,155,114}.guru-design{--accent:#ef9fff;--accent-rgb:239,159,255}.guru-seo{--accent:#a9e876;--accent-rgb:169,232,118}
   .fine{border-top:1px dashed rgba(255,255,255,.12);margin-top:18px;padding-top:14px;font-family:'JetBrains Mono',monospace;font-size:.72rem;color:#82828c;line-height:1.6}
   .fine b{color:#79d0bf;font-weight:600}
   [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
@@ -73,7 +85,7 @@
   .navlink:hover{color:#FFC321}
   .cta-pill{display:inline-flex;align-items:center;gap:9px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.86rem;padding:15px 26px;border-radius:999px;text-decoration:none;box-shadow:0 10px 32px rgba(255,180,0,.24)}
   .cta-pill:hover{transform:translateY(-3px)}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}.guru-card,.guru-card::before,.card-hover{transition:none}.guru-card:hover,.guru-card:focus-within{transform:none}.guru-card:hover::after,.guru-card:focus-within::after,.card-hover::before{animation:none}}
 </style>
 </head>
 <body>
@@ -119,42 +131,48 @@
       <p style="color:#b6b6c0;font-size:1.02rem;max-width:600px;line-height:1.7;margin:0;">Six specialists, zero egos, one shared weakness: every one of them needs a human to tell it which problem matters.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
-      <div class="card" data-reveal>
+      <article class="card guru-card guru-discovery" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">01 · Discovery &amp; Requirements</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The Discovery Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Asks "why" five times in a row and never once makes it awkward. Turns rambling stakeholder interviews into process maps and tight, testable specs.</p>
         <div class="fine"><b>The human decides:</b> which problems are worth solving in the first place.</div>
-      </div>
-      <div class="card" data-reveal>
+        <div class="card-hover" aria-hidden="true">Listening mode: interviews → process maps → testable requirements</div>
+      </article>
+      <article class="card guru-card guru-build" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">02 · Product Development</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The Build Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Ships serverless apps and AI pipelines at 3&nbsp;a.m. without coffee, complaints, or a single passive-aggressive commit message.</p>
         <div class="fine"><b>The human decides:</b> what reaches production. Every line gets reviewed by someone with a pulse.</div>
-      </div>
-      <div class="card" data-reveal>
+        <div class="card-hover" aria-hidden="true">Build mode: architecture → deterministic rules → release-ready software</div>
+      </article>
+      <article class="card guru-card guru-data" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">03 · Data &amp; Validation</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The Data Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Has strong opinions about your TAM, all of them footnoted. Would rather kill a bad idea on a Tuesday than watch it ship on a Friday.</p>
         <div class="fine"><b>The human decides:</b> what the numbers actually mean, and when the honest answer is "don't build it."</div>
-      </div>
-      <div class="card" data-reveal>
+        <div class="card-hover" aria-hidden="true">Evidence mode: assumptions → models → a clear go, wait, or no</div>
+      </article>
+      <article class="card guru-card guru-pitch" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">04 · Go-to-Market</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The Pitch Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Turns working products into traction: positioning, pitches, and case studies that don't read like they were written by a committee. Because it isn't one.</p>
         <div class="fine"><b>The human decides:</b> every claim that goes in front of a client. If it's promised, a person promised it.</div>
-      </div>
-      <div class="card" data-reveal>
+        <div class="card-hover" aria-hidden="true">Narrative mode: positioning → proof → a claim worth standing behind</div>
+      </article>
+      <article class="card guru-card guru-design" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">05 · Design &amp; Experience</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The Design Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Treats whitespace as a load-bearing feature. Obsesses over contrast ratios, tap targets, and hierarchy, and has never once said "just make the logo bigger."</p>
         <div class="fine"><b>The human decides:</b> what actually feels right. Taste doesn't ship from a prompt.</div>
-      </div>
-      <div class="card" data-reveal>
+        <div class="card-hover" aria-hidden="true">Experience mode: hierarchy → prototypes → interfaces people can use</div>
+      </article>
+      <article class="card guru-card guru-seo" data-reveal tabindex="0">
         <div class="mono" style="font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#79d0bf;margin-bottom:10px;">06 · Search &amp; Visibility</div>
         <h3 class="jak" style="margin:0 0 10px;font-size:1.25rem;font-weight:800;color:#f4f4f6;">The SEO Guru</h3>
         <p style="color:#b6b6c0;font-size:.95rem;line-height:1.7;margin:0;">Reads algorithm updates the way other people read gossip columns. Writes meta descriptions with a poet's care and an accountant's discipline.</p>
         <div class="fine"><b>The human decides:</b> that everything is written for people first, crawlers second. No exceptions, not even good ones.</div>
-      </div>
+        <div class="card-hover" aria-hidden="true">Visibility mode: search intent → useful pages → durable discovery</div>
+      </article>
     </div>
   </div>
 </section>

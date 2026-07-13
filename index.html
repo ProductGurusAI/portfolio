@@ -3,9 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ProductGurus: AI-Powered Product Studio | Vancouver, BC</title>
-<meta name="description" content="We bridge business analysis and product development: eliciting requirements, validating ideas, and shipping them. Six products owned end to end.">
+<title>AI Product Strategy, UX & Development Studio | ProductGurus</title>
+<meta name="description" content="ProductGurus is a Vancouver AI-powered product studio for product discovery, UX, prototypes, and launches. Six products owned end to end; every decision human-verified.">
+<link rel="canonical" href="https://productgurus.ai/">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ProductGurus">
+<meta property="og:title" content="AI Product Strategy, UX & Development Studio | ProductGurus">
+<meta property="og:description" content="From raw research to shipped products—with every important decision human-verified.">
+<meta property="og:url" content="https://productgurus.ai/">
+<meta property="og:image" content="https://productgurus.ai/assets/og-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Product Strategy, UX & Development Studio | ProductGurus">
+<meta name="twitter:description" content="From raw research to shipped products—with every important decision human-verified.">
+<meta name="twitter:image" content="https://productgurus.ai/assets/og-card.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"ProductGurus","url":"https://productgurus.ai/","image":"https://productgurus.ai/assets/og-card.png","description":"An AI-powered product studio for product strategy, UX, prototypes, and launches, with every decision human-verified.","serviceType":["Product strategy","UX design","Product development","AI product consulting"],"areaServed":"Canada","address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"sameAs":["https://www.linkedin.com/in/abhay-kumar-vancouver/"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,6 +30,9 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--txt);font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:rgba(255,195,33,.26);color:#fff}
+.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--amber);color:#1a1400;border-radius:8px;padding:10px 14px;font:700 .78rem 'JetBrains Mono',monospace;text-decoration:none;transition:top .2s}
+.skip:focus{top:12px}
+a:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
 .mono{font-family:'JetBrains Mono',monospace}
 .jak{font-family:'Plus Jakarta Sans',sans-serif}
@@ -37,7 +55,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.75);backdrop-filt
 .beam{position:absolute;width:1px;top:0;bottom:0;background:linear-gradient(180deg,transparent,rgba(255,195,33,.5),transparent);opacity:0;animation:beam 7s ease-in-out infinite}
 @keyframes beam{0%,100%{opacity:0;transform:translateY(-30%)}50%{opacity:.7;transform:translateY(30%)}}
 /* orbit system behind hero */
-#orbit{position:absolute;right:-6%;top:50%;width:640px;height:640px;transform:translateY(-50%);pointer-events:none;opacity:.55}
+#orbit{position:absolute;right:-6%;top:50%;width:640px;height:640px;transform:translateY(-50%) translate(var(--ox,0),var(--oy,0));pointer-events:none;opacity:.55;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 #orbit .ring{position:absolute;inset:0;border:1px solid rgba(121,208,191,.16);border-radius:50%;animation:spin 40s linear infinite}
 #orbit .ring.r2{inset:90px;border-color:rgba(255,195,33,.18);animation-duration:28s;animation-direction:reverse}
 #orbit .ring.r3{inset:185px;border-color:rgba(255,255,255,.08);animation-duration:52s}
@@ -49,14 +67,14 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.75);backdrop-filt
 .badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,195,33,.1);border:1px solid rgba(255,195,33,.35);color:#ffd45e;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px}
 .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse2 2s ease-in-out infinite}
 @keyframes pulse2{50%{opacity:.35}}
-h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.04em;line-height:1.02;font-size:clamp(3rem,7.4vw,6rem);margin:26px 0 26px;max-width:960px}
+h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.045em;line-height:1.01;font-size:clamp(3.1rem,6.3vw,5.8rem);margin:25px 0 26px;max-width:760px}
 h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
 h1 .w span{display:inline-block;transform:translateY(110%);animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:var(--d)}
 @keyframes rise{to{transform:translateY(0)}}
 .shine{background:linear-gradient(110deg,#ffe79a 20%,var(--amber) 40%,var(--amber2) 55%,#ffe79a 75%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5.5s linear infinite}
 .tealw{color:var(--teal);font-style:italic}
 @keyframes shimmer{to{background-position:-220% 0}}
-.sub{font-size:clamp(1.04rem,1.7vw,1.28rem);color:var(--mut);max-width:600px;line-height:1.75;margin:0 0 38px;opacity:0;animation:fadeup .9s ease .75s forwards}
+.sub{font-size:clamp(1.04rem,1.7vw,1.28rem);color:var(--mut);max-width:590px;line-height:1.75;margin:0 0 38px;opacity:0;animation:fadeup .9s ease .75s forwards}
 @keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .ctarow{display:flex;flex-wrap:wrap;gap:16px;align-items:center;opacity:0;animation:fadeup .9s ease .95s forwards}
 #magnet{position:relative;display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;padding:18px 32px;border-radius:999px;text-decoration:none;box-shadow:0 12px 44px rgba(255,180,0,.3);transition:box-shadow .3s;will-change:transform}
@@ -66,6 +84,25 @@ h1 .w span{display:inline-block;transform:translateY(110%);animation:rise .8s cu
 .cta2{color:#f2f2f5;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.82rem;letter-spacing:.04em;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px;transition:border-color .25s,color .25s}
 .cta2:hover{color:var(--amber);border-color:var(--amber)}
 .heromet{display:flex;flex-wrap:wrap;gap:10px 30px;margin-top:52px;font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--dim);opacity:0;animation:fadeup .9s ease 1.15s forwards}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);gap:clamp(34px,6vw,92px);align-items:center}
+.hero-copy{position:relative;z-index:2}
+.hero-deck{position:relative;z-index:2;min-height:420px;display:flex;align-items:center;justify-content:center;opacity:0;animation:deckin 1s cubic-bezier(.2,.8,.2,1) .42s forwards}
+@keyframes deckin{from{opacity:0;transform:translate3d(30px,22px,0) scale(.96)}to{opacity:1;transform:none}}
+.hero-deck::before{content:'';position:absolute;width:410px;height:410px;border-radius:50%;background:radial-gradient(circle,rgba(121,208,191,.12),rgba(255,195,33,.05) 38%,transparent 68%);filter:blur(4px);animation:deckglow 6s ease-in-out infinite}
+@keyframes deckglow{50%{transform:scale(1.13);opacity:.7}}
+.deck{position:relative;width:min(100%,390px);padding:20px;border:1px solid rgba(121,208,191,.26);border-radius:24px;background:linear-gradient(145deg,rgba(20,26,27,.92),rgba(13,13,17,.94));box-shadow:0 28px 90px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.06);backdrop-filter:blur(16px);overflow:hidden;transform:rotate(3deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.hero-deck:hover .deck{transform:rotate(0deg) translateY(-5px)}
+.deck::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.08) 47%,transparent 62%);transform:translateX(-130%);animation:deckscan 7s ease-in-out infinite 1.5s;pointer-events:none}
+@keyframes deckscan{35%,100%{transform:translateX(130%)}}
+.deck-top,.deck-foot{display:flex;justify-content:space-between;align-items:center;font:600 .61rem 'JetBrains Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
+.deck-top{padding:1px 1px 17px;color:var(--teal);border-bottom:1px solid rgba(255,255,255,.08)}
+.deck-top b{color:#cfd7d3;font-size:.55rem;font-weight:600}.deck-top b::before{content:'';display:inline-block;width:6px;height:6px;background:var(--teal);border-radius:50%;margin-right:6px;box-shadow:0 0 10px var(--teal)}
+.deck-flow{position:relative;padding:15px 0 12px}.deck-flow::before{content:'';position:absolute;left:11px;top:31px;bottom:29px;width:1px;background:linear-gradient(var(--teal),rgba(255,195,33,.65),rgba(255,255,255,.08))}
+.flow-row{position:relative;display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:13px 8px;border-radius:12px;color:#8e9897;transition:color .5s,background .5s,transform .5s}
+.flow-row.active{color:#edf4f1;background:rgba(121,208,191,.10);transform:translateX(4px)}
+.flow-dot{position:relative;width:9px;height:9px;border:1px solid #63706d;border-radius:50%;background:#15191a;z-index:1;transition:.5s}.flow-row.active .flow-dot{border-color:var(--amber);background:var(--amber);box-shadow:0 0 0 5px rgba(255,195,33,.12),0 0 16px rgba(255,195,33,.7)}
+.flow-name{font:700 .77rem 'JetBrains Mono',monospace;letter-spacing:.02em}.flow-status{font:500 .56rem 'JetBrains Mono',monospace;color:#78817f;text-align:right}.flow-row.active .flow-status{color:var(--teal)}
+.deck-foot{padding:15px 1px 1px;color:#9ca5a2;border-top:1px solid rgba(255,255,255,.08);letter-spacing:.06em;font-size:.55rem}.deck-foot span{color:var(--amber)}
 
 /* marquee */
 .marq{border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:20px 0;overflow:hidden;position:relative;background:rgba(255,255,255,.012)}
@@ -84,6 +121,22 @@ section{position:relative;padding:100px 0}
 .kick{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
 h2.big{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.08;margin:0 0 14px}
 .lead{color:var(--mut);font-size:1.06rem;line-height:1.7;max-width:620px;margin:0}
+
+/* engagement path */
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px;counter-reset:steps;position:relative}
+.path::before{content:'';position:absolute;top:54px;left:9%;right:9%;height:1px;background:linear-gradient(90deg,transparent,rgba(121,208,191,.16) 12%,rgba(255,195,33,.4) 50%,rgba(121,208,191,.16) 88%,transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.2,.8,.2,1) .15s}
+.path:has(.step.in)::before{transform:scaleX(1)}
+.step{position:relative;z-index:1;min-height:250px;padding:31px 28px 28px;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:linear-gradient(155deg,#141419,#101013);overflow:hidden;transition:border-color .5s,box-shadow .5s}
+.step::before{counter-increment:steps;content:'0' counter(steps);display:block;font:700 .7rem 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--amber);margin-bottom:36px}
+.step::after{content:'';position:absolute;width:180px;height:180px;right:-80px;bottom:-95px;border-radius:50%;border:1px solid rgba(121,208,191,.22)}
+.step h3{font:800 1.25rem/1.25 'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;margin:0 0 12px}
+.step p{position:relative;margin:0;color:var(--mut);font-size:.92rem;line-height:1.65;max-width:30ch}
+.stepnode{position:absolute;right:25px;top:26px;width:13px;height:13px;border:1px solid rgba(121,208,191,.45);border-radius:50%;background:#111715;transition:background .45s,border-color .45s,box-shadow .45s}
+.stepnode i{position:absolute;inset:3px;border-radius:50%;background:var(--teal);transform:scale(0);transition:transform .45s cubic-bezier(.2,1.35,.3,1)}
+.step.in{border-color:rgba(121,208,191,.27);box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.step.in .stepnode{background:rgba(121,208,191,.16);border-color:var(--teal);box-shadow:0 0 0 0 rgba(121,208,191,.35);animation:nodepulse 2.8s ease-out infinite .5s}
+.step.in .stepnode i{transform:scale(1)}
+@keyframes nodepulse{70%{box-shadow:0 0 0 13px rgba(121,208,191,0)}100%{box-shadow:0 0 0 0 rgba(121,208,191,0)}}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:56px}
@@ -111,16 +164,21 @@ h2.big{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing
 .b:hover .go i{transform:translateX(4px)}
 .s4{grid-column:span 4}.s2{grid-column:span 2}.s3{grid-column:span 3}
 @media (max-width:900px){.s4,.s2,.s3{grid-column:span 6}}
+@media (max-width:900px){.hero-layout{grid-template-columns:1fr}.hero-deck{min-height:0;justify-content:flex-start;margin:4px 0 12px}.deck{width:min(100%,490px);transform:none}.hero-deck:hover .deck{transform:translateY(-3px)}#orbit{right:-25%;opacity:.35}}
 .bhero{background:linear-gradient(150deg,#15150f,var(--card));justify-content:flex-end}
 .bhero .bt{padding-top:0}
 .bhero img{height:230px}
 
 /* gurus strip */
 .gstrip{display:flex;flex-wrap:wrap;gap:12px;margin-top:46px}
-.gchip{display:inline-flex;align-items:center;gap:10px;background:rgba(121,208,191,.07);border:1px solid rgba(121,208,191,.24);border-radius:999px;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.74rem;color:#a7e6d8;transition:transform .3s,border-color .3s,background .3s}
-.gchip:hover{transform:translateY(-3px);border-color:rgba(255,195,33,.5);background:rgba(255,195,33,.07);color:#ffd45e}
+.gchip{display:inline-flex;align-items:center;gap:10px;background:rgba(121,208,191,.07);border:1px solid rgba(121,208,191,.24);border-radius:999px;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.74rem;color:#a7e6d8;transition:transform .3s,border-color .3s,background .3s;appearance:none;cursor:pointer}
+.gchip:hover,.gchip.active{transform:translateY(-3px);border-color:rgba(255,195,33,.62);background:rgba(255,195,33,.08);color:#ffd45e}
 .gchip .gd{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px rgba(121,208,191,.6)}
-.gchip:hover .gd{background:var(--amber);box-shadow:0 0 10px rgba(255,195,33,.6)}
+.gchip:hover .gd,.gchip.active .gd{background:var(--amber);box-shadow:0 0 10px rgba(255,195,33,.6)}
+.guru-panel{display:grid;grid-template-columns:74px minmax(0,1fr);gap:22px;align-items:start;margin-top:18px;padding:24px 26px;border-radius:18px;border:1px solid rgba(121,208,191,.23);background:linear-gradient(110deg,rgba(121,208,191,.09),rgba(18,18,22,.8) 54%);overflow:hidden;position:relative}
+.guru-panel::before{content:'';position:absolute;width:220px;height:220px;right:-86px;top:-124px;border:1px solid rgba(255,195,33,.22);border-radius:50%;box-shadow:0 0 0 24px rgba(121,208,191,.025),0 0 0 48px rgba(255,195,33,.018)}
+.guru-num{font:800 clamp(2.8rem,5vw,4.4rem)/.85 'Plus Jakarta Sans',sans-serif;letter-spacing:-.08em;color:var(--amber);position:relative}.guru-copy{position:relative}.guru-kick{display:block;font:600 .62rem 'JetBrains Mono',monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--teal);margin-bottom:8px}.guru-copy h3{font:800 1.35rem/1.2 'Plus Jakarta Sans',sans-serif;margin:0 0 7px}.guru-copy p{margin:0;color:var(--mut);line-height:1.65;font-size:.94rem;max-width:680px}.guru-human{display:inline-flex;margin-top:14px;padding-top:12px;border-top:1px dashed rgba(255,255,255,.14);color:#cbd5d1;font:500 .69rem/1.5 'JetBrains Mono',monospace}.guru-human b{color:var(--amber);font-weight:700;margin-right:6px}.guru-panel.swap .guru-copy,.guru-panel.swap .guru-num{animation:guruSwap .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes guruSwap{from{opacity:.25;transform:translateY(9px)}to{opacity:1;transform:none}}
 
 /* fine print band */
 .fine{border:1px solid rgba(121,208,191,.22);border-radius:24px;background:linear-gradient(180deg,#111614,#0e1210);padding:44px 42px;margin-top:80px;position:relative;overflow:hidden}
@@ -150,12 +208,16 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
  .sub,.ctarow,.heromet{opacity:1}
  .rv{opacity:1;transform:none}
 }
+@media (max-width:720px){
+ .wrap{padding-left:20px;padding-right:20px}.navin{padding:10px 20px;gap:2px 16px}.navin>div{order:3;width:100%;justify-content:space-between}.navlink{padding:8px 0;font-size:.72rem}.ghost{padding:9px 12px;font-size:.7rem}h1{font-size:clamp(2.8rem,13vw,4rem)}.hero-deck{margin-top:12px}.deck{padding:17px;border-radius:20px}.flow-row{padding:11px 6px}.flow-status{font-size:.5rem}.heromet{margin-top:36px;gap:8px 17px}.guru-panel{grid-template-columns:1fr;gap:12px;padding:22px}.guru-num{font-size:3rem}.path{grid-template-columns:1fr}.path::before{top:9%;bottom:9%;left:34px;right:auto;width:1px;height:auto;transform:scaleY(0);transform-origin:top}.path:has(.step.in)::before{transform:scaleY(1)}.step{min-height:0}.fine{padding:32px 25px}section{padding:76px 0}#endcta{padding:95px 0 85px}
+}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div id="prog" aria-hidden="true"></div>
 
-<nav>
+<nav aria-label="Primary navigation">
   <div class="navin">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
       <img src="assets/logo.svg" alt="ProductGurus logo" style="width:46px;height:23px;object-fit:contain;">
@@ -167,10 +229,11 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
       <a class="navlink" href="what-we-do">What we do</a>
       <a class="navlink" href="insights">Insights</a>
     </div>
-    <a class="ghost mono" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Get in touch</a>
+    <a class="ghost mono" href="#start">Start a project <span aria-hidden="true">→</span></a>
   </div>
 </nav>
 
+<main id="main">
 <header id="hero">
   <div class="gridbg" aria-hidden="true"></div>
   <div class="beam" style="left:18%;animation-delay:0s" aria-hidden="true"></div>
@@ -184,23 +247,39 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
   </div>
   <div id="spot" aria-hidden="true"></div>
   <div class="wrap" style="position:relative;padding-top:40px;padding-bottom:60px;">
-    <span class="badge"><span class="dot"></span>AI-powered product studio · Vancouver</span>
-    <h1 class="jak" id="stag">
-      <span class="w"><span style="--d:.05s">We</span></span>
-      <span class="w"><span style="--d:.12s">turn</span></span>
-      <span class="w"><span style="--d:.19s">raw</span></span>
-      <span class="w"><span style="--d:.26s">research</span></span><br>
-      <span class="w"><span style="--d:.36s">into</span></span>
-      <span class="w"><span class="shine" style="--d:.44s">shipped</span></span>
-      <span class="w"><span class="shine" style="--d:.52s">products<span class="tealw">.</span></span></span>
-    </h1>
-    <p class="sub">Six specialist AI gurus. One human with the keys. Requirements, prototypes, and launches with every claim signed by a person.</p>
-    <div class="ctarow">
-      <a id="magnet" href="work">View the work <span class="arr">→</span></a>
-      <a class="cta2" href="what-we-do">See how the gurus work</a>
-    </div>
-    <div class="heromet">
-      <span>6+ yrs retail tech &amp; SaaS</span><span>6 products end to end</span><span>2 in production</span><span>0 grievances since launch</span>
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span>Product strategy · UX · AI development</span>
+        <h1 class="jak" id="stag">
+          <span class="w"><span style="--d:.05s">Turn</span></span>
+          <span class="w"><span style="--d:.12s">product</span></span>
+          <span class="w"><span style="--d:.19s">uncertainty</span></span><br>
+          <span class="w"><span style="--d:.28s">into</span></span>
+          <span class="w"><span class="shine" style="--d:.36s">a decision</span></span><br>
+          <span class="w"><span style="--d:.44s">your team can</span></span>
+          <span class="w"><span class="shine" style="--d:.52s">ship<span class="tealw">.</span></span></span>
+        </h1>
+        <p class="sub">A Vancouver product studio for teams with a consequential problem to solve. We turn research into strategy, prototypes, and accountable releases—using AI for speed and human judgment for every decision that matters.</p>
+        <div class="ctarow">
+          <a id="magnet" href="#start">Start a project <span class="arr">→</span></a>
+          <a class="cta2" href="work">See the evidence</a>
+        </div>
+        <div class="heromet" aria-label="ProductGurus proof points">
+          <span>6+ yrs retail tech &amp; SaaS</span><span>6 products, end to end</span><span>2 platforms in production</span><span>Human-led decisions</span>
+        </div>
+      </div>
+      <div class="hero-deck" aria-hidden="true">
+        <div class="deck">
+          <div class="deck-top"><span>ProductGurus / operating system</span><b>Human gate: on</b></div>
+          <div class="deck-flow">
+            <div class="flow-row active" data-phase="0"><span class="flow-dot"></span><span class="flow-name">01 / Discover</span><span class="flow-status">Signal mapped</span></div>
+            <div class="flow-row" data-phase="1"><span class="flow-dot"></span><span class="flow-name">02 / Decide</span><span class="flow-status">Risk named</span></div>
+            <div class="flow-row" data-phase="2"><span class="flow-dot"></span><span class="flow-name">03 / Prototype</span><span class="flow-status">Reality tested</span></div>
+            <div class="flow-row" data-phase="3"><span class="flow-dot"></span><span class="flow-name">04 / Release</span><span class="flow-status">Claim verified</span></div>
+          </div>
+          <div class="deck-foot">AI accelerates. <span>Humans are accountable.</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -211,6 +290,19 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
     <span><b>ShiftFlow PRO</b><i>◆</i><b>Scrutas</b><i>◆</i><b>Squint</b><i>◆</i><b>PavIQ</b><i>◆</i><b>GridSentinel</b><i>◆</i><b>Dwell</b><i>◆</i>Discovery<i>◆</i>Build<i>◆</i>Validate<i>◆</i>Ship<i>◆</i></span>
   </div>
 </div>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="kick rv">A clear way through</div>
+    <h2 class="big rv">Less theatre. More <span class="shine">decision-making.</span></h2>
+    <p class="lead rv">We work in the order that reduces risk: understand the problem, make the right thing tangible, then ship with a clear record of what is—and is not—proven.</p>
+    <div class="path">
+      <article class="step rv"><span class="stepnode" aria-hidden="true"><i></i></span><h3>Frame the decision</h3><p>Turn scattered research, stakeholder input, and constraints into a focused brief with a testable next move.</p></article>
+      <article class="step rv"><span class="stepnode" aria-hidden="true"><i></i></span><h3>Make it real early</h3><p>Prototype the experience, pressure-test the requirements, and expose the decisions that should not wait for build.</p></article>
+      <article class="step rv"><span class="stepnode" aria-hidden="true"><i></i></span><h3>Ship with evidence</h3><p>Build the smallest credible release, measure it, and document the trade-offs so the next decision starts informed.</p></article>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
@@ -278,14 +370,23 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
     <div class="kick rv">The roster</div>
     <h2 class="big rv">Six gurus. One human with the keys.</h2>
     <p class="lead rv">Each guru is brilliant in one lane. The human decides which problems matter, and signs everything that leaves the building.</p>
-    <div class="gstrip rv">
-      <span class="gchip"><span class="gd"></span>Discovery Guru</span>
-      <span class="gchip"><span class="gd"></span>Build Guru</span>
-      <span class="gchip"><span class="gd"></span>Data Guru</span>
-      <span class="gchip"><span class="gd"></span>Pitch Guru</span>
-      <span class="gchip"><span class="gd"></span>Design Guru</span>
-      <span class="gchip"><span class="gd"></span>SEO Guru</span>
+    <div class="gstrip rv" aria-label="Meet the ProductGurus specialists">
+      <button class="gchip guru-trigger active" type="button" data-guru="discovery" aria-pressed="true"><span class="gd"></span>Discovery Guru</button>
+      <button class="gchip guru-trigger" type="button" data-guru="build" aria-pressed="false"><span class="gd"></span>Build Guru</button>
+      <button class="gchip guru-trigger" type="button" data-guru="data" aria-pressed="false"><span class="gd"></span>Data Guru</button>
+      <button class="gchip guru-trigger" type="button" data-guru="pitch" aria-pressed="false"><span class="gd"></span>Pitch Guru</button>
+      <button class="gchip guru-trigger" type="button" data-guru="design" aria-pressed="false"><span class="gd"></span>Design Guru</button>
+      <button class="gchip guru-trigger" type="button" data-guru="seo" aria-pressed="false"><span class="gd"></span>SEO Guru</button>
       <a class="gchip" href="about" style="text-decoration:none;border-style:dashed;">Meet them all →</a>
+    </div>
+    <div class="guru-panel rv" id="guru-panel" role="region" aria-label="Selected guru briefing" aria-live="polite">
+      <div class="guru-num" data-guru-num>01</div>
+      <div class="guru-copy">
+        <span class="guru-kick" data-guru-kick>Discovery &amp; requirements</span>
+        <h3 data-guru-title>The Discovery Guru</h3>
+        <p data-guru-description>Turns scattered interviews, assumptions, and operational constraints into a clear problem worth solving—and a next decision the team can stand behind.</p>
+        <span class="guru-human"><b>The human decides:</b> <span data-guru-human>which problem is worth solving in the first place.</span></span>
+      </div>
     </div>
     <div class="fine rv">
       <span class="mono">The fine print, in large type, on purpose</span>
@@ -296,15 +397,16 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
 
 <section id="endcta">
   <div class="glow" aria-hidden="true"></div>
-  <div class="wrap">
+  <div class="wrap" id="start">
     <h2 class="jak rv">Let's build something<br><span class="shine">worth shipping.</span></h2>
-    <p class="rv">A problem that needs discovery, a spec, or a prototype to prove it out? Talk to the human.</p>
+    <p class="rv">Have a product question, an unclear brief, or an idea worth testing? Bring the context. We’ll help identify the most useful next move.</p>
     <div class="rv" style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;">
-      <a id="magnet2" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;padding:18px 34px;border-radius:999px;text-decoration:none;box-shadow:0 12px 44px rgba(255,180,0,.3);will-change:transform;">Connect on LinkedIn →</a>
+      <a id="magnet2" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener" aria-label="Start a project conversation on LinkedIn (opens in a new tab)" style="display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;padding:18px 34px;border-radius:999px;text-decoration:none;box-shadow:0 12px 44px rgba(255,180,0,.3);will-change:transform;">Start the conversation <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap frow">
     <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
@@ -334,15 +436,57 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
  document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el);});
 
+ // The home roster is a quick briefing, not a decorative list of labels.
+ var gurus={
+   discovery:{num:'01',kick:'Discovery & requirements',title:'The Discovery Guru',description:'Turns scattered interviews, assumptions, and operational constraints into a clear problem worth solving—and a next decision the team can stand behind.',human:'which problem is worth solving in the first place.'},
+   build:{num:'02',kick:'Product development',title:'The Build Guru',description:'Turns an approved brief into dependable product work: software architecture, AI pipelines, and deterministic rules where a model should never be allowed to guess.',human:'what reaches production, and what must stay deterministic.'},
+   data:{num:'03',kick:'Data & validation',title:'The Data Guru',description:'Tests the commercial and operational case before enthusiasm becomes a roadmap. Assumptions are surfaced, models are footnoted, and weak ideas are allowed to stop early.',human:'what the numbers mean—and whether the honest answer is build, wait, or no.'},
+   pitch:{num:'04',kick:'Go-to-market',title:'The Pitch Guru',description:'Turns a useful product into an honest narrative: positioning, a pitch, and a case study that lets the evidence do more work than the adjectives.',human:'every public claim made to a client, partner, or market.'},
+   design:{num:'05',kick:'Design & experience',title:'The Design Guru',description:'Makes the interface legible before it is beautiful: hierarchy, contrast, flows, and prototypes that expose friction while it is still inexpensive to fix.',human:'what feels clear, useful, and worth putting in front of people.'},
+   seo:{num:'06',kick:'Search & visibility',title:'The SEO Guru',description:'Connects useful product knowledge with the questions people already search for, using sound technical foundations and pages written for people first.',human:'that visibility never comes at the expense of a useful, truthful page.'}
+ };
+ var guruTriggers=document.querySelectorAll('.guru-trigger'),guruPanel=document.getElementById('guru-panel');
+ function showGuru(key){
+   var guru=gurus[key];if(!guru||!guruPanel)return;
+   guruTriggers.forEach(function(trigger){var on=trigger.dataset.guru===key;trigger.classList.toggle('active',on);trigger.setAttribute('aria-pressed',on?'true':'false');});
+   guruPanel.classList.remove('swap');void guruPanel.offsetWidth;guruPanel.classList.add('swap');
+   guruPanel.querySelector('[data-guru-num]').textContent=guru.num;
+   guruPanel.querySelector('[data-guru-kick]').textContent=guru.kick;
+   guruPanel.querySelector('[data-guru-title]').textContent=guru.title;
+   guruPanel.querySelector('[data-guru-description]').textContent=guru.description;
+   guruPanel.querySelector('[data-guru-human]').textContent=guru.human;
+ }
+ guruTriggers.forEach(function(trigger,index){
+   trigger.addEventListener('mouseenter',function(){showGuru(trigger.dataset.guru);});
+   trigger.addEventListener('focus',function(){showGuru(trigger.dataset.guru);});
+   trigger.addEventListener('click',function(){showGuru(trigger.dataset.guru);});
+   trigger.addEventListener('keydown',function(e){
+     if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();
+     var next=(index+(e.key==='ArrowRight'?1:guruTriggers.length-1))%guruTriggers.length;guruTriggers[next].focus();
+   });
+ });
+
  if(reduce){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.dataset.count;});return;}
 
- // hero spotlight
+ // The hero workflow makes the studio's method legible before visitors scroll.
+ var phases=document.querySelectorAll('.flow-row'),phaseIndex=0,phaseTimer;
+ function setPhase(next){
+   phaseIndex=next%phases.length;
+   phases.forEach(function(row,i){row.classList.toggle('active',i===phaseIndex);});
+ }
+ function startPhases(){if(phases.length&&!phaseTimer)phaseTimer=setInterval(function(){setPhase(phaseIndex+1);},2400);}
+ function stopPhases(){if(phaseTimer){clearInterval(phaseTimer);phaseTimer=null;}}
+ if(phases.length){startPhases();document.addEventListener('visibilitychange',function(){if(document.hidden)stopPhases();else startPhases();});}
+
+ // Hero feels responsive on precise pointers, without adding work to touch screens.
  var hero=document.getElementById('hero'),spot=document.getElementById('spot');
- hero.addEventListener('mousemove',function(e){
-   var r=hero.getBoundingClientRect();
-   spot.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');
-   spot.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');
- },{passive:true});
+ var finePointer=matchMedia('(hover: hover) and (pointer: fine)').matches;
+ if(finePointer){hero.addEventListener('mousemove',function(e){
+   var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+   spot.style.setProperty('--mx',(x*100)+'%');spot.style.setProperty('--my',(y*100)+'%');
+   document.getElementById('orbit').style.setProperty('--ox',((x-.5)*-18)+'px');
+   document.getElementById('orbit').style.setProperty('--oy',((y-.5)*-14)+'px');
+ },{passive:true});}
 
  // magnetic buttons (spring-style settle)
  function magnetize(el,strength){
@@ -358,8 +502,7 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
      setTimeout(function(){el.style.transition='box-shadow .3s';},560);
    });
  }
- magnetize(document.getElementById('magnet'),.22);
- magnetize(document.getElementById('magnet2'),.22);
+ if(finePointer){magnetize(document.getElementById('magnet'),.22);magnetize(document.getElementById('magnet2'),.22);}
 
  // stat count-up
  var cio=new IntersectionObserver(function(es){es.forEach(function(e){
@@ -369,6 +512,8 @@ footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
      el.textContent=Math.round(ease*t);if(p<1)requestAnimationFrame(step);})(s);
  })},{threshold:.6});
  document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el)});
+
+ if(!finePointer)return;
 
  // 3D tilt on bento cards
  document.querySelectorAll('.tilt').forEach(function(card){
