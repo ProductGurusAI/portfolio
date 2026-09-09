@@ -1,0 +1,24 @@
+# ProductGurus
+
+> A Vancouver product studio for product discovery and prototyping, run by product manager Abhay Kumar with a roster of specialist AI systems. Seven products taken from research to release; every decision human-verified.
+
+Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30min
+
+## Services
+- [What we do](https://productgurus.ai/what-we-do): discovery sprints (2–4 weeks), working prototypes (3–6 weeks), build-ready specs and handover for client engineering teams
+- [About](https://productgurus.ai/about): who runs the studio; open to senior product roles in Vancouver
+
+## Case studies
+- [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): AI retail workforce scheduler, in production, compliance layer kept deterministic
+- [Scrutas](https://productgurus.ai/projects/scrutas): forensic web audit platform, 23 modules, two-stage authorization model
+- [Squint](https://productgurus.ai/projects/squint): website audit to client-ready pitch report for agencies
+- [Council of AIs](https://productgurus.ai/projects/council-of-ais): open-source budget-driven multi-model router
+- [Dwell](https://productgurus.ai/projects/dwell): renter trust score for Canadian newcomers, discovery in progress
+- [PavIQ](https://productgurus.ai/projects/paviq): fleet-mounted road-condition sensing, validated concept
+- [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept
+
+## Insights
+- [How to run product discovery before building an MVP](https://productgurus.ai/insights/product-discovery-before-building-an-mvp)
+- [Fractional product manager vs agency vs full-time hire](https://productgurus.ai/insights/fractional-product-manager-vs-agency-vs-full-time)
+- [How much does an MVP cost to build in Canada?](https://productgurus.ai/insights/how-much-does-an-mvp-cost-in-canada)
+- [Why ShiftFlow's break planner refuses to use AI](https://productgurus.ai/insights/why-shiftflow-breaks-are-not-ai)
