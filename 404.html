@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found | ProductGurus</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Manrope:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  :root{--bg:#0a0a0c;--card:#121216;--amber:#FFC321;--teal:#79d0bf;--txt:#e8e8ee;--mut:#b6b6c0;--dim:#8a8a94}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+       background:var(--bg);color:var(--txt);font-family:Manrope,system-ui,sans-serif;padding:2rem;text-align:center}
+  .code{font-family:"JetBrains Mono",monospace;color:var(--amber);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem}
+  h1{font-family:"Plus Jakarta Sans",Manrope,sans-serif;font-weight:800;font-size:clamp(1.8rem,5vw,3rem);line-height:1.1;margin:0 0 1rem;max-width:18ch}
+  p{color:var(--mut);max-width:44ch;line-height:1.6;margin:0 0 2rem}
+  .links{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+  a{color:var(--txt);text-decoration:none;border:1px solid #2a2a32;background:var(--card);padding:.7rem 1.1rem;border-radius:999px;font-weight:600;font-size:.95rem}
+  a.primary{background:var(--amber);color:#111;border-color:var(--amber)}
+  a:hover{border-color:var(--teal)}
+</style>
+</head>
+<body>
+  <div class="code">404 · not found</div>
+  <h1>That page didn't ship<span style="color:var(--teal)">.</span></h1>
+  <p>The link is broken or the page moved. Everything we've built is still here, one click away.</p>
+  <nav class="links" aria-label="Recovery links">
+    <a class="primary" href="/">Home</a>
+    <a href="/work">Work</a>
+    <a href="/what-we-do">What we do</a>
+    <a href="/about">About</a>
+    <a href="/insights">Insights</a>
+  </nav>
+</body>
+</html>
