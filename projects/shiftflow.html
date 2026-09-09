@@ -87,6 +87,9 @@
   body{margin:0;background:#0a0a0c}
   ::selection{background:rgba(255,195,33,.26);color:#fff}
   @keyframes gridmove{0%{background-position:0 0}100%{background-position:60px 60px}}
+[id]{scroll-margin-top:120px}
+nav[aria-label="Sections"] div::-webkit-scrollbar{display:none}
+nav[aria-label="Sections"] a:hover{color:#FFC321}
 </style>
 </head>
 <body>
@@ -142,7 +145,24 @@
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">AI providers</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">Gemini · Claude</div></div>
         </div>
       </div>
+
+      <div style="max-width:920px;margin:26px auto 0;padding:0 28px;">
+        <div style="border:1px solid rgba(121,208,191,.26);background:rgba(121,208,191,.05);border-radius:16px;padding:20px 24px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#79d0bf;margin-bottom:8px;">The 30-second version</div>
+          <p style="margin:0;color:#e0e0e6;font-size:1.02rem;line-height:1.7;text-wrap:pretty;"><strong style="color:#f4f4f6;">Built for a real retail store and live at v2.5.</strong> Rostering that took hours of spreadsheet work every two weeks is now a generated draft the manager edits. Union rules and hour guarantees run as deterministic code, and there have been zero grievances from guarantee misses since launch.</p>
+        </div>
+      </div>
     </header>
+<nav aria-label="Sections" style="position:sticky;top:68px;z-index:50;background:rgba(10,10,12,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);">
+      <div style="max-width:920px;margin:0 auto;padding:0 28px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;">
+        <a href="#the-problem" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Problem</a>
+        <a href="#discovery" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Discovery</a>
+        <a href="#requirements" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Requirements</a>
+        <a href="#what-i-built" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Build</a>
+        <a href="#outcome" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Outcome</a>
+        <a href="#roadmap" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Roadmap</a>
+      </div>
+    </nav>
 
     <section style="padding:20px 0 64px;">
       <div style="max-width:920px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr;gap:64px;">
@@ -152,7 +172,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="the-problem">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A schedule is a constraint-satisfaction problem, done by hand</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">Every two weeks, the store manager rebuilt the roster from scratch in a spreadsheet, reconciling contractual hour guarantees, shifting statutory-holiday hours, labor budgets, and role coverage all at once, entirely from memory and habit.</p>
           <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
@@ -164,7 +184,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Discovery</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="discovery">Discovery</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Who the schedule actually serves</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
@@ -181,7 +201,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Backlog</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="backlog">Backlog</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">User stories that shaped the build</h2>
           <div style="display:flex;flex-direction:column;gap:10px;">
 
@@ -225,7 +245,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Requirements</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="requirements">Requirements</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Spec'd as testable acceptance criteria</h2>
           <div style="border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="display:grid;grid-template-columns:1fr 100px;background:#16161b;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;">
@@ -242,13 +262,13 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">My role</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="my-role">My role</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">From the manager's actual workflow to a shipped tool</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">I sat with the scheduling process directly, translated every contractual and operational rule into an explicit constraint set, and specified how an LLM could generate a compliant draft a manager could trust. I then built the application end to end: the rules engine, the AI integration layer (designed to work across multiple model providers), and the editing surface managers actually use every two weeks.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">What I built</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="what-i-built">What I built</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 24px;">A rules engine wrapped around three AI providers</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
@@ -271,7 +291,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Under the hood</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="under-the-hood">Under the hood</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">The schedule is generated, not typed</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 22px;text-wrap:pretty;">Compiled store constraints (availability, holidays, budgets, roles) go to the model as a single context. It returns a shift-code grid plus its reasoning, which the manager reviews inline before publishing.</p>
           <div style="background:#0e0e12;border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:20px 22px;font-family:'JetBrains Mono',monospace;font-size:.82rem;line-height:1.7;color:#9fcabf;overflow-x:auto;">
@@ -283,7 +303,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="outcome">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A manager reviews a draft instead of building one</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 16px;text-wrap:pretty;">The manual reconciliation (hour guarantees, statutory shifts, break conflicts, budget ceilings) now happens before the manager ever opens the board. They spend their time adjusting a draft and handling call-ins, not building the schedule from a blank grid.</p>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
@@ -294,7 +314,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Roadmap</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="roadmap">Roadmap</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">What ships next</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">

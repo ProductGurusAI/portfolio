@@ -87,6 +87,9 @@
   body{margin:0;background:#0a0a0c}
   ::selection{background:rgba(255,195,33,.26);color:#fff}
   @keyframes gridmove{0%{background-position:0 0}100%{background-position:60px 60px}}
+[id]{scroll-margin-top:120px}
+nav[aria-label="Sections"] div::-webkit-scrollbar{display:none}
+nav[aria-label="Sections"] a:hover{color:#FFC321}
 </style>
 </head>
 <body>
@@ -141,7 +144,24 @@
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">Market</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">1.2M newcomers/yr</div></div>
         </div>
       </div>
+
+      <div style="max-width:920px;margin:26px auto 0;padding:0 28px;">
+        <div style="border:1px solid rgba(121,208,191,.26);background:rgba(121,208,191,.05);border-radius:16px;padding:20px 24px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#79d0bf;margin-bottom:8px;">The 30-second version</div>
+          <p style="margin:0;color:#e0e0e6;font-size:1.02rem;line-height:1.7;text-wrap:pretty;"><strong style="color:#f4f4f6;">Discovery in progress, 2 of 9 interviews done; build waits on evidence.</strong> A bank-verified renter trust score for the 1.2M newcomers Canadian credit bureaus can't see. Two interviews already added a fourth product pillar and flagged the pricing model as unproven, so the build decision is deliberately on hold.</p>
+        </div>
+      </div>
     </header>
+<nav aria-label="Sections" style="position:sticky;top:68px;z-index:50;background:rgba(10,10,12,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);">
+      <div style="max-width:920px;margin:0 auto;padding:0 28px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;">
+        <a href="#the-problem" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Problem</a>
+        <a href="#personas" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Discovery</a>
+        <a href="#requirements" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Requirements</a>
+        <a href="#what-i-designed" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Design</a>
+        <a href="#outcome" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Outcome</a>
+        <a href="#roadmap" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Roadmap</a>
+      </div>
+    </nav>
 
     <section style="padding:20px 0 64px;">
       <div style="max-width:920px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr;gap:64px;">
@@ -151,7 +171,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="the-problem">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Equifax and TransUnion are blind to 1.2M people a year</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">1.2 million newcomers enter Canada every year with no Canadian credit history, which means no rental history, which means landlords reject them on sight regardless of how reliable they actually are. The result: 6-month housing searches and 25–30 applications to rent a single room.</p>
           <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
@@ -178,7 +198,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Personas</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="personas">Personas</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Four people, four different frictions</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:20px;">
@@ -201,7 +221,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Backlog</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="backlog">Backlog</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">User stories that shaped the roadmap</h2>
           <div style="display:flex;flex-direction:column;gap:10px;">
             <div style="display:grid;grid-template-columns:70px 1fr auto;gap:16px;align-items:center;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;">
@@ -238,7 +258,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Requirements</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="requirements">Requirements</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">The 90-day MVP, spec'd as acceptance criteria</h2>
           <div style="border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="display:grid;grid-template-columns:1fr 100px;background:#16161b;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;">
@@ -255,13 +275,13 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">My role</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="my-role">My role</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Running discovery and letting it actually change the plan</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">I ran the discovery interviews, and treated every one as a chance to break the existing plan rather than confirm it. Ashmita's answer added an entire pillar. The realtor's answer put the pricing model on hold rather than let it ship on an unvalidated assumption. I then designed the trust-score algorithm, anti-gaming mechanics, and database schema so the next 5 interviews have something concrete to react to.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">What I designed</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="what-i-designed">What I designed</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 24px;">Four pillars, one trust graph</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
@@ -284,7 +304,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Under the hood</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="under-the-hood">Under the hood</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">What actually moves the score</h2>
           <div style="display:flex;flex-direction:column;gap:10px;">
             <div style="display:flex;align-items:center;gap:14px;"><span style="width:150px;flex:none;font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#c4c4cc;">Rent on-time rate</span><div style="flex:1;height:8px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden;"><div style="width:30%;height:100%;background:linear-gradient(90deg,#79d0bf,#FFC321);"></div></div><span style="width:36px;text-align:right;font-family:'JetBrains Mono',monospace;font-size:.76rem;color:#82828c;">30%</span></div>
@@ -299,19 +319,19 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Competitive moat</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="competitive-moat">Competitive moat</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">The renter's advocate, not another blacklist</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Openroom and FrontLobby already own the landlord-protection, negative-data side of this market. Their model requires renters to distrust them; no one hands their bank data to the platform built to report them. Dwell's Renter Trust Score only works if renters willingly connect their bank, which only happens if the product is renter-owned and never becomes a blacklist. That's a moat built from trust, not a feature list, and it's the one thing an incumbent can't copy by shipping a new module.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="outcome">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A build decision that waits on evidence, on purpose</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Dwell is 2 of 9 discovery interviews in, with a working score algorithm, database schema, and a 90-day MVP plan ready to execute, and, just as importantly, a monetization assumption correctly flagged as unresolved rather than shipped blind. The build/no-build decision waits for the remaining 7 interviews, on purpose.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Roadmap</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="roadmap">Roadmap</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Discovery → MVP → B2B → scale</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">

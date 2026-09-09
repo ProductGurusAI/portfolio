@@ -87,6 +87,9 @@
   body{margin:0;background:#0a0a0c}
   ::selection{background:rgba(255,195,33,.26);color:#fff}
   @keyframes gridmove{0%{background-position:0 0}100%{background-position:60px 60px}}
+[id]{scroll-margin-top:120px}
+nav[aria-label="Sections"] div::-webkit-scrollbar{display:none}
+nav[aria-label="Sections"] a:hover{color:#FFC321}
 </style>
 </head>
 <body>
@@ -142,7 +145,25 @@
           <div style="background:#111116;padding:18px 20px;"><div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;margin-bottom:8px;">Lifetime target</div><div style="color:#e8e8ee;font-size:.92rem;font-weight:600;">15+ years, no battery</div></div>
         </div>
       </div>
+
+      <div style="max-width:920px;margin:26px auto 0;padding:0 28px;">
+        <div style="border:1px solid rgba(121,208,191,.26);background:rgba(121,208,191,.05);border-radius:16px;padding:20px 24px;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:#79d0bf;margin-bottom:8px;">The 30-second version</div>
+          <p style="margin:0;color:#e0e0e6;font-size:1.02rem;line-height:1.7;text-wrap:pretty;"><strong style="color:#f4f4f6;">Validated concept, specified through Phase 0.</strong> A battery-free clamp-on grid sensor, re-scoped during technical discovery from theft detection (the physics don't close on medium voltage) to outage detection and fault localization, which utilities actually want. ~CAD $95 per node.</p>
+        </div>
+      </div>
     </header>
+<nav aria-label="Sections" style="position:sticky;top:68px;z-index:50;background:rgba(10,10,12,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);">
+      <div style="max-width:920px;margin:0 auto;padding:0 28px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;">
+        <a href="#the-problem" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Problem</a>
+        <a href="#discovery" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Discovery</a>
+        <a href="#repositioning" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Repositioning</a>
+        <a href="#requirements" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Requirements</a>
+        <a href="#what-i-designed" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Design</a>
+        <a href="#outcome" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Outcome</a>
+        <a href="#roadmap" style="flex:0 0 auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:#a8a8b2;text-decoration:none;padding:12px 10px;border-bottom:2px solid transparent;white-space:nowrap;">Roadmap</a>
+      </div>
+    </nav>
 
     <section style="padding:20px 0 64px;">
       <div style="max-width:920px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr;gap:64px;">
@@ -152,7 +173,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">The problem</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="the-problem">The problem</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Utilities find out about outages from phone calls</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0 0 14px;text-wrap:pretty;">The distribution grid edge (the actual conductors carrying power to homes and businesses) is almost entirely unmonitored. When a section goes down, utilities typically learn about it from customer calls, not sensors, and crews patrol blind to find the fault.</p>
           <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;">
@@ -163,13 +184,13 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Repositioning</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="repositioning">Repositioning</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">The headline feature doesn't close the math on this line</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">Electricity-theft detection was the original pitch, but on a medium-voltage feeder, the energy-balance equation needed to prove theft doesn't close; it only works at the low-voltage transformer secondary. Rather than ship a headline feature that can't work where it was pitched, I re-scoped the first product around what a utility ops team actively wants and has no incentive to refuse: automatic outage detection and fault localization. Theft detection moves to a planned LV variant, where the physics actually work.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Discovery</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="discovery">Discovery</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Who has to say yes</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
@@ -184,7 +205,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Backlog</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="backlog">Backlog</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">User stories that shaped the wedge</h2>
           <div style="display:flex;flex-direction:column;gap:10px;">
             <div style="display:grid;grid-template-columns:70px 1fr auto;gap:16px;align-items:center;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:16px 18px;">
@@ -221,7 +242,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Requirements</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="requirements">Requirements</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Spec'd as testable acceptance criteria</h2>
           <div style="border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="display:grid;grid-template-columns:1fr 100px;background:#16161b;padding:12px 20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#82828c;">
@@ -238,13 +259,13 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">My role</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="my-role">My role</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">Finding the wedge the physics actually support</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">I pressure-tested the original theft-detection pitch against the underlying electrical engineering, found it didn't close on a medium-voltage line, and re-sequenced the roadmap around a wedge utilities would adopt immediately. From there I specified the full hardware architecture, bill of materials, and phased validation plan.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">What I designed</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="what-i-designed">What I designed</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 24px;">A node that powers, senses, and reports itself</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px;">
@@ -267,7 +288,7 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Under the hood</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="under-the-hood">Under the hood</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">From current collapse to a crew dispatched to the right pole</h2>
           <div style="display:flex;flex-direction:column;gap:0;border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;">
             <div style="display:flex;align-items:center;gap:16px;padding:16px 20px;background:#111116;"><span style="font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#FFC321;width:20px;">1</span><span style="color:#c4c4cc;font-size:.9rem;">A fault drives a large current surge from the source side of the affected span</span></div>
@@ -279,13 +300,13 @@
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Outcome</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="outcome">Outcome</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 16px;">A de-risked platform, staged for a bench prototype</h2>
           <p style="color:#b6b6c0;font-size:1.02rem;line-height:1.75;margin:0;text-wrap:pretty;">GridSentinel is fully specified through Phase 0: architecture, BOM (~CAD $95/node electronics), and a de-risked product sequence that earns a place on the line with a wedge utilities want, rather than leading with the unsolved theft-detection problem. The dominant cost and risk, correctly identified upfront, is the custom HV enclosure and installation engineering, not the electronics.</p>
         </div>
 
         <div>
-          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;">Roadmap</div>
+          <div style="display:inline-flex;align-items:center;gap:8px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px;margin-bottom:16px;" id="roadmap">Roadmap</div>
           <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:-.02em;color:#f4f4f6;margin:0 0 20px;">Bench → pilot → platform</h2>
           <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">
             <div style="background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:20px;">
