@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0c;--card:#121216;--amber:#FFC321;--amber2:#ff9e00;--teal:#79d0bf;--txt:#e8e8ee;--mut:#b6b6c0;--dim:#8a8a94}
+:root{--bg:#0a0a0c;--card:#121216;--amber:#FFC321;--amber2:#ff9e00;--teal:#79d0bf;--txt:#e8e8ee;--mut:#b6b6c0;--dim:#9a9aa4}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--txt);font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -72,7 +72,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.75);backdrop-filt
 #orbit .core{position:absolute;left:50%;top:50%;width:30px;height:30px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3d0,var(--amber) 55%,#7a5200);box-shadow:0 0 90px 24px rgba(255,195,33,.4);animation:pulse 3.4s ease-in-out infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes pulse{50%{box-shadow:0 0 80px 22px rgba(255,195,33,.4)}}
-.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(255,195,33,.1);border:1px solid rgba(255,195,33,.35);color:#ffd45e;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px}
+.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px}
 .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse2 2s ease-in-out infinite}
 @keyframes pulse2{50%{opacity:.35}}
 h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.045em;line-height:1.01;font-size:clamp(3.1rem,6.3vw,5.8rem);margin:25px 0 26px;max-width:760px}
@@ -175,7 +175,7 @@ h2.big{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing
 .stat{background:linear-gradient(180deg,var(--card),#101013);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-decoration:none;color:inherit;cursor:pointer;display:block}
 .stat::after{content:"";position:absolute;inset:0;background:radial-gradient(200px circle at var(--sx,50%) var(--sy,0%),rgba(255,195,33,.08),transparent 70%);opacity:0;transition:opacity .4s}
 .stat:hover::after{opacity:1}
-.stat b{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.2rem,3.6vw,3rem);font-weight:800;background:linear-gradient(110deg,#ffe79a,var(--amber) 55%,var(--amber2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat b{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.2rem,3.6vw,3rem);font-weight:800;color:#f4f4f6}
 .stat span{display:block;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:10px;line-height:1.5}
 
 /* bento */
