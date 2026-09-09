@@ -5,3 +5,6 @@
 uploads/
 *.docx
 *.zip
+
+# Cowork preview exports
+Claude outputs/
