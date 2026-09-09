@@ -1,15 +1,25 @@
-# Clean project URLs (serve the existing .dc.html files at clean paths)
-/projects/council-of-ais /projects/CouncilOfAIs.dc.html   200
-/projects/shiftflow      /projects/ShiftFlow.dc.html      200
-/projects/squint         /projects/Squint.dc.html         200
-/projects/scrutas        /projects/Scrutas.dc.html        200
-/projects/paviq          /projects/PavIQ.dc.html          200
-/projects/gridsentinel   /projects/GridSentinel.dc.html   200
-/projects/dwell          /projects/Dwell.dc.html          200
+# Legacy project URLs -> clean slugs (files are now projects/<slug>.html, served at /projects/<slug>)
+/projects/CouncilOfAIs.dc.html  /projects/council-of-ais  301
+/projects/CouncilOfAIs.dc       /projects/council-of-ais  301
+/projects/ShiftFlow.dc.html     /projects/shiftflow       301
+/projects/ShiftFlow.dc          /projects/shiftflow       301
+/projects/Squint.dc.html        /projects/squint          301
+/projects/Squint.dc             /projects/squint          301
+/projects/Scrutas.dc.html       /projects/scrutas         301
+/projects/Scrutas.dc            /projects/scrutas         301
+/projects/PavIQ.dc.html         /projects/paviq           301
+/projects/PavIQ.dc              /projects/paviq           301
+/projects/GridSentinel.dc.html  /projects/gridsentinel    301
+/projects/GridSentinel.dc       /projects/gridsentinel    301
+/projects/Dwell.dc.html         /projects/dwell           301
+/projects/Dwell.dc              /projects/dwell           301
 
-# Kill the duplicate homepage
+# Duplicate homepages
 /Portfolio.dc.html   /   301
+/Portfolio.dc        /   301
+/index-old.html      /   301
+/index-old           /   301
 
-# /projects alone has no page of its own — send it to the work section
-/projects    /#work   301
-/projects/   /#work   301
+# /projects alone has no page of its own
+/projects    /work   301
+/projects/   /work   301
