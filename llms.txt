@@ -18,6 +18,7 @@ Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30mi
 - [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept
 
 ## Insights
+- [Copy the Homework: Using a Competitor's Decisions as Free Discovery](https://productgurus.ai/insights/copy-the-homework-competitor-decisions-as-discovery)
 - [Product Discovery Interview Questions: The Script We Actually Use](https://productgurus.ai/insights/product-discovery-interview-questions)
 - [Prototype vs MVP: Which One Should You Build First?](https://productgurus.ai/insights/prototype-vs-mvp-which-first)
 - [How to Write User Stories with Acceptance Criteria Engineers Can Build From](https://productgurus.ai/insights/user-stories-with-acceptance-criteria)
