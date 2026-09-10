@@ -114,6 +114,7 @@
   [data-reveal].in{opacity:1;transform:none}
   @media (max-width:640px){.stage{grid-template-columns:44px 1fr;gap:16px}.node{width:40px;height:40px;font-size:.72rem}.scard{padding:24px 22px}}
   @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+details summary::-webkit-details-marker{display:none}details summary::after{content:"+";float:right;color:#FFC321;font-weight:700}details[open] summary::after{content:"–"}
 </style>
 </head>
 <body>
@@ -255,6 +256,39 @@
   </div>
 </section>
 
+
+<section style="padding:0 0 60px;">
+  <div class="wrap">
+    <div data-reveal style="margin-bottom:18px;"><span class="badge">Questions we get on the first call</span></div>
+    <h2 data-reveal class="jak" style="font-weight:800;letter-spacing:-.03em;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15;margin:0 0 20px;">Straight answers before you book</h2>
+    <div data-reveal style="display:grid;gap:10px;max-width:860px;">
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">What does a discovery sprint actually deliver?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">Interview notes from six to nine conversations, personas grounded in those interviews, a process map of how the work happens today, user stories with acceptance criteria tagged Must/Should/Could/Won't, a first-pass market sizing with every assumption footnoted, and a written build, wait, or no recommendation. The Dwell case study shows what the output looks like at the halfway point.</p>
+      </details>
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">Do you build the production product?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">For our own products, yes, end to end. For client work, we stop at the working prototype and a spec your engineering team can build from. The expensive questions get answered before production code exists; the build itself is a known quantity a good team can execute without us.</p>
+      </details>
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">How is this different from hiring a freelance product manager?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">A freelance PM sells days. An engagement here sells a defined outcome with a deliverable at the end, run by one product lead with a roster of specialist AI systems doing the heavy lifting. That's why a discovery sprint takes weeks rather than a quarter, and why you get a written artifact instead of meeting notes.</p>
+      </details>
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">What do the "gurus" actually do, and what does the human do?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">The AI specialists transcribe and pattern-match interviews, draft personas and user stories, build market-sizing models, write and refactor prototype code, and draft copy. Abhay decides who to interview, which findings change the plan, what is deterministic versus AI-generated in a build, and every claim that goes out under the studio's name. Nothing ships without a person having read it.</p>
+      </details>
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">Who is this for?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">Founders before a first build, product teams with a feature they can't agree on, and small companies with an internal process that's broken and nobody to spec the fix. Most work so far has been in retail operations, SaaS, and hardware-adjacent concepts, but the process doesn't depend on the industry.</p>
+      </details>
+      <details style="background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px;">
+        <summary class="jak" style="cursor:pointer;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none;">What does it cost?</summary>
+        <p style="margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7;">Discovery sprints and prototypes are quoted as fixed-scope engagements after a 30-minute call, not by the hour. The call is free and ends with a written scope, whether or not you go ahead.</p>
+      </details>
+    </div>
+  </div>
+</section>
 <section style="padding:0 0 90px;">
   <div class="wrap">
     <div data-reveal style="background:linear-gradient(180deg,#121216,#101013);border:1px solid rgba(121,208,191,.22);border-radius:22px;padding:36px 32px;max-width:820px;">

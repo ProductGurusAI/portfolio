@@ -18,6 +18,10 @@ Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30mi
 - [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept
 
 ## Insights
+- [Product Discovery Interview Questions: The Script We Actually Use](https://productgurus.ai/insights/product-discovery-interview-questions)
+- [Prototype vs MVP: Which One Should You Build First?](https://productgurus.ai/insights/prototype-vs-mvp-which-first)
+- [How to Write User Stories with Acceptance Criteria Engineers Can Build From](https://productgurus.ai/insights/user-stories-with-acceptance-criteria)
+- [How to Size a Market Before You Build (TAM, SAM, SOM Without Fooling Yourself)](https://productgurus.ai/insights/market-sizing-tam-sam-som-before-you-build)
 - [How to run product discovery before building an MVP](https://productgurus.ai/insights/product-discovery-before-building-an-mvp)
 - [Fractional product manager vs agency vs full-time hire](https://productgurus.ai/insights/fractional-product-manager-vs-agency-vs-full-time)
 - [How much does an MVP cost to build in Canada?](https://productgurus.ai/insights/how-much-does-an-mvp-cost-in-canada)
