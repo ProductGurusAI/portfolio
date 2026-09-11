@@ -23,3 +23,22 @@
 # /projects alone has no page of its own
 /projects    /work   301
 /projects/   /work   301
+
+# Assets replaced on 2026-09-10 (old paths were in og:image tags crawlers had already fetched)
+/assets/shiftflow-screenshot.png     /assets/shiftflow-og.jpg      301
+/assets/scrutas-screenshot.png       /assets/scrutas-og.jpg        301
+/assets/squint-screenshot.png        /assets/squint-og.jpg         301
+/assets/paviq-dashboard.png          /assets/paviq-og.jpg          301
+/assets/paviq-dashboard-2.png        /assets/paviq-og.jpg          301
+/assets/gridsentinel-screenshot.jpg  /assets/gridsentinel-og.jpg   301
+/assets/dwell-screenshot.jpg         /assets/dwell-og.jpg          301
+/assets/abhay-headshot.jpg           /assets/abhay-headshot-1024.jpg 301
+/assets/favicon-48.png               /assets/favicon-32.png        301
+/assets/hero-studio.jpg              /assets/og-card.png           301
+/assets/work/shiftflow.jpg           /assets/work/shiftflow.webp   301
+/assets/work/scrutas.jpg             /assets/work/scrutas.webp     301
+/assets/work/squint.jpg              /assets/work/squint.webp      301
+/assets/work/paviq.jpg               /assets/work/paviq.webp       301
+/assets/work/gridsentinel.jpg        /assets/work/gridsentinel.webp 301
+/assets/work/dwell.jpg               /assets/work/dwell.webp       301
+/assets/work/council.jpg             /assets/og-card.png           301
