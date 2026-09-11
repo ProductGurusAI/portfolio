@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY"></script>
+<!-- Google tag (gtag.js): queue is live immediately, the library loads after the page has painted -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-N7PBH45QNY');
+  window.addEventListener('load', function(){ var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY'; document.head.appendChild(s); });
 </script>
 <script type="application/ld+json">
 {
@@ -81,7 +81,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
 <style>
   html{scroll-behavior:smooth}
   body{margin:0;background:#0a0a0c}
@@ -170,7 +172,7 @@ nav[aria-label="Sections"] a:hover{color:#FFC321}
       <div style="max-width:920px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr;gap:64px;">
 
         <div>
-          <img src="../assets/paviq-hero.webp" width="1840" height="1021" alt="PavIQ hardware / dashboard photo screenshot" loading="lazy" style="display:block;width:100%;max-height:560px;object-fit:contain;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:#0d0d10;">
+          <img src="../assets/paviq-hero.webp" srcset="../assets/paviq-hero-920.webp 920w, ../assets/paviq-hero.webp 1840w" sizes="(max-width: 920px) 100vw, 864px" fetchpriority="high" width="1840" height="1021" alt="PavIQ hardware / dashboard photo screenshot" style="display:block;width:100%;max-height:560px;object-fit:contain;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:#0d0d10;">
         </div>
 
         <div>

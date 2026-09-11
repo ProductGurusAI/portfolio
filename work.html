@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY"></script>
+<!-- Google tag (gtag.js): queue is live immediately, the library loads after the page has painted -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-N7PBH45QNY');
+  window.addEventListener('load', function(){ var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY'; document.head.appendChild(s); });
 </script>
 <title>Product Case Studies: Seven Shipped Products | ProductGurus</title>
 <meta name="description" content="Seven product management case studies from a Vancouver product studio: three production platforms, three validated-concept ventures, and one internal tool. Each covers problem, discovery, requirements, build, and outcomes.">
@@ -69,7 +69,9 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
 <style>
   html{scroll-behavior:smooth}
   body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
@@ -267,7 +269,7 @@
     </a>
 
     <a class="wcard" data-cat="prod" data-reveal href="projects/shiftflow">
-      <div class="wshot"><img src="assets/work/shiftflow.webp" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/shiftflow.webp" srcset="assets/work/shiftflow-560.webp 560w, assets/work/shiftflow.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">ShiftFlow PRO <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">AI Retail Workforce Scheduler</span></h2>
@@ -282,7 +284,7 @@
     </a>
 
     <a class="wcard" data-cat="prod" data-reveal href="projects/squint">
-      <div class="wshot"><img src="assets/work/squint.webp" width="980" height="544" alt="Squint pitch generator interface" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/squint.webp" srcset="assets/work/squint-560.webp 560w, assets/work/squint.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="544" alt="Squint pitch generator interface" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Squint <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Audit-Driven Pitch Generator</span></h2>
@@ -296,7 +298,7 @@
     </a>
 
     <a class="wcard" data-cat="prod" data-reveal href="projects/scrutas">
-      <div class="wshot"><img src="assets/work/scrutas.webp" width="980" height="547" alt="Scrutas audit platform interface" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/scrutas.webp" srcset="assets/work/scrutas-560.webp 560w, assets/work/scrutas.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="547" alt="Scrutas audit platform interface" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Scrutas <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Forensic Web Audit Platform</span></h2>
@@ -310,7 +312,7 @@
     </a>
 
     <a class="wcard" data-cat="conc" data-reveal href="projects/paviq">
-      <div class="wshot"><img src="assets/work/paviq.webp" width="980" height="543" alt="PavIQ road-condition dashboard" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/paviq.webp" srcset="assets/work/paviq-560.webp 560w, assets/work/paviq.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="543" alt="PavIQ road-condition dashboard" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">PavIQ <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Road-Condition Intelligence</span></h2>
@@ -324,7 +326,7 @@
     </a>
 
     <a class="wcard" data-cat="conc" data-reveal href="projects/gridsentinel">
-      <div class="wshot"><img src="assets/work/gridsentinel.webp" width="980" height="547" alt="GridSentinel grid sensor concept" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/gridsentinel.webp" srcset="assets/work/gridsentinel-560.webp 560w, assets/work/gridsentinel.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="547" alt="GridSentinel grid sensor concept" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">GridSentinel <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Self-Powered Grid Sensor</span></h2>
@@ -338,7 +340,7 @@
     </a>
 
     <a class="wcard" data-cat="conc" data-reveal href="projects/dwell">
-      <div class="wshot"><img src="assets/work/dwell.webp" width="980" height="547" alt="Dwell renter trust score app" loading="lazy"></div>
+      <div class="wshot"><img src="assets/work/dwell.webp" srcset="assets/work/dwell-560.webp 560w, assets/work/dwell.webp 980w" sizes="(max-width: 760px) 100vw, 50vw" width="980" height="547" alt="Dwell renter trust score app" loading="lazy"></div>
       <div class="wbody">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
         <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Dwell <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Renter-Trust-Score Marketplace</span></h2>
