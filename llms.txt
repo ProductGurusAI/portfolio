@@ -1,11 +1,11 @@
 # ProductGurus
 
-> A Vancouver product studio for product discovery and prototyping, run by product manager Abhay Kumar with a roster of specialist AI systems. Seven products taken from research to release; every decision human-verified.
+> A Vancouver user research and product discovery studio, run by product manager Abhay Kumar with a roster of specialist AI systems. Discovery sprints (2–4 weeks) that end in a build, wait, or no decision; prototypes (3–6 weeks) when you need to test before building. Seven of our own products taken from research to release.
 
 Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30min
 
 ## Services
-- [What we do](https://productgurus.ai/what-we-do): discovery sprints (2–4 weeks), working prototypes (3–6 weeks), build-ready specs and handover for client engineering teams
+- [What we do](https://productgurus.ai/what-we-do): user research and discovery sprints (2–4 weeks); optional prototypes (3–6 weeks); build-ready specs and handover for client engineering teams
 - [About](https://productgurus.ai/about): who runs the studio; open to senior product roles in Vancouver
 
 ## Case studies
