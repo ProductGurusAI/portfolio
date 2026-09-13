@@ -42,3 +42,7 @@
 /assets/work/gridsentinel.jpg        /assets/work/gridsentinel.webp 301
 /assets/work/dwell.jpg               /assets/work/dwell.webp       301
 /assets/work/council.jpg             /assets/og-card.png           301
+
+# 2026-09-13: What we do became the Services hub
+/what-we-do        /services   301
+/what-we-do.html   /services   301

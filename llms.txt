@@ -1,21 +1,37 @@
 # ProductGurus
 
-> A Vancouver user research and product discovery studio, run by product manager Abhay Kumar with a roster of specialist AI systems. Discovery sprints (2–4 weeks) that end in a build, wait, or no decision; prototypes (3–6 weeks) when you need to test before building. Seven of our own products taken from research to release.
+> A Vancouver research and build studio for small business owners and founders. Product, feasibility, location, and competitor research that ends in a build, wait, or no decision; build briefs and product ownership when the answer is build; websites and local SEO when it's time to be found. Seven of our own products taken from research to release. No e-commerce stores, no paid ads. Prices quoted after a 30-minute call.
 
 Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30min
 
 ## Services
-- [What we do](https://productgurus.ai/what-we-do): user research and discovery sprints (2–4 weeks); optional prototypes (3–6 weeks); build-ready specs and handover for client engineering teams
-- [About](https://productgurus.ai/about): who runs the studio; open to senior product roles in Vancouver
+- [Services hub](https://productgurus.ai/services): all eight services, three families, how the work runs
+- [Product research](https://productgurus.ai/services/product-research): customer interviews, personas grounded in interviews, findings that change the plan
+- [Feasibility research](https://productgurus.ai/services/feasibility-research): market sizing (TAM/SAM/SOM), unit economics, technical check, build / wait / no recommendation
+- [Location and demography research](https://productgurus.ai/services/location-research): who lives, works, and spends near an address; foot traffic and transit; shortlist with a recommendation
+- [Competitor benchmarking](https://productgurus.ai/services/competitor-benchmarking): positioning, pricing, features, reviews, side-by-side report
+- [Build brief](https://productgurus.ai/services/build-brief): requirements workshop, process mapping, user stories with acceptance criteria, PRD, vendor selection
+- [Product ownership](https://productgurus.ai/services/product-ownership): backlog, roadmap, UAT, fractional product owner
+- [Websites](https://productgurus.ai/services/websites): search-ready service and brochure sites, scored website audit, analytics and search setup; no e-commerce
+- [Local SEO](https://productgurus.ai/services/local-seo): Google Business Profile, citations, review collection, local landing page
+- [Engagements](https://productgurus.ai/engagements): shapes and typical timelines (research sprint 2 weeks; prototype 3–4 weeks; website 2–3 weeks; retainer monthly)
+
+## Industries
+- [Retail operations](https://productgurus.ai/industries/retail-operations)
+- [Marketplaces](https://productgurus.ai/industries/marketplaces)
+- [Hardware concepts](https://productgurus.ai/industries/hardware-concepts)
+
+## About
+- [About](https://productgurus.ai/about): how the studio works, the founder, open to senior product roles in Vancouver
 
 ## Case studies
-- [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): AI retail workforce scheduler, in production, compliance layer kept deterministic
-- [Scrutas](https://productgurus.ai/projects/scrutas): forensic web audit platform, 23 modules, two-stage authorization model
-- [Squint](https://productgurus.ai/projects/squint): website audit to client-ready pitch report for agencies
-- [Council of AIs](https://productgurus.ai/projects/council-of-ais): open-source budget-driven multi-model router
-- [Dwell](https://productgurus.ai/projects/dwell): renter trust score for Canadian newcomers, discovery in progress
-- [PavIQ](https://productgurus.ai/projects/paviq): fleet-mounted road-condition sensing, validated concept
-- [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept
+- [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): retail workforce scheduler, in production at v2.5, zero scheduling grievances since launch
+- [Scrutas](https://productgurus.ai/projects/scrutas): internal audit platform, 23 modules, two-stage authorization model
+- [Squint](https://productgurus.ai/projects/squint): website audit to client-ready pitch in under two minutes; pricing tested at $79–$249/month
+- [Council of AIs](https://productgurus.ai/projects/council-of-ais): open-source budget-driven multi-model router, MIT licence, 47 tests
+- [Dwell](https://productgurus.ai/projects/dwell): renter trust score for Canadian newcomers; 9 interviews, discovery in progress
+- [PavIQ](https://productgurus.ai/projects/paviq): fleet-mounted road-condition sensing, validated concept, CAD $580 bill of materials
+- [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept, about CAD $95 per node
 
 ## Insights
 - [Copy the Homework: Using a Competitor's Decisions as Free Discovery](https://productgurus.ai/insights/copy-the-homework-competitor-decisions-as-discovery)

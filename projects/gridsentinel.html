@@ -94,7 +94,6 @@ nav[aria-label="Sections"] div::-webkit-scrollbar{display:none}
 @media (max-width:760px){nav[aria-label="Sections"]{position:static!important}}/*jump-static*/
 nav[aria-label="Sections"] a:hover{color:#FFC321}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
-@media (max-width:760px){nav[style*="position:sticky"]{position:static!important}}/*nav-static-mobile*/
 </style>
 </head>
 <body>
@@ -116,10 +115,11 @@ nav[aria-label="Sections"] a:hover{color:#FFC321}
       <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
     </a>
     <div style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-family:'JetBrains Mono',monospace;font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="pg-navlink" href="../about">About</a>
-      <a class="pg-navlink" href="../work" style="color:#FFC321;">Work</a>
-      <a class="pg-navlink" href="../what-we-do">What we do</a>
-      <a class="pg-navlink" href="../insights">Insights</a>
+      <a class="pg-navlink" href="/services">Services</a>
+      <a class="pg-navlink" href="/work" style="color:#FFC321;" aria-current="page">Work</a>
+      <a class="pg-navlink" href="/industries/retail-operations">Industries</a>
+      <a class="pg-navlink" href="/insights">Insights</a>
+      <a class="pg-navlink" href="/about">About</a>
     </div>
     <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'case_study_nav'})">Book a call</a>
   </div>
