@@ -29,6 +29,17 @@
     });
   }
 
+  /* 1b. Marker highlights sweep in when they scroll into view */
+  var hls = document.querySelectorAll('.hl, .page-hero .grad');
+  if (reduce || !('IntersectionObserver' in window)) {
+    hls.forEach(function(el){ el.classList.add('lit'); });
+  } else {
+    var hio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('lit'); hio.unobserve(e.target); } });
+    }, { threshold: .9 });
+    hls.forEach(function(el){ hio.observe(el); });
+  }
+
   /* 2. Numbers count up when they scroll into view */
   var nums = document.querySelectorAll('.stat b, .nums b');
   if (!reduce && 'IntersectionObserver' in window) {
