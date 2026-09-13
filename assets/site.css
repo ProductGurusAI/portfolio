@@ -48,8 +48,8 @@ img{max-width:100%;height:auto;display:block}
 .mono{font-family:var(--font-mono)}
 .kick{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--label);margin-bottom:var(--s-3);font-weight:600}
 .lead{color:var(--text-2);font-size:1.1rem;line-height:1.7;max-width:640px}
-.hl,.page-hero .grad{background-image:linear-gradient(100deg,rgba(255,195,33,.62),rgba(255,195,33,.78));background-repeat:no-repeat;background-size:0% 100%;background-position:0 0;padding:.02em .14em;margin:0 -.08em;border-radius:.18em;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .9s cubic-bezier(.2,.7,.2,1) .15s}
-.hl.lit,.page-hero .grad.lit{background-size:100% 100%}
+.hl,.page-hero .grad{background-image:linear-gradient(100deg,rgba(255,195,33,.62),rgba(255,195,33,.78));background-repeat:no-repeat;background-size:0% 62%;background-position:0 78%;padding:0 .1em;margin:0 -.06em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .9s cubic-bezier(.2,.7,.2,1) .15s}
+.hl.lit,.page-hero .grad.lit{background-size:100% 62%}
 .skip{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--action);color:var(--on-action);padding:10px 14px;border-radius:8px;border:0}
 .skip:focus{left:8px}
 
@@ -203,7 +203,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:var(--s-5) var(--s-10);align-items:
 .step::before{transition:transform .3s,background .3s}.step:hover::before{transform:scale(1.08)}
 details p{animation:rise .35s ease both}
 .nav .brand img{transition:transform .35s cubic-bezier(.2,.8,.2,1)}.nav .brand:hover img{transform:translateX(3px)}
-@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}*,*::before,*::after{animation:none!important;transition:none!important}.hl,.page-hero .grad{background-size:100% 100%}}
+@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}*,*::before,*::after{animation:none!important;transition:none!important}.hl,.page-hero .grad{background-size:100% 62%}}
 
 /* background motion: gradient blobs on transform only (no filters), a faint grid, slow drift */
 .hero-dark,.endcta,.page-hero,.proof{position:relative;overflow:hidden;isolation:isolate}
