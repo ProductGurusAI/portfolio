@@ -54,7 +54,7 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/assets/site.css?v=6">
+<link rel="stylesheet" href="/assets/site.css?v=7">
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/plus-jakarta-sans-latin-800-normal.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin-400-normal.woff2" crossorigin>
 </head>
@@ -76,7 +76,8 @@
 
 <main id="main">
 <header class="page-hero">
-  <div class="wrap">
+  <div class="wrap has-il">
+  <div>
     <p data-reveal class="mb-3"><a class="backlink" href="/services">← Services</a></p>
     <div data-reveal><span class="badge">Research</span></div>
     <h1 data-reveal>See exactly where you fit <span class="grad">and what to charge</span>.</h1>
@@ -85,6 +86,29 @@
       <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_hero'})">Book a 30-minute call →</a>
       <a class="btn btn-ghost" href="/engagements">See engagement shapes</a>
     </div>
+  </div>
+  <div class="hero-il" aria-hidden="true"><svg class="il" viewBox="0 0 360 300" role="img" aria-label="Interview notes turning into a chart">
+  <rect x="24" y="30" width="230" height="240" rx="16" class="il-card"/>
+  <rect x="48" y="60" width="120" height="10" rx="5" class="il-line il-l1"/>
+  <rect x="48" y="84" width="180" height="10" rx="5" class="il-line il-l2"/>
+  <rect x="48" y="108" width="150" height="10" rx="5" class="il-line il-l3"/>
+  <g class="il-bars">
+    <rect x="52" y="170" width="26" height="60" rx="4" class="il-bar il-b1"/>
+    <rect x="94" y="134" width="26" height="96" rx="4" class="il-bar il-b2"/>
+    <rect x="136" y="154" width="26" height="76" rx="4" class="il-bar il-b3"/>
+    <rect x="178" y="104" width="26" height="126" rx="4" class="il-bar il-b4 il-amber"/>
+  </g>
+  <line x1="48" y1="232" x2="232" y2="232" class="il-axis"/>
+  <g class="il-lens">
+    <circle cx="262" cy="150" r="46" class="il-glass"/>
+    <circle cx="262" cy="150" r="46" class="il-ring"/>
+    <line x1="296" y1="184" x2="332" y2="220" class="il-handle"/>
+  </g>
+  <g class="il-check">
+    <circle cx="300" cy="62" r="20" class="il-dot"/>
+    <path d="M290 62l7 7 13-14" class="il-tick"/>
+  </g>
+</svg></div>
   </div>
 </header>
 
@@ -166,6 +190,6 @@
     <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-<script src="/assets/site.js?v=2" defer></script>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

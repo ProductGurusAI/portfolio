@@ -87,6 +87,18 @@
     });
   }
 
+  /* 4b. Share row on articles */
+  var copyBtn = document.querySelector('.share-btn[data-share="copy"]');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function(){
+      var url = location.href.split('#')[0], title = document.title;
+      if (navigator.share && matchMedia('(pointer: coarse)').matches) { navigator.share({ title: title, url: url }).catch(function(){}); return; }
+      var done = function(){ copyBtn.textContent = 'Link copied'; copyBtn.classList.add('done'); setTimeout(function(){ copyBtn.textContent = 'Copy link'; copyBtn.classList.remove('done'); }, 2200); };
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function(){ prompt('Copy this link', url); });
+      else prompt('Copy this link', url);
+    });
+  }
+
   /* 5. Page-specific hooks that used to live inline */
   var btns = document.querySelectorAll('.pg-fbtn');
   if (btns.length) {
