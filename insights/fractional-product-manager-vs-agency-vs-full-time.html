@@ -87,69 +87,42 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .prose{max-width:720px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .prose p{color:#c2c2cc;font-size:1.05rem;line-height:1.85;margin:0 0 22px}
-  .prose h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.5rem;color:#f4f4f6;margin:40px 0 16px;line-height:1.3}
-  .prose a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  .prose a:hover{border-bottom-color:#FFC321}
-  .pull{border-left:3px solid #79d0bf;background:rgba(121,208,191,.06);border-radius:0 14px 14px 0;padding:20px 24px;margin:30px 0;font-size:1.08rem;line-height:1.7;color:#d8d8e0;font-style:italic}
-  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#9a9aa4;letter-spacing:.05em}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights" style="color:#FFC321;" aria-current="page">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:80px 0 30px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.07),transparent 55%);"></div>
-  <div class="prose" style="position:relative;">
-    <div data-reveal style="margin-bottom:20px;"><a class="backlink" href="../insights">← All insights</a></div>
-    <!-- PER-POST: tag / date / read time -->
-    <div data-reveal class="pmeta" style="margin-bottom:16px;">FIELD GUIDE · SEPTEMBER 9, 2026 · 6 MIN READ</div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.03em;">Fractional PM, agency, or full-time hire: <span class="grad">what a startup actually needs</span></h1>
-    <div data-reveal class="pmeta">By Abhay Kumar · Founder, ProductGurus</div>
-    <p data-reveal style="margin:22px 0 0;color:#c9c9d2;font-size:1.12rem;line-height:1.7;max-width:640px;border-left:3px solid #FFC321;padding-left:16px;">Fractional to find out what to build, full-time to keep building it, an agency when you already know exactly what you want. How to tell which stage you&#x27;re at.</p>
-  </div>
-</header>
+<main id="main">
+<article class="art">
+  <header class="art-hero">
+    <div class="art-prose">
+      <p data-reveal class="art-back"><a class="backlink" href="/insights">← All insights</a></p>
+      <!-- PER-POST: tag / date / read time -->
+      <div data-reveal class="art-meta">FIELD GUIDE · SEPTEMBER 9, 2026 · 6 MIN READ</div>
+      <h1 data-reveal>Fractional PM, agency, or full-time hire: <span class="hl">what a startup actually needs</span></h1>
+      <div data-reveal class="art-byline">By Abhay Kumar · Founder, ProductGurus</div>
+    <p data-reveal class="art-dek">Fractional to find out what to build, full-time to keep building it, an agency when you already know exactly what you want. How to tell which stage you&#x27;re at.</p>
+    </div>
+  </header>
 
-<article style="padding:30px 0 70px;">
-  <div class="prose" data-reveal>
-    <!-- ===== PER-POST BODY ===== -->
+  <div class="art-prose art-body" data-reveal>
+<!-- ===== PER-POST BODY ===== -->
 <p>Every founder hits the same moment. The product has stopped being something you can hold in your head, and engineering is waiting on answers nobody in the room is qualified to give. You need product leadership. The question is what shape it should take, and the honest answer depends on stage, budget, and how much of the problem is still unknown. I run a <a href="/services">product studio in Vancouver</a>, so I have an obvious bias. I have also been the full-time hire, so here is the comparison I would give a friend.</p>
 
 <h2>What each option is actually selling</h2>
@@ -161,12 +134,12 @@
 <p>Before product-market fit, the dominant risk is building the wrong thing. That risk is not reduced by adding engineers, and it is only partly reduced by adding a full-time PM, because a full-time PM at that stage spends most of their first quarter learning your domain. What reduces it is discovery: interviews, and requirements written as acceptance criteria someone can test. That is a bounded piece of work, and bounded work is what fractional and studio models are built for. It is also the shape of nearly everything ProductGurus does for clients: a discovery sprint, a prototype, or both, with the production build left to your own team.</p>
 <p>After product-market fit, the dominant risk flips to execution and continuity. Now you need someone who is there when the support ticket comes in, who owns the roadmap conversation with sales, and who will still be there in eighteen months. That is a full-time hire, and no amount of fractional cleverness substitutes for it.</p>
 
-<div class="pull">Hire fractional to find out what to build, and hire full-time to keep building it. An agency makes sense once you know exactly what you want and are short on hands.</div>
+<div class="art-pull">Hire fractional to find out what to build, and hire full-time to keep building it. An agency makes sense once you know exactly what you want and are short on hands.</div>
 
 <h2>Where each one goes wrong</h2>
 <p>The full-time hire goes wrong when it happens too early. A founder hires a PM at seed, hands them an ambiguous product, and six months later has paid a full salary for a roadmap document and a lot of meetings. Usually the person was fine. The timing wasn't.</p>
-<p>The agency goes wrong on ownership. Agencies are good at building what is in the brief and have no commercial reason to ask whether the brief is right. When <a href="../projects/gridsentinel">GridSentinel</a> discovered that its headline feature couldn't work on the line it was being pitched for, the useful response was to re-scope the product. An agency paid to deliver the original spec would have delivered the original spec.</p>
-<p>The fractional PM goes wrong on availability and on scope creep. If the engagement quietly becomes "be in every standup," you are paying senior rates for a part-time employee, and nobody is happy. The fix is to define the deliverable up front, whether that is a discovery report or a shipped v1 with documented outcomes. Every project on our <a href="../work">work page</a> is structured that way, mostly because it keeps both sides honest.</p>
+<p>The agency goes wrong on ownership. Agencies are good at building what is in the brief and have no commercial reason to ask whether the brief is right. When <a href="/projects/gridsentinel">GridSentinel</a> discovered that its headline feature couldn't work on the line it was being pitched for, the useful response was to re-scope the product. An agency paid to deliver the original spec would have delivered the original spec.</p>
+<p>The fractional PM goes wrong on availability and on scope creep. If the engagement quietly becomes "be in every standup," you are paying senior rates for a part-time employee, and nobody is happy. The fix is to define the deliverable up front, whether that is a discovery report or a shipped v1 with documented outcomes. Every project on our <a href="/work">work page</a> is structured that way, mostly because it keeps both sides honest.</p>
 
 <h2>Rough economics, without the sales pitch</h2>
 <p>In Vancouver, a mid-to-senior full-time product manager is a six-figure commitment once you add benefits and the months before they are productive. An agency engagement for a real MVP typically starts in the tens of thousands and climbs quickly with scope. A fractional arrangement is usually priced by the day, for a set number of days a week over a defined period, and comes out to a fraction of that salary.</p>
@@ -176,52 +149,41 @@
 <p>If you can describe your product's next twelve months with confidence, and the gap is purely capacity, use an agency or hire engineers. If you cannot describe the next three months with confidence, bring in fractional product leadership for a defined discovery-and-spec engagement, and decide about the full-time seat when you know what the job is. If you have paying customers and a roadmap that other people depend on, make the full-time hire and give them a real mandate.</p>
 <p>And if you are somewhere in the middle, which most companies are, the sequence that tends to work is fractional first to define the thing, then a full-time PM who inherits a product with its reasoning already documented. That handover is far easier when the discovery exists on paper instead of in someone's head, which is why every ProductGurus case study reads more like a spec than a highlight reel.</p>
 
-    <h2>Sources and further reading</h2>
-    <ul style="color:#c2c2cc;font-size:.98rem;line-height:1.7;padding-left:20px;margin:0 0 22px;"><li style="margin:0 0 8px;"><a href="https://www.svpg.com/books/" target="_blank" rel="noopener">Inspired and Empowered, Marty Cagan (SVPG)</a>. The standard reference on what a product manager is actually accountable for.</li><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/gridsentinel" target="_blank" rel="noopener">GridSentinel case study</a>. The re-scope referenced above.</li></ul>
-    <!-- ===== END PER-POST BODY ===== -->
+<h2>Sources and further reading</h2>
+<ul class="art-sources"><li><a href="https://www.svpg.com/books/" target="_blank" rel="noopener">Inspired and Empowered, Marty Cagan (SVPG)</a>. The standard reference on what a product manager is actually accountable for.</li><li><a href="https://productgurus.ai/projects/gridsentinel" target="_blank" rel="noopener">GridSentinel case study</a>. The re-scope referenced above.</li></ul>
+<!-- ===== END PER-POST BODY ===== -->
 
-
-    <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px 24px;margin-top:40px;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;background:#0f0f13;">
-      <img src="../assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,195,33,.55);flex:0 0 auto;">
-      <div style="flex:1 1 320px;">
-        <div class="pmeta" style="margin-bottom:6px;">WRITTEN BY</div>
-        <div class="jak" style="font-weight:800;font-size:1.1rem;color:#f4f4f6;margin-bottom:6px;">Abhay Kumar</div>
-        <p style="margin:0 0 10px;font-size:.95rem;line-height:1.65;color:#b6b6c0;">Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;"><a class="backlink" href="../about">About Abhay →</a><a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
-      </div>
+  <aside class="art-author" aria-label="About the author">
+    <img class="art-author-img" src="/assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy">
+    <div class="art-author-body">
+      <div class="art-meta">WRITTEN BY</div>
+      <div class="art-author-name">Abhay Kumar</div>
+      <p>Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
+      <div class="art-author-links"><a class="backlink" href="/about">About Abhay →</a><a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
     </div>
+  </aside>
 
-    <div style="border-top:1px dashed rgba(255,255,255,.12);margin-top:44px;padding-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
-      <!-- PER-POST: related case study link -->
-      <a class="backlink" href="../about">Meet the human behind ProductGurus →</a>
-      <a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
-    </div>
+  <div class="art-related">
+    <!-- PER-POST: related case study link -->
+    <a class="backlink" href="/about">Meet the human behind ProductGurus →</a>
+    <a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+  </div>
   </div>
 </article>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="../assets/atom.js" defer></script>
 </body>
 </html>

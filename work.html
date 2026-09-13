@@ -63,133 +63,62 @@
   ]
 }
 </script>
+<!-- ===== END PER-PAGE HEAD ===== -->
 <link rel="icon" href="/assets/favicon.ico?v=2" sizes="16x16 32x32 48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;white-space:nowrap}
-  .tag.prod{background:rgba(147,197,253,.12);color:#a9c8f5;border:1px solid rgba(147,197,253,.25)}
-  .tag.conc{background:rgba(255,195,33,.12);color:#ffd45e;border:1px solid rgba(255,195,33,.26)}
-  .fbtn{cursor:pointer;background:#141417;border:1px solid rgba(255,255,255,.12);color:#bcbcc6;font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;padding:13px 18px;border-radius:999px;transition:all .25s}
-  .fbtn:hover{border-color:rgba(255,195,33,.4);color:#f4f4f6}
-  .fbtn.act{background:#FFC321;color:#1a1400;border-color:#FFC321;font-weight:700}
-  .wcard{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .4s,opacity .4s}
-  .wcard:hover{transform:translateY(-5px);border-color:rgba(255,195,33,.35)}
-  .wcard.hide{display:none}
-  .wshot{position:relative;min-height:250px;background:#0d0d10}
-  .wshot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:.92}
-  .wbody{padding:40px 48px 40px 44px;display:flex;flex-direction:column;gap:16px}
-  @media (max-width:767px){.wbody{padding:28px 26px}}
-  .wstats{display:flex;flex-wrap:wrap;gap:10px 26px;border-top:1px dashed rgba(255,255,255,.1);padding-top:16px;margin-top:auto}
-  .wstat b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:1.15rem;font-weight:800;color:#ffd45e}
-  .wstat span{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:#9a9aa4}
-  .wlink{font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  .wshot img{transform:scale(1.1);will-change:transform}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}.wshot img{transform:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work" style="color:#FFC321;" aria-current="page">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work" aria-current="page">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:90px 0 40px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 75% 0%,rgba(255,195,33,.08),transparent 55%);"></div>
-  <div class="wrap" style="position:relative;">
+<main id="main">
+<header class="page-hero">
+  <div class="wrap">
     <div data-reveal><span class="badge">Selected work</span></div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2.5rem,5.4vw,4rem);line-height:1.05;margin:22px 0 18px;font-weight:800;letter-spacing:-.035em;max-width:760px;">Seven product case studies, <span class="grad">owned end to end</span></h1>
-    <p data-reveal style="font-size:clamp(1rem,1.5vw,1.15rem);color:#bcbcc6;max-width:620px;line-height:1.7;margin:0 0 28px;">Every case study covers the full arc: problem, discovery, requirements, what we built, and what happened after. No highlight reels; the unresolved parts are documented too.</p>
-    <div data-reveal style="display:flex;flex-wrap:wrap;gap:10px;">
-      <button class="fbtn act" data-filter="all">All · 7</button>
-      <button class="fbtn" data-filter="prod">In Production · 4</button>
-      <button class="fbtn" data-filter="conc">Validated Concepts · 3</button>
+    <h1 data-reveal>Seven product case studies, <span class="grad">owned end to end</span></h1>
+    <p data-reveal class="lead">Every case study covers the full arc: problem, discovery, requirements, what we built, and what happened after. No highlight reels; the unresolved parts are documented too.</p>
+    <div data-reveal class="pg-filters">
+      <button class="pg-fbtn act" data-filter="all">All · 7</button>
+      <button class="pg-fbtn" data-filter="prod">In Production · 4</button>
+      <button class="pg-fbtn" data-filter="conc">Validated Concepts · 3</button>
     </div>
   </div>
 </header>
 
-<section style="padding:20px 0 90px;">
-  <div class="wrap" style="display:flex;flex-direction:column;gap:24px;">
+<section class="pg-tight">
+  <div class="wrap pg-work">
 
-    <a class="wcard" data-cat="prod" data-reveal href="projects/council-of-ais">
-      <div class="wshot">
-        <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Council of AIs system architecture: bypass gate, leader cascade, thinker and explorer tiers, graphify memory, budget ledger" style="width:100%;height:100%;display:block;background:#0d0d10;">
-          <style>
-            .node { fill: #121216; stroke: rgba(255,255,255,.12); stroke-width: 1px; transition: stroke .3s, stroke-width .3s; }
-            .node-yellow { fill: #121216; stroke: #FFC321; stroke-width: 1px; }
-            .node-teal { fill: #121216; stroke: #79d0bf; stroke-width: 1px; }
-            .node-ledger { fill: #121216; stroke: #8a8a94; stroke-width: 1px; }
-            .lbl { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #c2c2cc; text-anchor: middle; font-weight: 500; }
-            .lbl-accent { fill: #FFC321; }
-            .lbl-teal { fill: #79d0bf; }
-            .sec-label { font-family: 'JetBrains Mono', monospace; font-size: 8px; fill: #8a8a94; }
-            .line-normal { stroke: rgba(255,255,255,0.22); stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
-            .line-yellow { stroke: #FFC321; stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
-            .line-teal { stroke: #79d0bf; stroke-width: 1.2px; fill: none; stroke-dasharray: 5 5; animation: flow 4s linear infinite; }
-            .line-dashed { stroke: #8a8a94; stroke-width: 1.2px; fill: none; stroke-dasharray: 4 4; animation: flow-slow 8s linear infinite; }
-            @keyframes flow { to { stroke-dashoffset: -20; } }
-            @keyframes flow-slow { to { stroke-dashoffset: -20; } }
-            .node-user { animation: glow-white 8s infinite; animation-delay: 0s; }
-            .node-gate { animation: glow-yellow 8s infinite; animation-delay: 1.1s; }
-            .node-leader { animation: glow-yellow 8s infinite; animation-delay: 2.2s; }
-            .node-thinker { animation: glow-yellow 8s infinite; animation-delay: 3.3s; }
-            .node-explorer { animation: glow-teal 8s infinite; animation-delay: 3.3s; }
-            .node-escalation { animation: glow-white 8s infinite; animation-delay: 4.4s; }
-            .node-graphify { animation: glow-white 8s infinite; animation-delay: 5.5s; }
-            .node-memory { animation: glow-white 8s infinite; animation-delay: 6.6s; }
-            @keyframes glow-white { 0%, 100%, 30% { stroke: rgba(255,255,255,.12); stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
-            @keyframes glow-yellow { 0%, 100%, 30% { stroke: #FFC321; stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
-            @keyframes glow-teal { 0%, 100%, 30% { stroke: #79d0bf; stroke-width: 1px; } 15% { stroke: #ffffff; stroke-width: 1.6px; } }
-            @media (max-width: 580px) { .sec-label { display: none; } }
-            @media (prefers-reduced-motion: reduce) {
-              .line-normal, .line-yellow, .line-teal, .line-dashed,
-              .node-user, .node-gate, .node-leader, .node-thinker, .node-explorer, .node-escalation, .node-graphify, .node-memory {
-                animation: none !important;
-              }
-            }
-          </style>
+    <a class="pg-wcard" data-cat="prod" data-reveal href="/projects/council-of-ais">
+      <div class="pg-wshot"><svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Council of AIs system architecture: bypass gate, leader cascade, thinker and explorer tiers, graphify memory, budget ledger" class="pg-dg">
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="rgba(255,255,255,0.4)" />
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" class="arr" />
             </marker>
             <marker id="arrow-yellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#FFC321" />
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" class="arr-yellow" />
             </marker>
             <marker id="arrow-teal" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-              <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#79d0bf" />
+              <path d="M 0 1.5 L 8 5 L 0 8.5 z" class="arr-teal" />
             </marker>
           </defs>
           <path d="M 85,62 L 85,122" class="line-normal" marker-end="url(#arrow)" />
@@ -215,7 +144,7 @@
           </g>
           <g>
             <path d="M 85,128 L 150,150 L 85,172 L 20,150 Z" class="node node-yellow node-gate" />
-            <text x="85" y="153" class="lbl lbl-accent" style="font-size: 9px;">Bypass Gate</text>
+            <text x="85" y="153" class="lbl lbl-s lbl-accent">Bypass Gate</text>
           </g>
           <g>
             <rect x="20" y="263" width="130" height="34" rx="6" class="node" />
@@ -223,198 +152,155 @@
           </g>
           <g>
             <path d="M 260,126 L 340,150 L 260,174 L 180,150 Z" class="node node-yellow node-leader" />
-            <text x="260" y="153" class="lbl lbl-accent" style="font-size: 9px;">Leader Gate</text>
+            <text x="260" y="153" class="lbl lbl-s lbl-accent">Leader Gate</text>
           </g>
           <g>
             <rect x="370" y="48" width="120" height="34" rx="6" class="node node-yellow node-thinker" />
-            <text x="430" y="69" class="lbl lbl-accent" style="font-size: 9px;">Thinker · Premium</text>
+            <text x="430" y="69" class="lbl lbl-s lbl-accent">Thinker · Premium</text>
           </g>
           <g>
             <rect x="370" y="143" width="120" height="34" rx="6" class="node node-teal node-explorer" />
-            <text x="430" y="164" class="lbl lbl-teal" style="font-size: 9px;">Explorer · Mid</text>
+            <text x="430" y="164" class="lbl lbl-s lbl-teal">Explorer · Mid</text>
           </g>
           <g>
             <rect x="360" y="248" width="140" height="34" rx="6" class="node node-escalation" />
-            <text x="430" y="269" class="lbl" style="font-size: 9px;">Escalation</text>
+            <text x="430" y="269" class="lbl lbl-s">Escalation</text>
           </g>
           <g>
             <rect x="515" y="95" width="110" height="34" rx="6" class="node node-graphify" />
-            <text x="570" y="116" class="lbl" style="font-size: 9px;">Graphify</text>
+            <text x="570" y="116" class="lbl lbl-s">Graphify</text>
           </g>
           <g>
-            <ellipse cx="570" cy="189" rx="50" ry="6" class="node node-memory" style="fill: #121216; stroke: rgba(255,255,255,.12);" />
-            <rect x="520" y="189" width="100" height="36" fill="#121216" />
-            <path d="M 520,189 L 520,225 M 620,189 L 620,225" stroke="rgba(255,255,255,.12)" stroke-width="1" />
-            <ellipse cx="570" cy="225" rx="50" ry="6" class="node node-memory" style="fill: #121216; stroke: rgba(255,255,255,.12);" />
+            <ellipse cx="570" cy="189" rx="50" ry="6" class="node node-memory" />
+            <rect x="520" y="189" width="100" height="36" class="cyl" />
+            <path d="M 520,189 L 520,225 M 620,189 L 620,225" class="cyl-edge" />
+            <ellipse cx="570" cy="225" rx="50" ry="6" class="node node-memory" />
             <text x="570" y="212" class="lbl">SQLite Mem</text>
           </g>
           <g>
-            <ellipse cx="260" cy="292" rx="55" ry="6" class="node node-ledger" style="fill: #121216; stroke: #8a8a94;" />
-            <rect x="205" y="292" width="110" height="36" fill="#121216" />
-            <path d="M 205,292 L 205,328 M 315,292 L 315,328" stroke="#8a8a94" stroke-width="1" />
-            <ellipse cx="260" cy="328" rx="55" ry="6" class="node node-ledger" style="fill: #121216; stroke: #8a8a94;" />
-            <text x="260" y="315" class="lbl" style="fill: #8a8a94;">Budget Ledger</text>
+            <ellipse cx="260" cy="292" rx="55" ry="6" class="node node-ledger" />
+            <rect x="205" y="292" width="110" height="36" class="cyl" />
+            <path d="M 205,292 L 205,328 M 315,292 L 315,328" class="cyl-edge-ledger" />
+            <ellipse cx="260" cy="328" rx="55" ry="6" class="node node-ledger" />
+            <text x="260" y="315" class="lbl lbl-muted">Budget Ledger</text>
           </g>
-        </svg>
-      </div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Open Source · In Production</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Council of AIs <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Budget-Driven Multi-Model Router</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">An open-source engine that replaces AI subscriptions with one prepaid budget, routing each task to the cheapest capable model. Trivial work goes to cheap models, high-stakes reasoning to premium ones, with spending limits enforced in code. Built by its own council: Claude Fable 5 as architect and verifier, Gemini as builder.</p>
-        <div class="wstats">
-          <div class="wstat"><b>47</b><span>Passing tests</span></div>
-          <div class="wstat"><b>3</b><span>LLM providers</span></div>
-          <div class="wstat"><b>MIT</b><span>Open source</span></div>
+        </svg></div>
+      <div class="pg-wbody">
+        <div><span class="badge">Open Source · In Production</span></div>
+        <h2>Council of AIs <span class="pg-sub">Budget-Driven Multi-Model Router</span></h2>
+        <p>An open-source engine that replaces AI subscriptions with one prepaid budget, routing each task to the cheapest capable model. Trivial work goes to cheap models, high-stakes reasoning to premium ones, with spending limits enforced in code. Built by its own council: Claude Fable 5 as architect and verifier, Gemini as builder.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>47</b><span>Passing tests</span></div>
+          <div class="pg-wstat"><b>3</b><span>LLM providers</span></div>
+          <div class="pg-wstat"><b>MIT</b><span>Open source</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
-      </div>
-    </a>
-
-    <a class="wcard" data-cat="prod" data-reveal href="projects/shiftflow">
-      <div class="wshot"><img src="assets/work/shiftflow.webp" srcset="assets/work/shiftflow-400.webp 400w, assets/work/shiftflow-560.webp 560w, assets/work/shiftflow-740.webp 740w, assets/work/shiftflow.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">ShiftFlow PRO <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">AI Retail Workforce Scheduler</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">A serverless web app that turns hours of manual rostering into a compliant, budget-aware two-week draft, with union rules and hour guarantees enforced before a manager ever opens the board.</p>
-        <div class="wstats">
-          <div class="wstat"><b>v2.5.0</b><span>Live in production</span></div>
-          <div class="wstat"><b>0</b><span>Grievances since launch</span></div>
-          <div class="wstat"><b>3</b><span>LLM providers</span></div>
-        </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
-    <a class="wcard" data-cat="prod" data-reveal href="projects/squint">
-      <div class="wshot"><img src="assets/work/squint.webp" srcset="assets/work/squint-400.webp 400w, assets/work/squint-560.webp 560w, assets/work/squint-740.webp 740w, assets/work/squint.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="544" alt="Squint pitch generator interface" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Squint <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Audit-Driven Pitch Generator</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">Turns a website audit into a client-winning pitch, benchmarked against the prospect's strongest competitor so the pitch opens with evidence instead of adjectives.</p>
-        <div class="wstats">
-          <div class="wstat"><b>&lt;2 min</b><span>Audit to pitch</span></div>
-          <div class="wstat"><b>1:1</b><span>Competitor benchmark</span></div>
+    <a class="pg-wcard" data-cat="prod" data-reveal href="/projects/shiftflow">
+      <div class="pg-wshot"><img src="/assets/work/shiftflow.webp" srcset="/assets/work/shiftflow-400.webp 400w, /assets/work/shiftflow-560.webp 560w, /assets/work/shiftflow-740.webp 740w, /assets/work/shiftflow.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge">Internal Tool · In Production</span></div>
+        <h2>ShiftFlow PRO <span class="pg-sub">AI Retail Workforce Scheduler</span></h2>
+        <p>A serverless web app that turns hours of manual rostering into a compliant, budget-aware two-week draft, with union rules and hour guarantees enforced before a manager ever opens the board.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>v2.5.0</b><span>Live in production</span></div>
+          <div class="pg-wstat"><b>0</b><span>Grievances since launch</span></div>
+          <div class="pg-wstat"><b>3</b><span>LLM providers</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
-    <a class="wcard" data-cat="prod" data-reveal href="projects/scrutas">
-      <div class="wshot"><img src="assets/work/scrutas.webp" srcset="assets/work/scrutas-400.webp 400w, assets/work/scrutas-560.webp 560w, assets/work/scrutas-740.webp 740w, assets/work/scrutas.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="547" alt="Scrutas audit platform interface" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag prod">Internal Tool · In Production</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Scrutas <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Forensic Web Audit Platform</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">A 23-module security, compliance and performance audit built on a two-stage, legally-defensible authorization model. Deep scans only ever run with explicit, recorded consent.</p>
-        <div class="wstats">
-          <div class="wstat"><b>23</b><span>Audit modules</span></div>
-          <div class="wstat"><b>2-stage</b><span>Authorization model</span></div>
+    <a class="pg-wcard" data-cat="prod" data-reveal href="/projects/squint">
+      <div class="pg-wshot"><img src="/assets/work/squint.webp" srcset="/assets/work/squint-400.webp 400w, /assets/work/squint-560.webp 560w, /assets/work/squint-740.webp 740w, /assets/work/squint.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="544" alt="Squint pitch generator interface" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge">Internal Tool · In Production</span></div>
+        <h2>Squint <span class="pg-sub">Audit-Driven Pitch Generator</span></h2>
+        <p>Turns a website audit into a client-winning pitch, benchmarked against the prospect's strongest competitor so the pitch opens with evidence instead of adjectives.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>&lt;2 min</b><span>Audit to pitch</span></div>
+          <div class="pg-wstat"><b>1:1</b><span>Competitor benchmark</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
-    <a class="wcard" data-cat="conc" data-reveal href="projects/paviq">
-      <div class="wshot"><img src="assets/work/paviq.webp" srcset="assets/work/paviq-400.webp 400w, assets/work/paviq-560.webp 560w, assets/work/paviq-740.webp 740w, assets/work/paviq.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="543" alt="PavIQ road-condition dashboard" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">PavIQ <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Road-Condition Intelligence</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">A fleet-deployable sensor box mapping pothole severity city-wide through accelerometer and camera fusion. Road intelligence becomes a continuously updating data layer.</p>
-        <div class="wstats">
-          <div class="wstat"><b>$40B+</b><span>TAM</span></div>
-          <div class="wstat"><b>2-sensor</b><span>Fusion approach</span></div>
+    <a class="pg-wcard" data-cat="prod" data-reveal href="/projects/scrutas">
+      <div class="pg-wshot"><img src="/assets/work/scrutas.webp" srcset="/assets/work/scrutas-400.webp 400w, /assets/work/scrutas-560.webp 560w, /assets/work/scrutas-740.webp 740w, /assets/work/scrutas.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="547" alt="Scrutas audit platform interface" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge">Internal Tool · In Production</span></div>
+        <h2>Scrutas <span class="pg-sub">Forensic Web Audit Platform</span></h2>
+        <p>A 23-module security, compliance and performance audit built on a two-stage, legally-defensible authorization model. Deep scans only ever run with explicit, recorded consent.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>23</b><span>Audit modules</span></div>
+          <div class="pg-wstat"><b>2-stage</b><span>Authorization model</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
-    <a class="wcard" data-cat="conc" data-reveal href="projects/gridsentinel">
-      <div class="wshot"><img src="assets/work/gridsentinel.webp" srcset="assets/work/gridsentinel-400.webp 400w, assets/work/gridsentinel-560.webp 560w, assets/work/gridsentinel-740.webp 740w, assets/work/gridsentinel.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="547" alt="GridSentinel grid sensor concept" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">GridSentinel <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Self-Powered Grid Sensor</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">A battery-free, clamp-on sensor that turns the electricity grid edge into a live stream of outage and fault data, powered by the line it monitors.</p>
-        <div class="wstats">
-          <div class="wstat"><b>0</b><span>Batteries required</span></div>
-          <div class="wstat"><b>Clamp-on</b><span>Zero-downtime install</span></div>
+    <a class="pg-wcard" data-cat="conc" data-reveal href="/projects/paviq">
+      <div class="pg-wshot"><img src="/assets/work/paviq.webp" srcset="/assets/work/paviq-400.webp 400w, /assets/work/paviq-560.webp 560w, /assets/work/paviq-740.webp 740w, /assets/work/paviq.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="543" alt="PavIQ road-condition dashboard" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge pg-tag-conc">Validated Concept</span></div>
+        <h2>PavIQ <span class="pg-sub">Road-Condition Intelligence</span></h2>
+        <p>A fleet-deployable sensor box mapping pothole severity city-wide through accelerometer and camera fusion. Road intelligence becomes a continuously updating data layer.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>$40B+</b><span>TAM</span></div>
+          <div class="pg-wstat"><b>2-sensor</b><span>Fusion approach</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
-    <a class="wcard" data-cat="conc" data-reveal href="projects/dwell">
-      <div class="wshot"><img src="assets/work/dwell.webp" srcset="assets/work/dwell-400.webp 400w, assets/work/dwell-560.webp 560w, assets/work/dwell-740.webp 740w, assets/work/dwell.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 560px" width="980" height="547" alt="Dwell renter trust score app" loading="lazy"></div>
-      <div class="wbody">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;"><span class="tag conc">Validated Concept</span></div>
-        <h2 class="jak" style="margin:0;font-size:1.6rem;font-weight:800;color:#f4f4f6;">Dwell <span style="display:block;font-size:.85rem;font-weight:600;color:#9a9aa4;margin-top:4px;">Renter-Trust-Score Marketplace</span></h2>
-        <p style="color:#b6b6c0;font-size:.96rem;line-height:1.7;margin:0;">Bank-verified trust infrastructure for shared living: a portable rental reputation for the 1.2M newcomers a year that Equifax and TransUnion can't see.</p>
-        <div class="wstats">
-          <div class="wstat"><b>1.2M</b><span>Newcomers / year</span></div>
-          <div class="wstat"><b>300–850</b><span>Trust score range</span></div>
-          <div class="wstat"><b>2 of 9</b><span>Discovery interviews</span></div>
+    <a class="pg-wcard" data-cat="conc" data-reveal href="/projects/gridsentinel">
+      <div class="pg-wshot"><img src="/assets/work/gridsentinel.webp" srcset="/assets/work/gridsentinel-400.webp 400w, /assets/work/gridsentinel-560.webp 560w, /assets/work/gridsentinel-740.webp 740w, /assets/work/gridsentinel.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="547" alt="GridSentinel grid sensor concept" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge pg-tag-conc">Validated Concept</span></div>
+        <h2>GridSentinel <span class="pg-sub">Self-Powered Grid Sensor</span></h2>
+        <p>A battery-free, clamp-on sensor that turns the electricity grid edge into a live stream of outage and fault data, powered by the line it monitors.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>0</b><span>Batteries required</span></div>
+          <div class="pg-wstat"><b>Clamp-on</b><span>Zero-downtime install</span></div>
         </div>
-        <span class="wlink">Read case study →</span>
+        <span class="go">Read case study →</span>
+      </div>
+    </a>
+
+    <a class="pg-wcard" data-cat="conc" data-reveal href="/projects/dwell">
+      <div class="pg-wshot"><img src="/assets/work/dwell.webp" srcset="/assets/work/dwell-400.webp 400w, /assets/work/dwell-560.webp 560w, /assets/work/dwell-740.webp 740w, /assets/work/dwell.webp 980w" sizes="(max-width: 760px) calc(100vw - 48px), 546px" width="980" height="547" alt="Dwell renter trust score app" loading="lazy"></div>
+      <div class="pg-wbody">
+        <div><span class="badge pg-tag-conc">Validated Concept</span></div>
+        <h2>Dwell <span class="pg-sub">Renter-Trust-Score Marketplace</span></h2>
+        <p>Bank-verified trust infrastructure for shared living: a portable rental reputation for the 1.2M newcomers a year that Equifax and TransUnion can't see.</p>
+        <div class="pg-wstats">
+          <div class="pg-wstat"><b>1.2M</b><span>Newcomers / year</span></div>
+          <div class="pg-wstat"><b>300–850</b><span>Trust score range</span></div>
+          <div class="pg-wstat"><b>2 of 9</b><span>Discovery interviews</span></div>
+        </div>
+        <span class="go">Read case study →</span>
       </div>
     </a>
 
   </div>
 </section>
-
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand pg-fbrand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
-
-  var btns = document.querySelectorAll('.fbtn');
-  btns.forEach(function(b){
-    b.addEventListener('click', function(){
-      btns.forEach(function(x){x.classList.remove('act');});
-      b.classList.add('act');
-      var f = b.getAttribute('data-filter');
-      document.querySelectorAll('.wcard').forEach(function(c){
-        c.classList.toggle('hide', f!=='all' && c.getAttribute('data-cat')!==f);
-      });
-    });
-  });
-
-  /* Screenshot parallax */
-  (function(){
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var shots = [].slice.call(document.querySelectorAll('.wshot img')),
-        ticking = false;
-
-    function paint(){
-      ticking = false;
-      shots.forEach(function(img){
-        var r = img.parentNode.getBoundingClientRect();
-        if (r.bottom < 0 || r.top > innerHeight) return;
-        var t = (r.top + r.height/2 - innerHeight/2) / innerHeight; // -0.5..0.5
-        img.style.transform = 'scale(1.1) translateY(' + (t*-16).toFixed(1) + 'px)';
-      });
-    }
-    window.addEventListener('scroll', function(){
-      if(!ticking){ ticking = true; requestAnimationFrame(paint); }
-    }, {passive:true});
-    paint();
-  })();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
+  var btns=document.querySelectorAll('.pg-fbtn');
+  btns.forEach(function(b){b.addEventListener('click',function(){btns.forEach(function(x){x.classList.remove('act');});b.classList.add('act');var f=b.getAttribute('data-filter');document.querySelectorAll('.pg-wcard').forEach(function(c){c.classList.toggle('hide',f!=='all'&&c.getAttribute('data-cat')!==f);});});});
 </script>
-<script src="assets/atom.js" defer></script>
 </body>
 </html>

@@ -58,116 +58,79 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .prose{max-width:720px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .prose p{color:#c2c2cc;font-size:1.05rem;line-height:1.85;margin:0 0 22px}
-  .prose h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.5rem;color:#f4f4f6;margin:40px 0 16px;line-height:1.3}
-  .prose a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  .prose a:hover{border-bottom-color:#FFC321}
-  .pull{border-left:3px solid #79d0bf;background:rgba(121,208,191,.06);border-radius:0 14px 14px 0;padding:20px 24px;margin:30px 0;font-size:1.08rem;line-height:1.7;color:#d8d8e0;font-style:italic}
-  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#9a9aa4;letter-spacing:.05em}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights" style="color:#FFC321;" aria-current="page">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:80px 0 30px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.07),transparent 55%);"></div>
-  <div class="prose" style="position:relative;">
-    <div data-reveal style="margin-bottom:20px;"><a class="backlink" href="../insights">← All insights</a></div>
-    <!-- PER-POST: tag / date / read time -->
-    <div data-reveal class="pmeta" style="margin-bottom:16px;">DECISION MOMENT · JULY 6, 2026 · 4 MIN READ</div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.03em;">Why ShiftFlow's break planner <span class="grad">refuses to use AI</span></h1>
-    <div data-reveal class="pmeta">By Abhay Kumar · Founder, ProductGurus</div>
-  </div>
-</header>
-
-<article style="padding:30px 0 70px;">
-  <div class="prose" data-reveal>
-    <!-- ===== PER-POST BODY ===== -->
-    <p>ShiftFlow PRO is, by most descriptions, an AI product. It generates two-week retail rosters with an LLM at its core, designed to work across multiple providers. So the design decision people find most surprising is that the break planner, the feature that decides when every employee steps away from the floor, contains no AI at all. It's deterministic, client-side code, and it will stay that way.</p>
-
-    <h2>The stakes hiding in a fifteen-minute break</h2>
-    <p>A retail break schedule looks trivial until you read a collective agreement. Guaranteed hours differ by employment type. Two employees covering the same role can't be gone at once. An opening manager and a morning auditor have to be on the floor at specific times. Get it wrong and the cost isn't a UX bug. It's a union grievance, with real money and someone's trust attached.</p>
-    <p>During discovery, I sat with the store manager who rebuilt this roster from memory every two weeks. What she feared wasn't inefficiency; she'd survived that for years. It was the <em>silent</em> mistake: the schedule that looks fine, gets published, and turns out to have under-scheduled someone with a 40-hour guarantee.</p>
-
-    <div class="pull">That's the test I now apply to every feature: if this goes wrong silently, who pays, and how much? If the answer is a real person, the model doesn't get the job.</div>
-
-    <h2>Where the line actually sits</h2>
-    <p>Generating a <em>draft</em> schedule is a perfect LLM task. The search space is huge, the constraints are many, and a human reviews every draft before publishing. The failure mode is "manager edits a bad suggestion," which costs minutes. So ShiftFlow happily sends roster generation to Gemini or Claude, forces the output into a strict JSON schema, and asks the model to explain its reasoning next to every decision.</p>
-    <p>Compliance is the opposite shape of problem. The rules are few and they're absolute; nothing about them rewards creativity. An LLM doing this work is a probabilistic system performing arithmetic with a liability attached, and its failure mode is invisible until someone files a grievance. So the whole compliance layer (break allocation, coverage-overlap checks, the guaranteed-hours math) runs as plain deterministic code. Same inputs, same output, every time. A model update can't quietly change what a 40-hour guarantee means.</p>
-
-    <h2>The rule, portable</h2>
-    <p>Every product I've shipped since has the same split somewhere. In <a href="../projects/scrutas">Scrutas</a>, the audit modules that carry legal weight run deterministic checks and the AI writes the explanations. The rule of thumb I ended up with: let the model generate where a wrong answer is cheap and a human reviews it, and use boring code where a wrong answer is expensive and nobody's watching.</p>
-    <p>The uncomfortable part is that this decision made the product demo <em>worse</em>. "Everything is AI" is a better pitch than "AI where appropriate." But the store manager doesn't run demos. She publishes schedules, and she hasn't had a guarantee-related grievance since launch. I'd make the same trade again.</p>
-    <!-- ===== END PER-POST BODY ===== -->
-
-    <div style="border-top:1px dashed rgba(255,255,255,.12);margin-top:44px;padding-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
-      <!-- PER-POST: related case study link -->
-      <a class="backlink" href="../projects/shiftflow">Read the full ShiftFlow case study →</a>
-      <a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+<main id="main">
+<article class="art">
+  <header class="art-hero">
+    <div class="art-prose">
+      <p data-reveal class="art-back"><a class="backlink" href="/insights">← All insights</a></p>
+      <!-- PER-POST: tag / date / read time -->
+      <div data-reveal class="art-meta">DECISION MOMENT · JULY 6, 2026 · 4 MIN READ</div>
+      <h1 data-reveal>Why ShiftFlow's break planner <span class="hl">refuses to use AI</span></h1>
+      <div data-reveal class="art-byline">By Abhay Kumar · Founder, ProductGurus</div>
     </div>
+  </header>
+
+  <div class="art-prose art-body" data-reveal>
+<!-- ===== PER-POST BODY ===== -->
+<p>ShiftFlow PRO is, by most descriptions, an AI product. It generates two-week retail rosters with an LLM at its core, designed to work across multiple providers. So the design decision people find most surprising is that the break planner, the feature that decides when every employee steps away from the floor, contains no AI at all. It's deterministic, client-side code, and it will stay that way.</p>
+
+<h2>The stakes hiding in a fifteen-minute break</h2>
+<p>A retail break schedule looks trivial until you read a collective agreement. Guaranteed hours differ by employment type. Two employees covering the same role can't be gone at once. An opening manager and a morning auditor have to be on the floor at specific times. Get it wrong and the cost isn't a UX bug. It's a union grievance, with real money and someone's trust attached.</p>
+<p>During discovery, I sat with the store manager who rebuilt this roster from memory every two weeks. What she feared wasn't inefficiency; she'd survived that for years. It was the <em>silent</em> mistake: the schedule that looks fine, gets published, and turns out to have under-scheduled someone with a 40-hour guarantee.</p>
+
+<div class="art-pull">That's the test I now apply to every feature: if this goes wrong silently, who pays, and how much? If the answer is a real person, the model doesn't get the job.</div>
+
+<h2>Where the line actually sits</h2>
+<p>Generating a <em>draft</em> schedule is a perfect LLM task. The search space is huge, the constraints are many, and a human reviews every draft before publishing. The failure mode is "manager edits a bad suggestion," which costs minutes. So ShiftFlow happily sends roster generation to Gemini or Claude, forces the output into a strict JSON schema, and asks the model to explain its reasoning next to every decision.</p>
+<p>Compliance is the opposite shape of problem. The rules are few and they're absolute; nothing about them rewards creativity. An LLM doing this work is a probabilistic system performing arithmetic with a liability attached, and its failure mode is invisible until someone files a grievance. So the whole compliance layer (break allocation, coverage-overlap checks, the guaranteed-hours math) runs as plain deterministic code. Same inputs, same output, every time. A model update can't quietly change what a 40-hour guarantee means.</p>
+
+<h2>The rule, portable</h2>
+<p>Every product I've shipped since has the same split somewhere. In <a href="/projects/scrutas">Scrutas</a>, the audit modules that carry legal weight run deterministic checks and the AI writes the explanations. The rule of thumb I ended up with: let the model generate where a wrong answer is cheap and a human reviews it, and use boring code where a wrong answer is expensive and nobody's watching.</p>
+<p>The uncomfortable part is that this decision made the product demo <em>worse</em>. "Everything is AI" is a better pitch than "AI where appropriate." But the store manager doesn't run demos. She publishes schedules, and she hasn't had a guarantee-related grievance since launch. I'd make the same trade again.</p>
+<!-- ===== END PER-POST BODY ===== -->
+
+  <div class="art-related">
+    <!-- PER-POST: related case study link -->
+    <a class="backlink" href="/projects/shiftflow">Read the full ShiftFlow case study →</a>
+    <a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+  </div>
   </div>
 </article>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="../assets/atom.js" defer></script>
 </body>
 </html>

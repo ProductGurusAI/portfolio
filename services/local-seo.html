@@ -56,101 +56,45 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .teal{color:#79d0bf}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .kick{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#79d0bf;margin-bottom:14px}
-  h2.sec{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15;margin:0 0 18px;color:#f4f4f6}
-  .lead{color:#b6b6c0;font-size:1.06rem;line-height:1.75;max-width:760px;margin:0 0 26px}
-  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-  .card{background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:24px 26px}
-  .card h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.08rem;color:#f4f4f6;margin:0 0 8px}
-  .card p{color:#b0b0ba;font-size:.95rem;line-height:1.65;margin:0}
-  .deliv{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
-  .deliv div{background:#111116;padding:20px 22px}
-  .deliv b{display:block;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#FFC321;margin-bottom:8px;font-weight:700}
-  .deliv p{margin:0;color:#c4c4cc;font-size:.95rem;line-height:1.6}
-  .steps{counter-reset:s;display:grid;gap:12px}
-  .step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:20px 22px}
-  .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);width:44px;height:44px;border-radius:50%;background:#141417;border:1.5px solid rgba(255,195,33,.45);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:700;color:#FFC321;font-size:.8rem}
-  .step h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.05rem;color:#f4f4f6;margin:0 0 6px}
-  .step p{margin:0;color:#b0b0ba;font-size:.95rem;line-height:1.65}
-  .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;align-items:center;background:linear-gradient(135deg,#141417,#0f0f12);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:32px 34px}
-  .proof .nums{display:flex;flex-wrap:wrap;gap:22px}
-  .proof .nums div b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.8rem;color:#f4f4f6}
-  .proof .nums div span{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#9a9aa4}
-  details{background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px}
-  details summary{cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none}
-  details summary::-webkit-details-marker{display:none}
-  details summary::after{content:"+";float:right;color:#FFC321;font-weight:700}
-  details[open] summary::after{content:"–"}
-  details p{margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7}
-  .cta-pill{display:inline-flex;align-items:center;gap:9px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.86rem;padding:15px 26px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(255,180,0,.22)}
-  .cta-pill:hover{transform:translateY(-3px)}
-  .cta-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:#f2f2f5;border:1px solid rgba(255,255,255,.18);font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.86rem;padding:15px 26px;border-radius:999px;text-decoration:none}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}*{animation:none!important}}
-  @media (max-width:760px){nav[style*="position:sticky"]{position:static!important}}
-  main p a:not([class]),section p a:not([class]),.step p a,details p a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  main p a:not([class]):hover,section p a:not([class]):hover{border-bottom-color:#FFC321}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services" style="color:#FFC321;" aria-current="page">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services" aria-current="page">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:90px 0 50px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.08),transparent 55%),radial-gradient(ellipse at 10% 90%,rgba(121,208,191,.06),transparent 60%);"></div>
-  <div class="wrap" style="position:relative;">
-    <div data-reveal style="margin-bottom:16px;"><a class="backlink" href="/services">← Services</a></div>
+<main id="main">
+<header class="page-hero">
+  <div class="wrap">
+    <p data-reveal class="mb-3"><a class="backlink" href="/services">← Services</a></p>
     <div data-reveal><span class="badge">Presence</span></div>
-    <!-- H1: outcome in the client's words. One <span class="grad"> highlight. -->
-    <h1 data-reveal class="jak" style="font-size:clamp(2.4rem,5.2vw,3.8rem);line-height:1.06;margin:22px 0 18px;font-weight:800;letter-spacing:-.035em;max-width:820px;">Show up on the map when someone nearby <span class="grad">searches for what you do</span></h1>
-    <p data-reveal style="font-size:clamp(1rem,1.5vw,1.15rem);color:#bcbcc6;max-width:660px;line-height:1.7;margin:0 0 26px;">Most local customers never scroll past the map. We set up and tune your Google Business Profile, fix your listings, give you a simple way to collect reviews and build a page that answers the local search. Two weeks to set up, optional monthly upkeep after.</p>
-    <div data-reveal style="display:flex;flex-wrap:wrap;gap:12px;">
-      <a class="cta-pill" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_hero'})">Book a 30-minute call →</a>
-      <a class="cta-ghost" href="/engagements">See engagement shapes</a>
+    <h1 data-reveal>Show up on the map when someone nearby <span class="grad">searches for what you do</span></h1>
+    <p data-reveal class="lead">Most local customers never scroll past the map. We set up and tune your Google Business Profile, fix your listings, give you a simple way to collect reviews and build a page that answers the local search. Two weeks to set up, optional monthly upkeep after.</p>
+    <div data-reveal class="btnrow">
+      <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_hero'})">Book a 30-minute call →</a>
+      <a class="btn btn-ghost" href="/engagements">See engagement shapes</a>
     </div>
   </div>
 </header>
 
-<!-- ===== 1. WHO THIS IS FOR: three concrete situations ===== -->
-<section style="padding:20px 0 60px;">
+<section class="pt0">
   <div class="wrap">
-    <div data-reveal class="kick">Who this is for</div>
-    <h2 data-reveal class="sec">Built for businesses with a front door</h2>
-    <div data-reveal class="grid3">
+    <div class="sec-head" data-reveal><div class="kick">Who this is for</div><h2>Built for businesses with a front door</h2></div>
+    <div class="grid3" data-reveal>
       <div class="card"><h3>You opened, and the map doesn't know</h3><p>A new café, clinic or shop. The sign is up, the phone works, and searching your own business name brings up a competitor two blocks over. Your Google listing is unclaimed, half-filled or plain wrong.</p></div>
       <div class="card"><h3>You're a trade and the phone should ring more</h3><p>Plumbing, electrical, landscaping, cleaning. Your customers search "near me" and call the first three results. You're on page two of the map, with an old address and no reviews since last year.</p></div>
       <div class="card"><h3>Your details are different everywhere</h3><p>One directory has the old phone number. Another has the unit number wrong. Google shows hours from before you changed them. Each mismatch makes the search engines trust your listing a little less.</p></div>
@@ -158,95 +102,63 @@
   </div>
 </section>
 
-<!-- ===== 2. WHAT YOU GET: four to six named deliverables ===== -->
-<section style="padding:0 0 60px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div data-reveal class="kick">What you get</div>
-    <h2 data-reveal class="sec">Four things that move a local listing</h2>
-    <p data-reveal class="lead">Local search rewards a small number of things done consistently. This is the setup that gets them done, in a form you can keep up yourself afterwards.</p>
-    <div data-reveal class="deliv">
-      <div><b>Google Business Profile setup and optimisation</b><p>Claimed, verified and fully completed: the right categories, services, service area, hours, photos, attributes and a description written for the searches your customers make. If a listing already exists, we clean it up and remove duplicates.</p></div><div><b>Citations</b><p>Citations are the listings of your name, address and phone number on directories, maps and review sites. Search engines compare them. We make sure the core ones match your Google profile exactly, fix the ones that don't and add the ones you're missing.</p></div><div><b>Review-collection routine</b><p>A short, repeatable way to ask happy customers for a Google review: a link, a card or a message template, and a note on when to ask. We also show you how to reply to reviews, including the bad ones, in under five minutes a week.</p></div><div><b>Local landing page</b><p>A page on your website written for the local search: what you do, where you do it, how to reach you, with the structured data that tells Google this is a real business at a real address. </p></div><div><b>Optional monthly upkeep</b><p>After setup, an optional monthly check: posts and photos on your profile, hours updated for holidays, new citations, review replies if you'd rather hand them off, and a one-page summary of calls, direction requests and profile views.</p></div><!-- repeat: <div><b>Name</b><p>One or two sentences. What it is, what it lets you do.</p></div> -->
+    <div class="sec-head" data-reveal><div class="kick">What you get</div><h2>Four things that move a local listing</h2><p class="lead">Local search rewards a small number of things done consistently. This is the setup that gets them done, in a form you can keep up yourself afterwards.</p></div>
+    <div class="deliv" data-reveal><div><b>Google Business Profile setup and optimisation</b><p>Claimed, verified and fully completed: the right categories, services, service area, hours, photos, attributes and a description written for the searches your customers make. If a listing already exists, we clean it up and remove duplicates.</p></div><div><b>Citations</b><p>Citations are the listings of your name, address and phone number on directories, maps and review sites. Search engines compare them. We make sure the core ones match your Google profile exactly, fix the ones that don't and add the ones you're missing.</p></div><div><b>Review-collection routine</b><p>A short, repeatable way to ask happy customers for a Google review: a link, a card or a message template, and a note on when to ask. We also show you how to reply to reviews, including the bad ones, in under five minutes a week.</p></div><div><b>Local landing page</b><p>A page on your website written for the local search: what you do, where you do it, how to reach you, with the structured data that tells Google this is a real business at a real address. </p></div><div><b>Optional monthly upkeep</b><p>After setup, an optional monthly check: posts and photos on your profile, hours updated for holidays, new citations, review replies if you'd rather hand them off, and a one-page summary of calls, direction requests and profile views.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head" data-reveal><div class="kick">How it runs</div><h2>Two weeks to set up, then it's yours to keep</h2><p class="lead">A typical local SEO setup takes two weeks. You'll need to give us access to your Google listing (or help us claim it), confirm your business details and take a few photos. After that, the routine fits into one short session a week.</p></div>
+    <div class="steps" data-reveal><div class="step"><div><h3>Check where you stand</h3><p>We search for your business the way a customer would, from a few spots in your area, and record what appears. We list every directory that mentions you and note each mismatch in name, address or phone.</p></div></div><div class="step"><div><h3>Claim and complete the profile</h3><p>We claim or verify the Google Business Profile, choose the categories that match the searches you want, fill in every field and write the description. Photos go up properly named and sized.</p></div></div><div class="step"><div><h3>Fix the citations</h3><p>Every core listing gets corrected to match the profile exactly, down to the spelling of the street name. Duplicates are merged or removed. Missing listings on the directories that matter for your trade are added.</p></div></div><div class="step"><div><h3>Build the landing page and review routine</h3><p>The local page goes live on your site with structured data and a clear call or booking action. You get the review link, the ask template and a short guide to replying. We walk through it with you on a call.</p></div></div><div class="step"><div><h3>Handover, or keep going</h3><p>Everything is in your accounts. You can run the routine yourself from here, or keep us on monthly for posts, updates and a summary of what the profile is doing. Either is fine.</p></div></div></div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <div class="kick" data-reveal>Proof</div>
+    <div class="proof" data-reveal>
+      <div><h2>The first case study is being written</h2><p>Local SEO is a new service and the first case study will come from the first engagement. The setup work itself is the same we did for our own site: structured data, fast pages, Search Console, Bing and IndexNow, all verified and measured. The numbers here are productgurus.ai's own. We'd rather show you those than invent a client.</p><a href="/services/websites">See the website work it builds on →</a></div>
+      <div class="nums"><div><b>99</b><span>mobile performance</span></div><div><b>100</b><span>SEO score</span></div><div><b>86</b><span>technical audit score</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== 3. HOW IT RUNS: three to five numbered steps, with the timeline in the heading or lead ===== -->
-<section style="padding:0 0 60px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div data-reveal class="kick">How it runs</div>
-    <h2 data-reveal class="sec">Two weeks to set up, then it's yours to keep</h2>
-    <p data-reveal class="lead">A typical local SEO setup takes two weeks. You'll need to give us access to your Google listing (or help us claim it), confirm your business details and take a few photos. After that, the routine fits into one short session a week.</p>
-    <div data-reveal class="steps">
-      <div class="step"><div><h3>Check where you stand</h3><p>We search for your business the way a customer would, from a few spots in your area, and record what appears. We list every directory that mentions you and note each mismatch in name, address or phone.</p></div></div><div class="step"><div><h3>Claim and complete the profile</h3><p>We claim or verify the Google Business Profile, choose the categories that match the searches you want, fill in every field and write the description. Photos go up properly named and sized.</p></div></div><div class="step"><div><h3>Fix the citations</h3><p>Every core listing gets corrected to match the profile exactly, down to the spelling of the street name. Duplicates are merged or removed. Missing listings on the directories that matter for your trade are added.</p></div></div><div class="step"><div><h3>Build the landing page and review routine</h3><p>The local page goes live on your site with structured data and a clear call or booking action. You get the review link, the ask template and a short guide to replying. We walk through it with you on a call.</p></div></div><div class="step"><div><h3>Handover, or keep going</h3><p>Everything is in your accounts. You can run the routine yourself from here, or keep us on monthly for posts, updates and a summary of what the profile is doing. Either is fine.</p></div></div><!-- repeat: <div class="step"><div><h3>Step name</h3><p>What happens, who is involved, what comes out.</p></div></div> -->
-    </div>
+    <div class="sec-head" data-reveal><div class="kick">Questions we get on the first call</div><h2>Straight answers before you book</h2></div>
+    <div class="faq" data-reveal><details><summary>Do I need a website for this to work?</summary><p>A Google Business Profile works without one, and for some businesses that's enough to start. A local landing page helps, because it gives Google a page to match the search against. If you don't have a site, we can build a small one alongside this; see <a href="/services/websites">websites</a>.</p></details><details><summary>How long until I see results?</summary><p>Profile changes usually show within days. Map ranking shifts over weeks as citations get picked up and reviews accumulate. We set up the profile's own reporting so you can see calls, direction requests and views month by month rather than guessing. We don't promise a position; nobody honest can.</p></details><details><summary>Can you get me reviews?</summary><p>We can't and won't write or buy them. Fake reviews get listings suspended. What we do is make asking easy and habitual: a link, a template, a moment in your process where the ask fits naturally. Businesses that ask consistently get reviews consistently.</p></details><details><summary>What are citations and why do they matter?</summary><p>A citation is any listing of your business name, address and phone number on another site: directories, maps, review platforms, trade associations. Search engines cross-check them against your Google profile. When they all agree, your listing looks trustworthy. When they don't, it looks uncertain, and uncertain listings rank lower.</p></details><details><summary>I serve customers at their homes. Does this still apply?</summary><p>Yes. Google Business Profile supports service-area businesses, where you hide your address and list the areas you cover instead. The setup is slightly different and the categories matter more. We handle both storefront and service-area listings.</p></details><details><summary>Can I stop the monthly option?</summary><p>Yes, it's month to month and everything stays in your accounts. Pricing for setup and monthly is quoted after a call.</p></details></div>
   </div>
 </section>
 
-<!-- ===== 4. PROOF: one related case study, real numbers only ===== -->
-<section style="padding:0 0 60px;">
+<section>
   <div class="wrap">
-    <div data-reveal class="kick">Proof</div>
-    <div data-reveal class="proof">
-      <div>
-        <h2 class="sec" style="font-size:1.5rem;margin-bottom:10px;">The first case study is being written</h2>
-        <p class="lead" style="margin-bottom:16px;font-size:1rem;">Local SEO is a new service and the first case study will come from the first engagement. The setup work itself is the same we did for our own site: structured data, fast pages, Search Console, Bing and IndexNow, all verified and measured. The numbers here are productgurus.ai's own. We'd rather show you those than invent a client.</p>
-        <a class="backlink" href="/services/websites">See the website work it builds on →</a>
-      </div>
-      <div class="nums">
-        <div><b>99</b><span>mobile performance</span></div><div><b>100</b><span>SEO score</span></div><div><b>86</b><span>technical audit score</span></div><!-- repeat up to 3: <div><b>7</b><span>label</span></div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 5. FAQ: four to six first-call questions ===== -->
-<section style="padding:0 0 60px;">
-  <div class="wrap">
-    <div data-reveal class="kick">Questions we get on the first call</div>
-    <h2 data-reveal class="sec">Straight answers before you book</h2>
-    <div data-reveal style="display:grid;gap:10px;max-width:860px;">
-      <details><summary>Do I need a website for this to work?</summary><p>A Google Business Profile works without one, and for some businesses that's enough to start. A local landing page helps, because it gives Google a page to match the search against. If you don't have a site, we can build a small one alongside this; see <a href="/services/websites">websites</a>.</p></details><details><summary>How long until I see results?</summary><p>Profile changes usually show within days. Map ranking shifts over weeks as citations get picked up and reviews accumulate. We set up the profile's own reporting so you can see calls, direction requests and views month by month rather than guessing. We don't promise a position; nobody honest can.</p></details><details><summary>Can you get me reviews?</summary><p>We can't and won't write or buy them. Fake reviews get listings suspended. What we do is make asking easy and habitual: a link, a template, a moment in your process where the ask fits naturally. Businesses that ask consistently get reviews consistently.</p></details><details><summary>What are citations and why do they matter?</summary><p>A citation is any listing of your business name, address and phone number on another site: directories, maps, review platforms, trade associations. Search engines cross-check them against your Google profile. When they all agree, your listing looks trustworthy. When they don't, it looks uncertain, and uncertain listings rank lower.</p></details><details><summary>I serve customers at their homes. Does this still apply?</summary><p>Yes. Google Business Profile supports service-area businesses, where you hide your address and list the areas you cover instead. The setup is slightly different and the categories matter more. We handle both storefront and service-area listings.</p></details><details><summary>Can I stop the monthly option?</summary><p>Yes, it's month to month and everything stays in your accounts. Pricing for setup and monthly is quoted after a call.</p></details><!-- repeat: <details><summary>Question?</summary><p>Answer.</p></details> -->
-    </div>
-  </div>
-</section>
-
-<!-- ===== 6. CTA ===== -->
-<section style="padding:0 0 90px;">
-  <div class="wrap">
-    <div data-reveal style="background:linear-gradient(180deg,#121216,#101013);border:1px solid rgba(121,208,191,.22);border-radius:22px;padding:36px 32px;max-width:860px;">
+    <div class="cta-box" data-reveal>
       <div class="kick">Next step</div>
-      <p class="lead" style="margin-bottom:22px;">Tell us your business name and neighbourhood. Before the call we'll look at what the map shows today, and in 30 minutes we'll tell you what a two-week setup would change.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;">
-        <a class="cta-pill" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_cta'})">Book a 30-minute call →</a>
-        <a class="cta-ghost" href="/engagements">Engagement shapes and timelines</a>
+      <p class="lead">Tell us your business name and neighbourhood. Before the call we'll look at what the map shows today, and in 30 minutes we'll tell you what a two-week setup would change.</p>
+      <div class="btnrow">
+        <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_cta'})">Book a 30-minute call →</a>
+        <a class="btn btn-ghost" href="/engagements">Engagement shapes and timelines</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand brand-sm" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#9a9aa4;">© 2026 ProductGurus · Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="/assets/atom.js" defer></script>
 </body>
 </html>

@@ -52,177 +52,110 @@
   ]
 }
 </script>
+<!-- ===== END PER-PAGE HEAD ===== -->
 <link rel="icon" href="/assets/favicon.ico?v=2" sizes="16x16 32x32 48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .pcard{display:block;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:30px 34px;text-decoration:none;color:inherit;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .4s}
-  .pcard:hover{transform:translateY(-4px);border-color:rgba(255,195,33,.35)}
-  .ptag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.28);color:#8fe0cf}
-  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.68rem;color:#9a9aa4;letter-spacing:.04em}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (max-width:640px){.pcard{padding:24px 22px}}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights" style="color:#FFC321;" aria-current="page">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:90px 0 46px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 75% 0%,rgba(255,195,33,.08),transparent 55%);"></div>
-  <div class="wrap" style="position:relative;">
+<main id="main">
+<header class="page-hero">
+  <div class="wrap">
     <div data-reveal><span class="badge">Insights</span></div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2.4rem,5.2vw,3.8rem);line-height:1.06;margin:22px 0 18px;font-weight:800;letter-spacing:-.035em;max-width:780px;">Playbooks and field guides from <span class="grad">shipping seven products</span></h1>
-    <p data-reveal style="font-size:clamp(1rem,1.5vw,1.15rem);color:#bcbcc6;max-width:620px;line-height:1.7;margin:0;">How we run discovery, write specs, size markets, and decide what to build, with every claim traced to a case study on this site. Written by the human, checked against what actually shipped.</p>
+    <h1 data-reveal>Playbooks and field guides from <span class="grad">shipping seven products</span></h1>
+    <p data-reveal class="lead">How we run discovery, write specs, size markets, and decide what to build, with every claim traced to a case study on this site. Written by the human, checked against what actually shipped.</p>
   </div>
 </header>
 
-<section style="padding:20px 0 90px;">
-  <div class="wrap" style="display:flex;flex-direction:column;gap:20px;max-width:860px;">
+<section class="pg-tight">
+  <div class="wrap">
+  <div class="pg-posts">
 
     <!-- POSTS: newest first. Copy a card, update href/tag/date/title/excerpt. -->
-    <a class="pcard" data-reveal href="insights/copy-the-homework-competitor-decisions-as-discovery">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Field Guide</span>
-        <span class="pmeta">September 11, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Copy the Homework: Using a Competitor&#x27;s Decisions as Free Discovery</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">Starbucks pays for location research before every store. That research is visible to anyone who looks. How to read a competitor&#x27;s decisions as discovery data, and the trap in copying them.</p>
+    <a class="card pg-post" data-reveal href="/insights/copy-the-homework-competitor-decisions-as-discovery">
+      <div class="pg-postmeta"><span class="badge">Field Guide</span><span class="pg-postdate">September 11, 2026 · 6 min read</span></div>
+      <h2>Copy the Homework: Using a Competitor&#x27;s Decisions as Free Discovery</h2>
+      <p>Starbucks pays for location research before every store. That research is visible to anyone who looks. How to read a competitor&#x27;s decisions as discovery data, and the trap in copying them.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/product-discovery-interview-questions">
+      <div class="pg-postmeta"><span class="badge">Playbook</span><span class="pg-postdate">September 10, 2026 · 6 min read</span></div>
+      <h2>Product Discovery Interview Questions: The Script We Actually Use</h2>
+      <p>The exact questions we ask in a discovery interview, in order, with the reasoning behind each one and the two we stopped asking.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/prototype-vs-mvp-which-first">
+      <div class="pg-postmeta"><span class="badge">Field Guide</span><span class="pg-postdate">September 10, 2026 · 5 min read</span></div>
+      <h2>Prototype vs MVP: Which One Should You Build First?</h2>
+      <p>What a prototype is for, what an MVP is for, and the one question that tells you which to build first.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/user-stories-with-acceptance-criteria">
+      <div class="pg-postmeta"><span class="badge">Playbook</span><span class="pg-postdate">September 10, 2026 · 6 min read</span></div>
+      <h2>How to Write User Stories with Acceptance Criteria Engineers Can Build From</h2>
+      <p>The story format we use, why each part is there, how MoSCoW keeps the list honest, and real examples from three shipped products.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/market-sizing-tam-sam-som-before-you-build">
+      <div class="pg-postmeta"><span class="badge">Field Guide</span><span class="pg-postdate">September 10, 2026 · 6 min read</span></div>
+      <h2>How to Size a Market Before You Build (TAM, SAM, SOM Without Fooling Yourself)</h2>
+      <p>Bottom-up numbers, footnoted assumptions, and the sanity checks that catch inflated figures. How PavIQ&#x27;s $40B TAM was built and what it does and doesn&#x27;t mean.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/product-discovery-before-building-an-mvp">
+      <div class="pg-postmeta"><span class="badge">Playbook</span><span class="pg-postdate">September 9, 2026 · 6 min read</span></div>
+      <h2>How to Run Product Discovery Before Building an MVP</h2>
+      <p>Who to interview, what to ask, and the three questions that decide whether an MVP should be built at all. Examples from Dwell, GridSentinel and Squint.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/fractional-product-manager-vs-agency-vs-full-time">
+      <div class="pg-postmeta"><span class="badge">Field Guide</span><span class="pg-postdate">September 9, 2026 · 6 min read</span></div>
+      <h2>Fractional Product Manager vs Agency vs Full-Time Hire: What a Startup Actually Needs</h2>
+      <p>When to hire a fractional product manager, when to use an agency, and when a full-time hire is the only answer. Cost, speed, ownership and risk, compared honestly.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/how-much-does-an-mvp-cost-in-canada">
+      <div class="pg-postmeta"><span class="badge">Field Guide</span><span class="pg-postdate">September 9, 2026 · 7 min read</span></div>
+      <h2>How Much Does an MVP Cost to Build in Canada? An Honest Breakdown</h2>
+      <p>The price ranges by approach, the five decisions that move the number most, and how doing discovery first is the cheapest way to lower the bill.</p>
+    </a>
+    <a class="card pg-post" data-reveal href="/insights/why-shiftflow-breaks-are-not-ai">
+      <div class="pg-postmeta"><span class="badge">Decision moment</span><span class="pg-postdate">July 6, 2026 · 4 min read</span></div>
+      <h2>Why ShiftFlow's break planner refuses to use AI</h2>
+      <p>We built an AI scheduling tool, then deliberately kept its entire compliance layer away from the model. The rule I use to decide what AI should never touch.</p>
     </a>
 
-    <a class="pcard" data-reveal href="insights/product-discovery-interview-questions">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Playbook</span>
-        <span class="pmeta">September 10, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Product Discovery Interview Questions: The Script We Actually Use</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">The exact questions we ask in a discovery interview, in order, with the reasoning behind each one and the two we stopped asking.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/prototype-vs-mvp-which-first">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Field Guide</span>
-        <span class="pmeta">September 10, 2026 · 5 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Prototype vs MVP: Which One Should You Build First?</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">What a prototype is for, what an MVP is for, and the one question that tells you which to build first.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/user-stories-with-acceptance-criteria">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Playbook</span>
-        <span class="pmeta">September 10, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">How to Write User Stories with Acceptance Criteria Engineers Can Build From</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">The story format we use, why each part is there, how MoSCoW keeps the list honest, and real examples from three shipped products.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/market-sizing-tam-sam-som-before-you-build">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Field Guide</span>
-        <span class="pmeta">September 10, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">How to Size a Market Before You Build (TAM, SAM, SOM Without Fooling Yourself)</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">Bottom-up numbers, footnoted assumptions, and the sanity checks that catch inflated figures. How PavIQ&#x27;s $40B TAM was built and what it does and doesn&#x27;t mean.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/product-discovery-before-building-an-mvp">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Playbook</span>
-        <span class="pmeta">September 9, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">How to Run Product Discovery Before Building an MVP</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">Who to interview, what to ask, and the three questions that decide whether an MVP should be built at all. Examples from Dwell, GridSentinel and Squint.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/fractional-product-manager-vs-agency-vs-full-time">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Field Guide</span>
-        <span class="pmeta">September 9, 2026 · 6 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Fractional Product Manager vs Agency vs Full-Time Hire: What a Startup Actually Needs</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">When to hire a fractional product manager, when to use an agency, and when a full-time hire is the only answer. Cost, speed, ownership and risk, compared honestly.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/how-much-does-an-mvp-cost-in-canada">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Field Guide</span>
-        <span class="pmeta">September 9, 2026 · 7 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">How Much Does an MVP Cost to Build in Canada? An Honest Breakdown</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">The price ranges by approach, the five decisions that move the number most, and how doing discovery first is the cheapest way to lower the bill.</p>
-    </a>
-
-    <a class="pcard" data-reveal href="insights/why-shiftflow-breaks-are-not-ai">
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px;">
-        <span class="ptag">Decision moment</span>
-        <span class="pmeta">July 6, 2026 · 4 min read</span>
-      </div>
-      <h2 class="jak" style="margin:0 0 10px;font-size:1.45rem;font-weight:800;color:#f4f4f6;line-height:1.25;">Why ShiftFlow's break planner refuses to use AI</h2>
-      <p style="color:#b6b6c0;font-size:.97rem;line-height:1.7;margin:0;">We built an AI scheduling tool, then deliberately kept its entire compliance layer away from the model. The rule I use to decide what AI should never touch.</p>
-    </a>
-
+  </div>
   </div>
 </section>
-
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+</main>
+<footer>
+  <div class="wrap">
+    <a class="brand pg-fbrand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="assets/atom.js" defer></script>
 </body>
 </html>

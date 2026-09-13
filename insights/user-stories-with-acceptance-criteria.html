@@ -91,79 +91,52 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .prose{max-width:720px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .prose p{color:#c2c2cc;font-size:1.05rem;line-height:1.85;margin:0 0 22px}
-  .prose h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.5rem;color:#f4f4f6;margin:40px 0 16px;line-height:1.3}
-  .prose a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  .prose a:hover{border-bottom-color:#FFC321}
-  .pull{border-left:3px solid #79d0bf;background:rgba(121,208,191,.06);border-radius:0 14px 14px 0;padding:20px 24px;margin:30px 0;font-size:1.08rem;line-height:1.7;color:#d8d8e0;font-style:italic}
-  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#9a9aa4;letter-spacing:.05em}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights" style="color:#FFC321;" aria-current="page">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:80px 0 30px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.07),transparent 55%);"></div>
-  <div class="prose" style="position:relative;">
-    <div data-reveal style="margin-bottom:20px;"><a class="backlink" href="../insights">← All insights</a></div>
-    <!-- PER-POST: tag / date / read time -->
-    <div data-reveal class="pmeta" style="margin-bottom:16px;">PLAYBOOK · SEPTEMBER 10, 2026 · 6 MIN READ</div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.03em;">User stories and acceptance criteria <span class="grad">engineers can build from</span></h1>
-    <div data-reveal class="pmeta">By Abhay Kumar · Founder, ProductGurus</div>
-    <p data-reveal style="margin:22px 0 0;color:#c9c9d2;font-size:1.12rem;line-height:1.7;max-width:640px;border-left:3px solid #FFC321;padding-left:16px;">The story format we use, why each part is there, how MoSCoW keeps the list honest, and real examples from three shipped products.</p>
-  </div>
-</header>
+<main id="main">
+<article class="art">
+  <header class="art-hero">
+    <div class="art-prose">
+      <p data-reveal class="art-back"><a class="backlink" href="/insights">← All insights</a></p>
+      <!-- PER-POST: tag / date / read time -->
+      <div data-reveal class="art-meta">PLAYBOOK · SEPTEMBER 10, 2026 · 6 MIN READ</div>
+      <h1 data-reveal>User stories and acceptance criteria <span class="hl">engineers can build from</span></h1>
+      <div data-reveal class="art-byline">By Abhay Kumar · Founder, ProductGurus</div>
+    <p data-reveal class="art-dek">The story format we use, why each part is there, how MoSCoW keeps the list honest, and real examples from three shipped products.</p>
+    </div>
+  </header>
 
-<article style="padding:30px 0 70px;">
-  <div class="prose" data-reveal>
-    <!-- ===== PER-POST BODY ===== -->
+  <div class="art-prose art-body" data-reveal>
+<!-- ===== PER-POST BODY ===== -->
 <p>Most user stories are written to be read once in a planning meeting and then ignored. The ones worth writing are the ones an engineer can build from without a meeting, and a tester can check without asking what you meant. Every case study on this site includes the actual backlog, so rather than invent examples, I'll use those.</p>
 
 <h2>The story is the "why", the criteria are the "done"</h2>
-<p>The story format is familiar: as a [person], I want [something], so that [outcome]. What people forget is that the story is the reason for the requirement, and a different thing from the requirement itself. Here is one from <a href="../projects/scrutas">Scrutas</a>: "As a site operator, I want to authorize deeper testing with a header, not credentials, so legal and security can sign off without friction." An engineer reading that knows what to build and, more usefully, knows what not to build. A login form would satisfy the words "authorize deeper testing" and completely miss the point.</p>
+<p>The story format is familiar: as a [person], I want [something], so that [outcome]. What people forget is that the story is the reason for the requirement, and a different thing from the requirement itself. Here is one from <a href="/projects/scrutas">Scrutas</a>: "As a site operator, I want to authorize deeper testing with a header, not credentials, so legal and security can sign off without friction." An engineer reading that knows what to build and, more usefully, knows what not to build. A login form would satisfy the words "authorize deeper testing" and completely miss the point.</p>
 <p>The acceptance criteria are where the story becomes checkable. For that story the criterion was: "Cryptographic domain-verification header, single-use, 72-hour expiry, hash-only storage, gates Stage 2." Every clause is testable. Someone can try to reuse the header and confirm it fails. Someone can check the database and confirm no plaintext token is stored. If a tester can't tell whether it passed, you haven't written a criterion yet.</p>
 
 <h2>Name a real person</h2>
 <p>"As a user" is the most common opening line and the least useful. Users don't exist; store managers, agency owners, and council engineers do. ShiftFlow's stories say "as a store manager." Squint's say "as an agency owner" and, separately, "as an individual site owner," because the two want different things from the same audit. PavIQ's say "as a council engineer" and "as a fleet operator," and the split matters because one is the buyer and the other is hosting the hardware for free. When the person in the story is specific, the acceptance criteria almost write themselves, because you can picture what they would check.</p>
 
-<div class="pull">If you can't picture the person doing the thing and deciding whether it worked, you haven't written a story yet, only a feature with a costume on.</div>
+<div class="art-pull">If you can't picture the person doing the thing and deciding whether it worked, you haven't written a story yet, only a feature with a costume on.</div>
 
 <h2>MoSCoW, used honestly</h2>
 <p>We tag every story Must, Should, Could, or Won't. The trick is that Must has to mean "the product does not ship without this," not "I care about this." On ShiftFlow, generating a compliant draft roster was a Must. A manager-facing analytics dashboard was a Could, and it still is. On Squint, white-labelled reports were a Should, because agencies asked for them but the product worked without them, and bulk audit mode was a Could. If more than about a third of a backlog is Must, the prioritization hasn't happened yet.</p>
@@ -174,54 +147,43 @@
 
 <h2>The template</h2>
 <p>Each story on our backlogs is five lines: an ID, the story in as-I-want-so-that form, the MoSCoW tag, the acceptance criteria as a short list with numbers where they exist, and one line on what evidence from discovery justifies it. That last line is unusual and I'd argue it is the most important. "Because Ashmita viewed twenty rooms in six months" is a better reason to build the Property Trust Score than "because it seemed like a good idea," and when the story gets challenged in three months, the evidence is right there.</p>
-<p>The <a href="../projects/scrutas">Scrutas</a>, <a href="../projects/shiftflow">ShiftFlow</a>, and <a href="../projects/squint">Squint</a> case studies each carry their full backlog in this format. Steal the structure. The stories themselves are yours to write, and they'll be better if you've done the interviews first.</p>
+<p>The <a href="/projects/scrutas">Scrutas</a>, <a href="/projects/shiftflow">ShiftFlow</a>, and <a href="/projects/squint">Squint</a> case studies each carry their full backlog in this format. Steal the structure. The stories themselves are yours to write, and they'll be better if you've done the interviews first.</p>
 
-    <h2>Sources and further reading</h2>
-    <ul style="color:#c2c2cc;font-size:.98rem;line-height:1.7;padding-left:20px;margin:0 0 22px;"><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/scrutas" target="_blank" rel="noopener">Scrutas case study</a>. Six user stories and the requirements written as acceptance criteria.</li><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/shiftflow" target="_blank" rel="noopener">ShiftFlow case study</a>. The backlog behind a product in production.</li><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/squint" target="_blank" rel="noopener">Squint case study</a>. Stories for a two-sided product.</li></ul>
-    <!-- ===== END PER-POST BODY ===== -->
+<h2>Sources and further reading</h2>
+<ul class="art-sources"><li><a href="https://productgurus.ai/projects/scrutas" target="_blank" rel="noopener">Scrutas case study</a>. Six user stories and the requirements written as acceptance criteria.</li><li><a href="https://productgurus.ai/projects/shiftflow" target="_blank" rel="noopener">ShiftFlow case study</a>. The backlog behind a product in production.</li><li><a href="https://productgurus.ai/projects/squint" target="_blank" rel="noopener">Squint case study</a>. Stories for a two-sided product.</li></ul>
+<!-- ===== END PER-POST BODY ===== -->
 
-
-    <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px 24px;margin-top:40px;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;background:#0f0f13;">
-      <img src="../assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,195,33,.55);flex:0 0 auto;">
-      <div style="flex:1 1 320px;">
-        <div class="pmeta" style="margin-bottom:6px;">WRITTEN BY</div>
-        <div class="jak" style="font-weight:800;font-size:1.1rem;color:#f4f4f6;margin-bottom:6px;">Abhay Kumar</div>
-        <p style="margin:0 0 10px;font-size:.95rem;line-height:1.65;color:#b6b6c0;">Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;"><a class="backlink" href="../about">About Abhay →</a><a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
-      </div>
+  <aside class="art-author" aria-label="About the author">
+    <img class="art-author-img" src="/assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy">
+    <div class="art-author-body">
+      <div class="art-meta">WRITTEN BY</div>
+      <div class="art-author-name">Abhay Kumar</div>
+      <p>Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
+      <div class="art-author-links"><a class="backlink" href="/about">About Abhay →</a><a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
     </div>
+  </aside>
 
-    <div style="border-top:1px dashed rgba(255,255,255,.12);margin-top:44px;padding-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
-      <!-- PER-POST: related case study link -->
-      <a class="backlink" href="../projects/scrutas">See a full backlog: the Scrutas case study →</a>
-      <a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
-    </div>
+  <div class="art-related">
+    <!-- PER-POST: related case study link -->
+    <a class="backlink" href="/projects/scrutas">See a full backlog: the Scrutas case study →</a>
+    <a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+  </div>
   </div>
 </article>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="../assets/atom.js" defer></script>
 </body>
 </html>

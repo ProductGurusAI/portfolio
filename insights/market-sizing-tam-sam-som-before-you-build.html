@@ -91,136 +91,98 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .prose{max-width:720px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .prose p{color:#c2c2cc;font-size:1.05rem;line-height:1.85;margin:0 0 22px}
-  .prose h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.5rem;color:#f4f4f6;margin:40px 0 16px;line-height:1.3}
-  .prose a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  .prose a:hover{border-bottom-color:#FFC321}
-  .pull{border-left:3px solid #79d0bf;background:rgba(121,208,191,.06);border-radius:0 14px 14px 0;padding:20px 24px;margin:30px 0;font-size:1.08rem;line-height:1.7;color:#d8d8e0;font-style:italic}
-  .pmeta{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:#9a9aa4;letter-spacing:.05em}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights" style="color:#FFC321;" aria-current="page">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:80px 0 30px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.07),transparent 55%);"></div>
-  <div class="prose" style="position:relative;">
-    <div data-reveal style="margin-bottom:20px;"><a class="backlink" href="../insights">← All insights</a></div>
-    <!-- PER-POST: tag / date / read time -->
-    <div data-reveal class="pmeta" style="margin-bottom:16px;">FIELD GUIDE · SEPTEMBER 10, 2026 · 6 MIN READ</div>
-    <h1 data-reveal class="jak" style="font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.12;margin:0 0 18px;font-weight:800;letter-spacing:-.03em;">Sizing a market before you build, <span class="grad">without fooling yourself</span></h1>
-    <div data-reveal class="pmeta">By Abhay Kumar · Founder, ProductGurus</div>
-    <p data-reveal style="margin:22px 0 0;color:#c9c9d2;font-size:1.12rem;line-height:1.7;max-width:640px;border-left:3px solid #FFC321;padding-left:16px;">Bottom-up numbers, footnoted assumptions, and the sanity checks that catch inflated figures. How PavIQ&#x27;s $40B TAM was built and what it does and doesn&#x27;t mean.</p>
-  </div>
-</header>
+<main id="main">
+<article class="art">
+  <header class="art-hero">
+    <div class="art-prose">
+      <p data-reveal class="art-back"><a class="backlink" href="/insights">← All insights</a></p>
+      <!-- PER-POST: tag / date / read time -->
+      <div data-reveal class="art-meta">FIELD GUIDE · SEPTEMBER 10, 2026 · 6 MIN READ</div>
+      <h1 data-reveal>Sizing a market before you build, <span class="hl">without fooling yourself</span></h1>
+      <div data-reveal class="art-byline">By Abhay Kumar · Founder, ProductGurus</div>
+    <p data-reveal class="art-dek">Bottom-up numbers, footnoted assumptions, and the sanity checks that catch inflated figures. How PavIQ&#x27;s $40B TAM was built and what it does and doesn&#x27;t mean.</p>
+    </div>
+  </header>
 
-<article style="padding:30px 0 70px;">
-  <div class="prose" data-reveal>
-    <!-- ===== PER-POST BODY ===== -->
+  <div class="art-prose art-body" data-reveal>
+<!-- ===== PER-POST BODY ===== -->
 <p>Every pitch deck has a market-size slide, and almost every one of them is a number somebody found in a report and multiplied by hope. I have written those slides. This is the way I do it now, after doing it wrong enough times to have a method, and after watching the Validate stage of our own process hold products back because the numbers didn't survive scrutiny.</p>
 
 <h2>Three numbers, three different questions</h2>
 <p>TAM is how much money the whole problem represents if everyone who has it paid to solve it. SAM is the slice you could actually reach with your product and your channels. SOM is what you could realistically win in the next few years given who else is competing and how fast you can sell. They answer different questions, and the mistake is treating TAM as if it were a forecast, when it's a ceiling nobody reaches.</p>
-<p><a href="../projects/paviq">PavIQ</a> carries a TAM of forty billion dollars and above. That figure is real, in the sense that road-condition surveys, pothole repair, and the vehicle damage they cause add up to that kind of money globally. It is also almost meaningless as a business plan. The number that matters for PavIQ is how many municipal councils in one province will pay for a daily road-condition feed at a price that covers a five-hundred-and-eighty-dollar sensor box per vehicle and the cloud pipeline behind it. That is a SOM question, and it is a much smaller and much more useful number.</p>
+<p><a href="/projects/paviq">PavIQ</a> carries a TAM of forty billion dollars and above. That figure is real, in the sense that road-condition surveys, pothole repair, and the vehicle damage they cause add up to that kind of money globally. It is also almost meaningless as a business plan. The number that matters for PavIQ is how many municipal councils in one province will pay for a daily road-condition feed at a price that covers a five-hundred-and-eighty-dollar sensor box per vehicle and the cloud pipeline behind it. That is a SOM question, and it is a much smaller and much more useful number.</p>
 
 <h2>Build it bottom-up, then check it top-down</h2>
 <p>Top-down sizing starts with a big published figure and applies percentages until it looks like your market. Bottom-up sizing starts with one customer, what they would pay, and how many of them exist. Do the bottom-up version first. For PavIQ: one council, one survey run they currently buy at twenty-six to a hundred and five thousand dollars every one to three years, replaced with a subscription. Multiply by the number of councils that run those surveys. That gives you a SAM you can defend line by line.</p>
 <p>Then do the top-down version and see if the two are within an order of magnitude. If they aren't, one of them is wrong, and it is usually the top-down one, because published market reports are built to be quoted, not to be right about your niche.</p>
 
-<div class="pull">A market-size number without a footnote is an opinion. Every figure in the sizing should have a source, a date, and the assumption that turns it into your number.</div>
+<div class="art-pull">A market-size number without a footnote is an opinion. Every figure in the sizing should have a source, a date, and the assumption that turns it into your number.</div>
 
 <h2>Footnote the assumptions, not just the sources</h2>
-<p>The Data Guru's rule on our projects is that every assumption is footnoted, and I mean the assumption, not only the source. "There are 1.2 million newcomers to Canada a year" is a source. "Sixty percent of them rent in shared housing in their first year" is an assumption, and it is the one that decides whether <a href="../projects/dwell">Dwell</a> is a big market or a modest one. Writing the assumption down as an assumption makes it something you can test in an interview rather than something you accidentally start believing.</p>
+<p>The Data Guru's rule on our projects is that every assumption is footnoted, and I mean the assumption, not only the source. "There are 1.2 million newcomers to Canada a year" is a source. "Sixty percent of them rent in shared housing in their first year" is an assumption, and it is the one that decides whether <a href="/projects/dwell">Dwell</a> is a big market or a modest one. Writing the assumption down as an assumption makes it something you can test in an interview rather than something you accidentally start believing.</p>
 
 <h2>The sanity checks</h2>
-<p>Three checks catch most inflated numbers. First, the willingness-to-pay check: does the price you've assumed match what anyone in the interviews said they currently pay for the workaround? Squint's seventy-nine to two-hundred-and-forty-nine dollars a month came from agencies describing what they'd spend to make outreach convert, not from a competitor's pricing page. Second, the channel check: can you actually reach the customers you've counted? Dwell's interview with a realtor showed that the small landlords in the sizing use free channels and won't pay per unlock, which knocked a segment out of the SAM in one conversation. Third, the physics check: does the product work where the market is? <a href="../projects/gridsentinel">GridSentinel</a>'s theft-detection market was real, and the product couldn't serve it on medium-voltage lines, so the first product was re-scoped to outage detection, a smaller market the product can actually win.</p>
+<p>Three checks catch most inflated numbers. First, the willingness-to-pay check: does the price you've assumed match what anyone in the interviews said they currently pay for the workaround? Squint's seventy-nine to two-hundred-and-forty-nine dollars a month came from agencies describing what they'd spend to make outreach convert, not from a competitor's pricing page. Second, the channel check: can you actually reach the customers you've counted? Dwell's interview with a realtor showed that the small landlords in the sizing use free channels and won't pay per unlock, which knocked a segment out of the SAM in one conversation. Third, the physics check: does the product work where the market is? <a href="/projects/gridsentinel">GridSentinel</a>'s theft-detection market was real, and the product couldn't serve it on medium-voltage lines, so the first product was re-scoped to outage detection, a smaller market the product can actually win.</p>
 
 <h2>What the number is for</h2>
 <p>The point of market sizing before a build is not to impress an investor. It is to find out whether the product is worth building at all, and if so, which segment to build for first. Half the value of the Validate stage on our projects is the products that don't get built, or get built smaller. A forty-billion-dollar TAM did not make PavIQ a go; a council engineer saying he would pay to stop doing surveys every three years did. Size the market to find that person, and then go and talk to them.</p>
 
-    <h2>Sources and further reading</h2>
-    <ul style="color:#c2c2cc;font-size:.98rem;line-height:1.7;padding-left:20px;margin:0 0 22px;"><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/paviq" target="_blank" rel="noopener">PavIQ case study</a>. The market sizing, unit economics and 20-week plan referenced here.</li><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/gridsentinel" target="_blank" rel="noopener">GridSentinel case study</a>. A market that had to be re-scoped after the physics were checked.</li><li style="margin:0 0 8px;"><a href="https://productgurus.ai/projects/dwell" target="_blank" rel="noopener">Dwell case study</a>. The 1.2M newcomers figure and the pricing model that discovery flagged.</li></ul>
-    <!-- ===== END PER-POST BODY ===== -->
+<h2>Sources and further reading</h2>
+<ul class="art-sources"><li><a href="https://productgurus.ai/projects/paviq" target="_blank" rel="noopener">PavIQ case study</a>. The market sizing, unit economics and 20-week plan referenced here.</li><li><a href="https://productgurus.ai/projects/gridsentinel" target="_blank" rel="noopener">GridSentinel case study</a>. A market that had to be re-scoped after the physics were checked.</li><li><a href="https://productgurus.ai/projects/dwell" target="_blank" rel="noopener">Dwell case study</a>. The 1.2M newcomers figure and the pricing model that discovery flagged.</li></ul>
+<!-- ===== END PER-POST BODY ===== -->
 
-
-    <div style="border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px 24px;margin-top:40px;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;background:#0f0f13;">
-      <img src="../assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,195,33,.55);flex:0 0 auto;">
-      <div style="flex:1 1 320px;">
-        <div class="pmeta" style="margin-bottom:6px;">WRITTEN BY</div>
-        <div class="jak" style="font-weight:800;font-size:1.1rem;color:#f4f4f6;margin-bottom:6px;">Abhay Kumar</div>
-        <p style="margin:0 0 10px;font-size:.95rem;line-height:1.65;color:#b6b6c0;">Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
-        <div style="display:flex;gap:16px;flex-wrap:wrap;"><a class="backlink" href="../about">About Abhay →</a><a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
-      </div>
+  <aside class="art-author" aria-label="About the author">
+    <img class="art-author-img" src="/assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy">
+    <div class="art-author-body">
+      <div class="art-meta">WRITTEN BY</div>
+      <div class="art-author-name">Abhay Kumar</div>
+      <p>Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where seven products have gone from research to release. Every claim in this article traces to a case study on this site.</p>
+      <div class="art-author-links"><a class="backlink" href="/about">About Abhay →</a><a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
     </div>
+  </aside>
 
-    <div style="border-top:1px dashed rgba(255,255,255,.12);margin-top:44px;padding-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;">
-      <!-- PER-POST: related case study link -->
-      <a class="backlink" href="../projects/paviq">See the full sizing in the PavIQ case study →</a>
-      <a class="backlink" style="color:#79d0bf;" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
-    </div>
+  <div class="art-related">
+    <!-- PER-POST: related case study link -->
+    <a class="backlink" href="/projects/paviq">See the full sizing in the PavIQ case study →</a>
+    <a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+  </div>
   </div>
 </article>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="../assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="../assets/atom.js" defer></script>
 </body>
 </html>

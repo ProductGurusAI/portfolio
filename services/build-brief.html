@@ -56,101 +56,45 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-  html{scroll-behavior:smooth}
-  body{margin:0;background:#0a0a0c;color:#e8e8ee;font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
-  ::selection{background:rgba(255,195,33,.26);color:#fff}
-  a{transition:color .2s,border-color .2s,transform .25s}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .mono{font-family:'JetBrains Mono',monospace}
-  .jak{font-family:'Plus Jakarta Sans',sans-serif}
-  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:999px}
-  .grad{background:linear-gradient(110deg,#ffe79a,#ffc321 52%,#ff9e00);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .teal{color:#79d0bf}
-  .navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block}
-  .navlink:hover{color:#FFC321}
-  .kick{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#79d0bf;margin-bottom:14px}
-  h2.sec{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15;margin:0 0 18px;color:#f4f4f6}
-  .lead{color:#b6b6c0;font-size:1.06rem;line-height:1.75;max-width:760px;margin:0 0 26px}
-  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-  .card{background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:24px 26px}
-  .card h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.08rem;color:#f4f4f6;margin:0 0 8px}
-  .card p{color:#b0b0ba;font-size:.95rem;line-height:1.65;margin:0}
-  .deliv{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
-  .deliv div{background:#111116;padding:20px 22px}
-  .deliv b{display:block;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#FFC321;margin-bottom:8px;font-weight:700}
-  .deliv p{margin:0;color:#c4c4cc;font-size:.95rem;line-height:1.6}
-  .steps{counter-reset:s;display:grid;gap:12px}
-  .step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:#121216;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:20px 22px}
-  .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);width:44px;height:44px;border-radius:50%;background:#141417;border:1.5px solid rgba(255,195,33,.45);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:700;color:#FFC321;font-size:.8rem}
-  .step h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.05rem;color:#f4f4f6;margin:0 0 6px}
-  .step p{margin:0;color:#b0b0ba;font-size:.95rem;line-height:1.65}
-  .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;align-items:center;background:linear-gradient(135deg,#141417,#0f0f12);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:32px 34px}
-  .proof .nums{display:flex;flex-wrap:wrap;gap:22px}
-  .proof .nums div b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.8rem;color:#f4f4f6}
-  .proof .nums div span{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#9a9aa4}
-  details{background:#111116;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:4px 20px}
-  details summary{cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1.05rem;color:#f4f4f6;padding:14px 0;list-style:none}
-  details summary::-webkit-details-marker{display:none}
-  details summary::after{content:"+";float:right;color:#FFC321;font-weight:700}
-  details[open] summary::after{content:"–"}
-  details p{margin:0 0 18px;color:#b6b6c0;font-size:.98rem;line-height:1.7}
-  .cta-pill{display:inline-flex;align-items:center;gap:9px;background:#FFC321;color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.86rem;padding:15px 26px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(255,180,0,.22)}
-  .cta-pill:hover{transform:translateY(-3px)}
-  .cta-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:#f2f2f5;border:1px solid rgba(255,255,255,.18);font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.86rem;padding:15px 26px;border-radius:999px;text-decoration:none}
-  .backlink{display:inline-block;padding:6px 0;font-family:'JetBrains Mono',monospace;font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#FFC321;text-decoration:none}
-  [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
-  [data-reveal].in{opacity:1;transform:none}
-  @media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}*{animation:none!important}}
-  @media (max-width:760px){nav[style*="position:sticky"]{position:static!important}}
-  main p a:not([class]),section p a:not([class]),.step p a,details p a{color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35)}
-  main p a:not([class]):hover,section p a:not([class]):hover{border-bottom-color:#FFC321}
-</style>
 </head>
 <body>
-<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:8px;z-index:100;background:#FFC321;color:#1a1400;padding:10px 14px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-weight:700;text-decoration:none;" onfocus="this.style.left='12px'" onblur="this.style.left='-9999px'">Skip to content</a>
-
-<nav style="position:sticky;top:0;z-index:50;background:rgba(10,10,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);">
-  <div class="wrap" style="padding:12px 28px;min-height:68px;display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="display:inline-flex;width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(12px,3vw,30px);font-size:.8rem;letter-spacing:.02em;align-items:center;">
-      <a class="navlink" href="/services" style="color:#FFC321;" aria-current="page">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services" aria-current="page">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" style="margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:9px 17px;border-radius:999px;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
-<header id="main" style="position:relative;padding:90px 0 50px;overflow:hidden;">
-  <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse at 70% 0%,rgba(255,195,33,.08),transparent 55%),radial-gradient(ellipse at 10% 90%,rgba(121,208,191,.06),transparent 60%);"></div>
-  <div class="wrap" style="position:relative;">
-    <div data-reveal style="margin-bottom:16px;"><a class="backlink" href="/services">← Services</a></div>
+<main id="main">
+<header class="page-hero">
+  <div class="wrap">
+    <p data-reveal class="mb-3"><a class="backlink" href="/services">← Services</a></p>
     <div data-reveal><span class="badge">Build</span></div>
-    <!-- H1: outcome in the client's words. One <span class="grad"> highlight. -->
-    <h1 data-reveal class="jak" style="font-size:clamp(2.4rem,5.2vw,3.8rem);line-height:1.06;margin:22px 0 18px;font-weight:800;letter-spacing:-.035em;max-width:820px;">Hand your developer a brief they can <span class="grad">actually quote</span></h1>
-    <p data-reveal style="font-size:clamp(1rem,1.5vw,1.15rem);color:#bcbcc6;max-width:660px;line-height:1.7;margin:0 0 26px;">You know what your business needs. We turn that into process maps, user stories with acceptance criteria and a product requirements document, so a developer or vendor can price the work and build the right thing first time.</p>
-    <div data-reveal style="display:flex;flex-wrap:wrap;gap:12px;">
-      <a class="cta-pill" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_hero'})">Book a 30-minute call →</a>
-      <a class="cta-ghost" href="/engagements">See engagement shapes</a>
+    <h1 data-reveal>Hand your developer a brief they can <span class="grad">actually quote</span></h1>
+    <p data-reveal class="lead">You know what your business needs. We turn that into process maps, user stories with acceptance criteria and a product requirements document, so a developer or vendor can price the work and build the right thing first time.</p>
+    <div data-reveal class="btnrow">
+      <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_hero'})">Book a 30-minute call →</a>
+      <a class="btn btn-ghost" href="/engagements">See engagement shapes</a>
     </div>
   </div>
 </header>
 
-<!-- ===== 1. WHO THIS IS FOR: three concrete situations ===== -->
-<section style="padding:20px 0 60px;">
+<section class="pt0">
   <div class="wrap">
-    <div data-reveal class="kick">Who this is for</div>
-    <h2 data-reveal class="sec">You know the problem. The brief is the hard part.</h2>
-    <div data-reveal class="grid3">
+    <div class="sec-head" data-reveal><div class="kick">Who this is for</div><h2>You know the problem. The brief is the hard part.</h2></div>
+    <div class="grid3" data-reveal>
       <div class="card"><h3>You've been quoted three wildly different prices</h3><p>Three developers, three numbers, and none of them are quoting the same thing, because each one filled the gaps differently. A written brief makes the quotes comparable.</p></div>
       <div class="card"><h3>The spreadsheet has stopped coping</h3><p>Scheduling, approvals, stock, audits: something that lives in a spreadsheet and three people's heads now needs to become a system. Nobody has written down how the work actually flows today.</p></div>
       <div class="card"><h3>You're not sure you should build at all</h3><p>There might be a product on the market that already does 80% of this. You want someone to check before you pay for custom software, and to tell you plainly if buying beats building.</p></div>
@@ -158,95 +102,63 @@
   </div>
 </section>
 
-<!-- ===== 2. WHAT YOU GET: four to six named deliverables ===== -->
-<section style="padding:0 0 60px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div data-reveal class="kick">What you get</div>
-    <h2 data-reveal class="sec">A brief that survives contact with a developer</h2>
-    <p data-reveal class="lead">Everything below is written in plain language first, with the technical detail underneath. You should recognise your own business in all of it.</p>
-    <div data-reveal class="deliv">
-      <div><b>Requirements workshop</b><p>A half-day session with you and the people who do the work. We walk through what happens today, what goes wrong, and what "done" would look like. Notes come back to you within two days.</p></div><div><b>Process maps: as-is and to-be</b><p>Two diagrams. The first shows how the work runs now, including the workarounds nobody admits to. The second shows how it should run once the system exists. The gap between them is the scope.</p></div><div><b>User stories with acceptance criteria</b><p>Each piece of the system written as a short story: who needs it, what they need, why. Under each one, a checklist of what has to be true for it to count as finished. Stories are ranked Must, Should, Could or Won't (MoSCoW), so the first release stays small.</p></div><div><b>Product requirements document</b><p>A PRD is the single document a developer builds from: goals, users, the stories above, the rules the system must never break, and what's out of scope. Yours will be short enough to read in one sitting.</p></div><div><b>Software or vendor selection</b><p>When an off-the-shelf tool covers most of what you need, we say so. You get a shortlist scored against your own stories, a recommendation, and a note on what you'd give up by buying instead of building.</p></div><div><b>Developer briefing</b><p>We walk your chosen developer or vendor through the brief on a call, answer their questions, and stay available while they quote. Fewer assumptions means a tighter price.</p></div><!-- repeat: <div><b>Name</b><p>One or two sentences. What it is, what it lets you do.</p></div> -->
+    <div class="sec-head" data-reveal><div class="kick">What you get</div><h2>A brief that survives contact with a developer</h2><p class="lead">Everything below is written in plain language first, with the technical detail underneath. You should recognise your own business in all of it.</p></div>
+    <div class="deliv" data-reveal><div><b>Requirements workshop</b><p>A half-day session with you and the people who do the work. We walk through what happens today, what goes wrong, and what "done" would look like. Notes come back to you within two days.</p></div><div><b>Process maps: as-is and to-be</b><p>Two diagrams. The first shows how the work runs now, including the workarounds nobody admits to. The second shows how it should run once the system exists. The gap between them is the scope.</p></div><div><b>User stories with acceptance criteria</b><p>Each piece of the system written as a short story: who needs it, what they need, why. Under each one, a checklist of what has to be true for it to count as finished. Stories are ranked Must, Should, Could or Won't (MoSCoW), so the first release stays small.</p></div><div><b>Product requirements document</b><p>A PRD is the single document a developer builds from: goals, users, the stories above, the rules the system must never break, and what's out of scope. Yours will be short enough to read in one sitting.</p></div><div><b>Software or vendor selection</b><p>When an off-the-shelf tool covers most of what you need, we say so. You get a shortlist scored against your own stories, a recommendation, and a note on what you'd give up by buying instead of building.</p></div><div><b>Developer briefing</b><p>We walk your chosen developer or vendor through the brief on a call, answer their questions, and stay available while they quote. Fewer assumptions means a tighter price.</p></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head" data-reveal><div class="kick">How it runs</div><h2>Workshop to signed-off brief in about two weeks</h2><p class="lead">A build brief typically takes two weeks, run as a research sprint. You'll spend roughly one working day of your own time across the whole thing, mostly in the workshop and the review.</p></div>
+    <div class="steps" data-reveal><div class="step"><div><h3>Workshop</h3><p>You, us, and the two or three people closest to the work. We map how things run today, list every pain point, and agree what a good outcome looks like. If a rule exists in a contract or an agreement, we ask to see it rather than guess.</p></div></div><div class="step"><div><h3>Process mapping</h3><p>We draw the as-is and to-be maps and send them back for a correction pass. This is where most surprises appear: a step nobody mentioned, an approval that happens by text message, a report that three people produce separately.</p></div></div><div class="step"><div><h3>Stories and priorities</h3><p>Every requirement becomes a user story with acceptance criteria. We rank them together using MoSCoW so the first version covers the Musts and nothing else. Scrutas ended up with 23 modules, all of which were ranked before a line of code was written.</p></div></div><div class="step"><div><h3>Build or buy check</h3><p>Before we write the PRD, we look at whether an existing product covers the Musts. If it does, the brief becomes a vendor selection instead. Either way you get a written recommendation.</p></div></div><div class="step"><div><h3>PRD and handover</h3><p>You get the finished document, a review call to sign it off, and a briefing call with your developer or vendor. If you'd like us to stay on while it gets built, that's our <a href="/services/product-ownership">product ownership</a> service.</p></div></div></div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <div class="kick" data-reveal>Proof</div>
+    <div class="proof" data-reveal>
+      <div><h2>Scrutas: from workshop to a 23-module audit tool</h2><p>Scrutas, an internal audit platform, began with a requirements workshop and as-is / to-be process mapping. The hard problem turned out to be legal rather than technical, and the brief captured it as a two-stage authorization flow before any code existed. ShiftFlow ran the same way: its scheduling and break rules were encoded straight from the union agreement, clause by clause.</p><a href="/projects/scrutas">Read the Scrutas case study →</a></div>
+      <div class="nums"><div><b>23</b><span>audit modules specified</span></div><div><b>2-stage</b><span>authorization flow</span></div><div><b>Live</b><span>running internally</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== 3. HOW IT RUNS: three to five numbered steps, with the timeline in the heading or lead ===== -->
-<section style="padding:0 0 60px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div data-reveal class="kick">How it runs</div>
-    <h2 data-reveal class="sec">Workshop to signed-off brief in about two weeks</h2>
-    <p data-reveal class="lead">A build brief typically takes two weeks, run as a research sprint. You'll spend roughly one working day of your own time across the whole thing, mostly in the workshop and the review.</p>
-    <div data-reveal class="steps">
-      <div class="step"><div><h3>Workshop</h3><p>You, us, and the two or three people closest to the work. We map how things run today, list every pain point, and agree what a good outcome looks like. If a rule exists in a contract or an agreement, we ask to see it rather than guess.</p></div></div><div class="step"><div><h3>Process mapping</h3><p>We draw the as-is and to-be maps and send them back for a correction pass. This is where most surprises appear: a step nobody mentioned, an approval that happens by text message, a report that three people produce separately.</p></div></div><div class="step"><div><h3>Stories and priorities</h3><p>Every requirement becomes a user story with acceptance criteria. We rank them together using MoSCoW so the first version covers the Musts and nothing else. Scrutas ended up with 23 modules, all of which were ranked before a line of code was written.</p></div></div><div class="step"><div><h3>Build or buy check</h3><p>Before we write the PRD, we look at whether an existing product covers the Musts. If it does, the brief becomes a vendor selection instead. Either way you get a written recommendation.</p></div></div><div class="step"><div><h3>PRD and handover</h3><p>You get the finished document, a review call to sign it off, and a briefing call with your developer or vendor. If you'd like us to stay on while it gets built, that's our <a href="/services/product-ownership">product ownership</a> service.</p></div></div><!-- repeat: <div class="step"><div><h3>Step name</h3><p>What happens, who is involved, what comes out.</p></div></div> -->
-    </div>
+    <div class="sec-head" data-reveal><div class="kick">Questions we get on the first call</div><h2>Straight answers before you book</h2></div>
+    <div class="faq" data-reveal><details><summary>Do I need to know anything technical?</summary><p>No. You need to know your business and be willing to show us how the work really happens, workarounds included. We handle the translation into stories, criteria and a PRD. If a developer later uses a term you don't recognise, ask us and we'll explain it.</p></details><details><summary>What if you find we shouldn't build anything?</summary><p>Then we tell you, in writing, with the reasoning. Sometimes an existing product covers the Musts and the honest advice is to buy it and configure it. The brief becomes a vendor shortlist and selection instead, and you've spent two weeks rather than six months finding out.</p></details><details><summary>Can my existing developer work from this?</summary><p>Yes, that's the point. The PRD and user stories are written in the format developers already expect, and we brief them directly. Most developers are relieved to get one; it means fewer change requests and fewer arguments about what was agreed. Read more on <a href="/insights/user-stories-with-acceptance-criteria">writing user stories with acceptance criteria</a>.</p></details><details><summary>How much of my time does it take?</summary><p>Plan for the half-day workshop, an hour reviewing the process maps, and an hour on the sign-off call. Around one working day in total, spread across two weeks. The people who do the work day to day should join the workshop; their knowledge is usually where the real requirements live.</p></details><details><summary>Will you build it too?</summary><p>We can build a clickable prototype to test the brief with real users before a developer starts, and we can act as your product owner while the developer builds. Production code for client work is done by your developer or vendor, working from the brief. Pricing for any of it is quoted after a call.</p></details></div>
   </div>
 </section>
 
-<!-- ===== 4. PROOF: one related case study, real numbers only ===== -->
-<section style="padding:0 0 60px;">
+<section>
   <div class="wrap">
-    <div data-reveal class="kick">Proof</div>
-    <div data-reveal class="proof">
-      <div>
-        <h2 class="sec" style="font-size:1.5rem;margin-bottom:10px;">Scrutas: from workshop to a 23-module audit tool</h2>
-        <p class="lead" style="margin-bottom:16px;font-size:1rem;">Scrutas, an internal audit platform, began with a requirements workshop and as-is / to-be process mapping. The hard problem turned out to be legal rather than technical, and the brief captured it as a two-stage authorization flow before any code existed. ShiftFlow ran the same way: its scheduling and break rules were encoded straight from the union agreement, clause by clause.</p>
-        <a class="backlink" href="/projects/scrutas">Read the Scrutas case study →</a>
-      </div>
-      <div class="nums">
-        <div><b>23</b><span>audit modules specified</span></div><div><b>2-stage</b><span>authorization flow</span></div><div><b>Live</b><span>running internally</span></div><!-- repeat up to 3: <div><b>7</b><span>label</span></div> -->
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 5. FAQ: four to six first-call questions ===== -->
-<section style="padding:0 0 60px;">
-  <div class="wrap">
-    <div data-reveal class="kick">Questions we get on the first call</div>
-    <h2 data-reveal class="sec">Straight answers before you book</h2>
-    <div data-reveal style="display:grid;gap:10px;max-width:860px;">
-      <details><summary>Do I need to know anything technical?</summary><p>No. You need to know your business and be willing to show us how the work really happens, workarounds included. We handle the translation into stories, criteria and a PRD. If a developer later uses a term you don't recognise, ask us and we'll explain it.</p></details><details><summary>What if you find we shouldn't build anything?</summary><p>Then we tell you, in writing, with the reasoning. Sometimes an existing product covers the Musts and the honest advice is to buy it and configure it. The brief becomes a vendor shortlist and selection instead, and you've spent two weeks rather than six months finding out.</p></details><details><summary>Can my existing developer work from this?</summary><p>Yes, that's the point. The PRD and user stories are written in the format developers already expect, and we brief them directly. Most developers are relieved to get one; it means fewer change requests and fewer arguments about what was agreed. Read more on <a href="/insights/user-stories-with-acceptance-criteria">writing user stories with acceptance criteria</a>.</p></details><details><summary>How much of my time does it take?</summary><p>Plan for the half-day workshop, an hour reviewing the process maps, and an hour on the sign-off call. Around one working day in total, spread across two weeks. The people who do the work day to day should join the workshop; their knowledge is usually where the real requirements live.</p></details><details><summary>Will you build it too?</summary><p>We can build a clickable prototype to test the brief with real users before a developer starts, and we can act as your product owner while the developer builds. Production code for client work is done by your developer or vendor, working from the brief. Pricing for any of it is quoted after a call.</p></details><!-- repeat: <details><summary>Question?</summary><p>Answer.</p></details> -->
-    </div>
-  </div>
-</section>
-
-<!-- ===== 6. CTA ===== -->
-<section style="padding:0 0 90px;">
-  <div class="wrap">
-    <div data-reveal style="background:linear-gradient(180deg,#121216,#101013);border:1px solid rgba(121,208,191,.22);border-radius:22px;padding:36px 32px;max-width:860px;">
+    <div class="cta-box" data-reveal>
       <div class="kick">Next step</div>
-      <p class="lead" style="margin-bottom:22px;">Tell us what your business needs to do that it can't do today. In 30 minutes we'll say whether a build brief is the right next step, and what it would cover.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;">
-        <a class="cta-pill" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_cta'})">Book a 30-minute call →</a>
-        <a class="cta-ghost" href="/engagements">Engagement shapes and timelines</a>
+      <p class="lead">Tell us what your business needs to do that it can't do today. In 30 minutes we'll say whether a build brief is the right next step, and what it would cover.</p>
+      <div class="btnrow">
+        <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'service_cta'})">Book a 30-minute call →</a>
+        <a class="btn btn-ghost" href="/engagements">Engagement shapes and timelines</a>
       </div>
     </div>
   </div>
 </section>
+</main>
 
-<footer style="border-top:1px solid rgba(255,255,255,.07);padding:40px 0;">
-  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:12px 26px;font-size:.78rem;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/engagements">Engagements</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
-      <a class="navlink" href="mailto:productgurus@proton.me">Email</a>
-      <a class="navlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+<footer>
+  <div class="wrap">
+    <a class="brand brand-sm" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#9a9aa4;">© 2026 ProductGurus · Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
-  document.querySelectorAll('[data-reveal]').forEach(function(el,i){el.style.transitionDelay=(i%3)*70+'ms';io.observe(el);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
-<script src="/assets/atom.js" defer></script>
 </body>
 </html>

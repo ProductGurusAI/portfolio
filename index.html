@@ -21,506 +21,144 @@
 <meta property="og:url" content="https://productgurus.ai/">
 <meta property="og:image" content="https://productgurus.ai/assets/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="User Research & Product Discovery Studio, Vancouver | ProductGurus">
-<meta name="twitter:description" content="User research and discovery sprints that end in a decision, from a Vancouver product studio.">
-<meta name="twitter:image" content="https://productgurus.ai/assets/og-card.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"ProductGurus","url":"https://productgurus.ai/","image":"https://productgurus.ai/assets/og-card.png","description":"A Vancouver research and build studio for small business owners and founders. Product, feasibility, location, and competitor research; build briefs and product ownership; websites and local SEO.","serviceType":["Product research","Feasibility research","Location and demography research","Competitor benchmarking","Build brief","Product ownership","Websites","Local SEO"],"areaServed":[{"@type":"City","name":"Vancouver"},{"@type":"Country","name":"Canada"}],"address":{"@type":"PostalAddress","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"email":"productgurus@proton.me","contactPoint":{"@type":"ContactPoint","contactType":"sales","email":"productgurus@proton.me","url":"https://calendly.com/productgurus-proton/30min","availableLanguage":"en"},"sameAs":["https://www.linkedin.com/in/abhay-kumar-vancouver/"]}
 </script>
+<!-- ===== END PER-PAGE HEAD ===== -->
 <link rel="icon" href="/assets/favicon.ico?v=2" sizes="16x16 32x32 48x48">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/site.css?v=1">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"></noscript>
-<style>
-:root{--bg:#0a0a0c;--card:#121216;--amber:#FFC321;--amber2:#ff9e00;--teal:#79d0bf;--txt:#e8e8ee;--mut:#b6b6c0;--dim:#9a9aa4}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--txt);font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-::selection{background:rgba(255,195,33,.26);color:#fff}
-.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--amber);color:#1a1400;border-radius:8px;padding:10px 14px;font:700 .78rem 'JetBrains Mono',monospace;text-decoration:none;transition:top .2s}
-.skip:focus{top:12px}
-a:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-.mono{font-family:'JetBrains Mono',monospace}
-.jak{font-family:'Plus Jakarta Sans',sans-serif}
-
-/* scroll progress */
-#prog{position:fixed;top:0;left:0;height:2.5px;width:0;background:linear-gradient(90deg,var(--amber),var(--teal));z-index:99;box-shadow:0 0 12px rgba(255,195,33,.6)}
-
-/* nav */
-nav{position:sticky;top:0;z-index:50;background:rgba(10,10,12,.75);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
-.navin{max-width:1180px;margin:0 auto;padding:12px 28px;min-height:66px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center}
-.navlink{color:#cfcfd6;text-decoration:none;padding:12px 2px;display:inline-block;font-size:.8rem;letter-spacing:.02em;transition:color .2s}
-.navlink:hover{color:var(--amber)}
-.ghost{margin-left:auto;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.18);color:#f2f2f5;padding:11px 18px;border-radius:999px;text-decoration:none;font-size:.78rem;transition:border-color .25s,background .25s}
-.ghost:hover{border-color:rgba(255,195,33,.6);background:rgba(255,195,33,.06)}
-
-/* hero */
-#hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
-#spot{position:absolute;inset:0;pointer-events:none;background:radial-gradient(560px circle at var(--mx,70%) var(--my,30%),rgba(255,195,33,.09),transparent 65%)}
-.gridbg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 90% 80% at 50% 40%,#000 30%,transparent 75%)}
-.beam{position:absolute;width:1px;top:0;bottom:0;background:linear-gradient(180deg,transparent,rgba(255,195,33,.5),transparent);opacity:0;animation:beam 7s ease-in-out infinite}
-@keyframes beam{0%,100%{opacity:0;transform:translateY(-30%)}50%{opacity:.7;transform:translateY(30%)}}
-/* orbit system behind hero */
-#orbit{position:absolute;right:-6%;top:50%;width:640px;height:640px;transform:translateY(-50%) translate(var(--ox,0),var(--oy,0));pointer-events:none;opacity:.85;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
-#orbit .ring{position:absolute;inset:0;border:1.5px solid rgba(121,208,191,.3);border-radius:50%;animation:spin 40s linear infinite}
-#orbit .ring.r2{inset:90px;border-color:rgba(255,195,33,.34);animation-duration:28s;animation-direction:reverse}
-#orbit .ring.r3{inset:185px;border-color:rgba(255,255,255,.16);animation-duration:52s}
-#orbit .ring i{position:absolute;top:-5px;left:50%;width:13px;height:13px;border-radius:50%;background:var(--amber);box-shadow:0 0 26px 7px rgba(255,195,33,.55)}
-#orbit .ring.r2 i{background:var(--teal);box-shadow:0 0 26px 7px rgba(121,208,191,.55)}
-#orbit .core{position:absolute;left:50%;top:50%;width:30px;height:30px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3d0,var(--amber) 55%,#7a5200);box-shadow:0 0 90px 24px rgba(255,195,33,.4);animation:pulse 3.4s ease-in-out infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes pulse{50%{box-shadow:0 0 80px 22px rgba(255,195,33,.4)}}
-.badge{display:inline-flex;align-items:center;gap:9px;background:rgba(121,208,191,.1);border:1px solid rgba(121,208,191,.35);color:#8fe0cf;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px}
-.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);animation:pulse2 2s ease-in-out infinite}
-@keyframes pulse2{50%{opacity:.35}}
-h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.045em;line-height:1.01;font-size:clamp(3.1rem,6.3vw,5.8rem);margin:25px 0 26px;max-width:760px}
-h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;margin-right:0.25em;padding-bottom:0.18em;margin-bottom:-0.18em}
-h1 .w span{display:inline-block;transform:translateY(110%);animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:var(--d)}
-@keyframes rise{to{transform:translateY(0)}}
-.shine{background:linear-gradient(110deg,#ffe79a 20%,var(--amber) 40%,var(--amber2) 55%,#ffe79a 75%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 5.5s linear infinite}
-.tealw{color:var(--teal);font-style:italic}
-@keyframes shimmer{to{background-position:-220% 0}}
-.sub{font-size:clamp(1.04rem,1.7vw,1.28rem);color:var(--mut);max-width:590px;line-height:1.75;margin:0 0 38px;opacity:0;animation:fadeup .9s ease .75s forwards}
-@keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.ctarow{display:flex;flex-wrap:wrap;gap:16px;align-items:center;opacity:0;animation:fadeup .9s ease .95s forwards}
-#magnet{position:relative;display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;padding:18px 32px;border-radius:999px;text-decoration:none;box-shadow:0 12px 44px rgba(255,180,0,.3);transition:box-shadow .3s;will-change:transform}
-#magnet:hover{box-shadow:0 18px 60px rgba(255,180,0,.5)}
-#magnet .arr{transition:transform .3s cubic-bezier(.2,.8,.2,1)}
-#magnet:hover .arr{transform:translateX(5px)}
-.cta2{color:#f2f2f5;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.82rem;letter-spacing:.04em;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px;transition:border-color .25s,color .25s}
-.cta2:hover{color:var(--amber);border-color:var(--amber)}
-.heromet{display:flex;flex-wrap:wrap;gap:10px 30px;margin-top:52px;font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--dim);opacity:0;animation:fadeup .9s ease 1.15s forwards}
-.hero-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(340px,.75fr);gap:clamp(34px,6vw,92px);align-items:center}
-.hero-copy{position:relative;z-index:2}
-.hero-deck{position:relative;z-index:2;min-height:420px;display:flex;align-items:center;justify-content:center;opacity:0;animation:deckin 1s cubic-bezier(.2,.8,.2,1) .42s forwards,floatDeck 6s ease-in-out infinite 1.42s}
-@keyframes deckin{from{opacity:0;transform:translate3d(30px,22px,0) scale(.96)}to{opacity:1;transform:none}}
-@keyframes floatDeck{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.hero-deck::before{content:'';position:absolute;width:410px;height:410px;border-radius:50%;background:radial-gradient(circle,rgba(121,208,191,.12),rgba(255,195,33,.05) 38%,transparent 68%);filter:blur(4px);animation:deckglow 6s ease-in-out infinite;z-index:0}
-@keyframes deckglow{50%{transform:scale(1.13);opacity:.7}}
-.hero-deck::after{content:'';position:absolute;width:min(100%,390px);height:324px;border:1px solid rgba(255,255,255,0.04);border-radius:24px;background:linear-gradient(145deg,rgba(16,21,22,0.82),rgba(10,10,13,0.85));box-shadow:0 12px 40px rgba(0,0,0,0.25);z-index:1;transform:rotate(-1.5deg) translate(-8px,10px);pointer-events:none;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .5s}
-.hero-deck:hover::after{transform:rotate(0deg) translate(0px,0px) scale(0.98);opacity:0}
-.deck{position:relative;z-index:2;width:min(100%,390px);padding:20px;border:1px solid rgba(121,208,191,.26);border-radius:24px;background:linear-gradient(145deg,rgba(20,26,27,.92),rgba(13,13,17,.94));box-shadow:0 28px 90px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.06);backdrop-filter:blur(16px);overflow:hidden;transform:rotate(3deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
-.hero-deck:hover .deck{transform:rotate(0deg) translateY(-5px)}
-.deck::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.08) 47%,transparent 62%);transform:translateX(-130%);animation:deckscan 7s ease-in-out infinite 1.5s;pointer-events:none}
-@keyframes deckscan{35%,100%{transform:translateX(130%)}}
-
-
-.deck-top,.deck-foot{display:flex;justify-content:space-between;align-items:center;font:600 .61rem 'JetBrains Mono',monospace;letter-spacing:.11em;text-transform:uppercase}
-.deck-top{padding:1px 1px 17px;color:var(--teal);border-bottom:1px solid rgba(255,255,255,.08)}
-.deck-top b{color:#cfd7d3;font-size:.55rem;font-weight:600}.deck-top b::before{content:'';display:inline-block;width:6px;height:6px;background:var(--teal);border-radius:50%;margin-right:6px;box-shadow:0 0 10px var(--teal)}
-.deck-flow{position:relative;padding:15px 0 12px}.deck-flow::before{content:'';position:absolute;left:11px;top:31px;bottom:29px;width:1px;background:linear-gradient(var(--teal),rgba(255,195,33,.65),rgba(255,255,255,.08))}
-.flow-row{position:relative;display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:13px 8px;border-radius:12px;color:#8e9897;transition:color .5s,background .5s,transform .5s}
-.flow-row.active{color:#edf4f1;background:rgba(121,208,191,.10);transform:translateX(4px)}
-.flow-dot{position:relative;width:9px;height:9px;border:1px solid #63706d;border-radius:50%;background:#15191a;z-index:1;transition:.5s}.flow-row.active .flow-dot{border-color:var(--amber);background:var(--amber);box-shadow:0 0 0 5px rgba(255,195,33,.12),0 0 16px rgba(255,195,33,.7)}
-.flow-name{font:700 .77rem 'JetBrains Mono',monospace;letter-spacing:.02em}.flow-status{font:500 .56rem 'JetBrains Mono',monospace;color:#78817f;text-align:right}.flow-row.active .flow-status{color:var(--teal)}
-.deck-foot{padding:15px 1px 1px;color:#9ca5a2;border-top:1px solid rgba(255,255,255,.08);letter-spacing:.06em;font-size:.55rem}.deck-foot span{color:var(--amber)}
-
-/* marquee */
-.marq{border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);padding:20px 0;overflow:hidden;position:relative;background:rgba(255,255,255,.012)}
-.marq::before,.marq::after{content:"";position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none}
-.marq::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
-.marq::after{right:0;background:linear-gradient(-90deg,var(--bg),transparent)}
-.track{display:flex;gap:56px;width:max-content;animation:scrollx 30s linear infinite}
-.marq:hover .track{animation-play-state:paused}
-@keyframes scrollx{to{transform:translateX(-50%)}}
-.track span{font-family:'JetBrains Mono',monospace;font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:56px;white-space:nowrap}
-.track b{color:#dcdce4;font-weight:600}
-.track i{color:var(--amber);font-style:normal}
-
-/* sections */
-section{position:relative;padding:100px 0}
-.kick{font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
-h2.big{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.08;margin:0 0 14px}
-.lead{color:var(--mut);font-size:1.06rem;line-height:1.7;max-width:620px;margin:0}
-
-/* engagement path */
-.path{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px;counter-reset:steps;position:relative}
-.path::before{content:'';position:absolute;top:54px;left:9%;right:9%;height:1px;background:linear-gradient(90deg,transparent,rgba(121,208,191,.16) 12%,rgba(255,195,33,.4) 50%,rgba(121,208,191,.16) 88%,transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.2,.8,.2,1) .15s}
-.path:has(.step.in)::before{transform:scaleX(1)}
-.step{position:relative;z-index:1;min-height:250px;padding:31px 28px 28px;border:1px solid rgba(255,255,255,.08);border-radius:20px;background:linear-gradient(155deg,#141419,#101013);overflow:hidden;transition:border-color .5s,box-shadow .5s}
-.step::before{counter-increment:steps;content:'0' counter(steps);display:block;font:700 .7rem 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--amber);margin-bottom:36px}
-.step::after{content:'';position:absolute;width:180px;height:180px;right:-80px;bottom:-95px;border-radius:50%;border:1px solid rgba(121,208,191,.22)}
-.step h3{font:800 1.25rem/1.25 'Plus Jakarta Sans',sans-serif;letter-spacing:-.02em;margin:0 0 12px}
-.step p{position:relative;margin:0;color:var(--mut);font-size:.92rem;line-height:1.65;max-width:30ch}
-.stepnode{position:absolute;right:25px;top:26px;width:13px;height:13px;border:1px solid rgba(121,208,191,.45);border-radius:50%;background:#111715;transition:background .45s,border-color .45s,box-shadow .45s}
-.stepnode i{position:absolute;inset:3px;border-radius:50%;background:var(--teal);transform:scale(0);transition:transform .45s cubic-bezier(.2,1.35,.3,1)}
-.step.in{border-color:rgba(121,208,191,.27);box-shadow:0 16px 40px rgba(0,0,0,.18)}
-.step.in .stepnode{background:rgba(121,208,191,.16);border-color:var(--teal);box-shadow:0 0 0 0 rgba(121,208,191,.35);animation:nodepulse 2.8s ease-out infinite .5s}
-.step.in .stepnode i{transform:scale(1)}
-@keyframes nodepulse{70%{box-shadow:0 0 0 13px rgba(121,208,191,0)}100%{box-shadow:0 0 0 0 rgba(121,208,191,0)}}
-
-/* stats */
-
-/* services grid */
-.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:48px}
-.svcfam{background:linear-gradient(180deg,var(--card),#101013);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:8px}
-.svchead{margin-bottom:8px}
-.svchead .mono{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:8px}
-.svchead h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-.02em;margin:0;color:#f4f4f6}
-.svcfam a{display:block;text-decoration:none;color:inherit;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.02);transition:border-color .25s,background .25s}
-.svcfam a:hover,.svcfam a:focus-visible{border-color:rgba(255,195,33,.45);background:rgba(255,195,33,.05)}
-.svcfam a b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.98rem;color:#f4f4f6;margin-bottom:4px}
-.svcfam a span{display:block;font-size:.9rem;line-height:1.55;color:var(--mut)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:56px}
-.stat{background:linear-gradient(180deg,var(--card),#101013);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:30px 26px;position:relative;overflow:hidden;text-decoration:none;color:inherit;cursor:pointer;display:block}
-.stat::after{content:"";position:absolute;inset:0;background:radial-gradient(200px circle at var(--sx,50%) var(--sy,0%),rgba(255,195,33,.08),transparent 70%);opacity:0;transition:opacity .4s}
-.stat:hover::after{opacity:1}
-.stat b{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(2.2rem,3.6vw,3rem);font-weight:800;color:#f4f4f6}
-.stat span{display:block;font-family:'JetBrains Mono',monospace;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:10px;line-height:1.5}
-
-/* bento */
-.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:56px}
-.b{position:relative;border-radius:22px;background:var(--card);border:1px solid rgba(255,255,255,.07);overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;min-height:250px;transition:transform .4s cubic-bezier(.2,.8,.2,1);transform-style:preserve-3d}
-.b:hover{transform:translateY(-4px)}
-.b .beamb{position:absolute;inset:0;border-radius:22px;padding:1px;pointer-events:none;opacity:0;transition:opacity .4s;background:conic-gradient(from var(--a,0deg),transparent 8%,var(--amber) 14%,transparent 22%,transparent 55%,var(--teal) 63%,transparent 72%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:rotbeam 3.4s linear infinite paused}
-.b:hover .beamb{opacity:1;animation-play-state:running}
-@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
-@keyframes rotbeam{to{--a:360deg}}
-.b img{width:100%;height:200px;object-fit:cover;object-position:top;opacity:.9}
-.b .bt{padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
-.b h3{margin:0;font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;font-weight:800}
-.b p{margin:0;color:var(--mut);font-size:.9rem;line-height:1.6}
-.b .tagx{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--teal)}
-.b .go{margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:7px}
-.b .go i{font-style:normal;transition:transform .3s}
-.b:hover .go i{transform:translateX(4px)}
-.s4{grid-column:span 4}.s2{grid-column:span 2}.s3{grid-column:span 3}
-@media (max-width:900px){.s4,.s2,.s3{grid-column:span 6}}
-@media (max-width:900px){.hero-layout{grid-template-columns:1fr}.hero-deck{min-height:0;justify-content:flex-start;margin:4px 0 12px}.deck{width:min(100%,490px);transform:none}.hero-deck:hover .deck{transform:translateY(-3px)}#orbit{right:-25%;opacity:.35}}
-.bhero{background:linear-gradient(150deg,#15150f,var(--card));justify-content:flex-end}
-.bhero .bt{padding-top:0}
-.bhero img{height:230px}
-
-
-/* fine print band */
-.fine{border:1px solid rgba(121,208,191,.22);border-radius:24px;background:linear-gradient(180deg,#111614,#0e1210);padding:44px 42px;margin-top:80px;position:relative;overflow:hidden}
-.fine::before{content:"";position:absolute;top:0;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(121,208,191,.5),transparent)}
-.fine p{color:#cdd6d2;font-size:1.12rem;line-height:1.85;margin:0;max-width:840px}
-.fine .mono{color:var(--teal);font-size:.64rem;letter-spacing:.15em;text-transform:uppercase;display:block;margin-bottom:16px}
-
-/* big cta */
-#endcta{text-align:center;padding:130px 0 120px;position:relative;overflow:hidden}
-#endcta .glow{position:absolute;left:50%;top:60%;width:900px;height:500px;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(255,195,33,.1),transparent 65%);pointer-events:none}
-#endcta h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.035em;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.06;margin:0 0 20px}
-#endcta p{color:var(--mut);font-size:1.1rem;margin:0 0 40px}
-
-/* footer */
-footer{border-top:1px solid rgba(255,255,255,.07);padding:40px 0}
-.frow{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
-.flink{color:#bcbcc6;text-decoration:none;font-family:'JetBrains Mono',monospace;font-size:.78rem;padding:10px 2px;display:inline-block}
-.flink:hover{color:var(--amber)}
-
-/* reveal on scroll */
-.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
-.rv.in{opacity:1;transform:none}
-
-@media (prefers-reduced-motion: reduce){
- *,*::before,*::after{animation:none!important;transition:none!important}
- h1 .w span{transform:none}
- .sub,.ctarow,.heromet,.hero-deck{opacity:1}
- .rv{opacity:1;transform:none}
-}
-@media (max-width:720px){
- .wrap{padding-left:20px;padding-right:20px}.navin{padding:10px 20px;gap:2px 16px}.navin>div{order:3;width:100%;justify-content:space-between}.navlink{padding:8px 0;font-size:.72rem}.ghost{padding:9px 12px;font-size:.7rem}h1{font-size:clamp(2.8rem,13vw,4rem)}.hero-deck{margin-top:12px}.deck{padding:17px;border-radius:20px}.flow-row{padding:11px 6px}.flow-status{font-size:.5rem}.heromet{margin-top:36px;gap:8px 17px}.path{grid-template-columns:1fr}.path::before{top:9%;bottom:9%;left:34px;right:auto;width:1px;height:auto;transform:scaleY(0);transform-origin:top}.path:has(.step.in)::before{transform:scaleY(1)}.step{min-height:0}.fine{padding:32px 25px}section{padding:76px 0}#endcta{padding:95px 0 85px}
-}
-</style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<div id="prog" aria-hidden="true"></div>
-
-<nav aria-label="Primary navigation">
-  <div class="navin">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:46px;height:23px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1.38rem;letter-spacing:-.02em;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div class="mono" style="display:flex;flex-wrap:wrap;gap:clamp(10px,3vw,28px);align-items:center;">
-      <a class="navlink" href="/services">Services</a>
-      <a class="navlink" href="/work">Work</a>
-      <a class="navlink" href="/industries/retail-operations">Industries</a>
-      <a class="navlink" href="/insights">Insights</a>
-      <a class="navlink" href="/about">About</a>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/retail-operations">Industries</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
     </div>
-    <a class="ghost mono" href="#start">Start a project <span aria-hidden="true">→</span></a>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
   </div>
 </nav>
 
 <main id="main">
-<header id="hero">
-  <div class="gridbg" aria-hidden="true"></div>
-  <div class="beam" style="left:18%;animation-delay:0s" aria-hidden="true"></div>
-  <div class="beam" style="left:52%;animation-delay:2.4s" aria-hidden="true"></div>
-  <div class="beam" style="left:83%;animation-delay:4.8s" aria-hidden="true"></div>
-  <div id="orbit" aria-hidden="true">
-    <div class="ring"><i></i></div>
-    <div class="ring r2"><i></i></div>
-    <div class="ring r3"><i></i></div>
-    <div class="core"></div>
-  </div>
-  <div id="spot" aria-hidden="true"></div>
-  <div class="wrap" style="position:relative;padding-top:40px;padding-bottom:60px;">
-    <div class="hero-layout">
-      <div class="hero-copy">
-        <span class="badge"><span class="dot"></span>Research · Build brief · Websites · Vancouver</span>
-        <h1 class="jak" id="stag">
-          <span class="w"><span style="--d:.05s">Find out if it</span></span><br>
-          <span class="w"><span class="shine" style="--d:.16s">will work</span></span><br>
-          <span class="w"><span style="--d:.28s">before you</span></span><br>
-          <span class="w"><span class="shine" style="--d:.40s">spend the money<span class="tealw">.</span></span></span>
-        </h1>
-        <p class="sub">ProductGurus is a Vancouver research and build studio for small business owners and founders. We find out whether the idea, the location, or the product holds up, write the brief a developer can quote, and build the website that brings in enquiries. Every number on this site traces to a case study you can read.</p>
-        <div class="ctarow">
-          <a id="magnet" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'hero'})">Book a 30-minute call <span class="arr">→</span></a>
-          <a class="cta2" href="/services">See the services</a>
-        </div>
-        <div class="heromet" aria-label="ProductGurus proof points">
-          <span>7 products, end to end</span><span>3 platforms in production</span><span>0 compliance misses in production</span><span>Vancouver, BC</span>
-        </div>
+<header class="hero-dark">
+  <div class="wrap">
+    <div>
+      <span class="badge"><i></i>Research · Build brief · Websites · Vancouver</span>
+      <h1>Find out if it <span class="grad">will work</span> before you <span class="grad">spend the money.</span></h1>
+      <p>ProductGurus is a Vancouver research and build studio for small business owners and founders. We find out whether the idea, the location, or the product holds up, write the brief a developer can quote, and build the website that brings in enquiries. Every number on this site traces to a case study you can read.</p>
+      <div class="btnrow">
+        <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'hero'})">Book a 30-minute call →</a>
+        <a class="btn btn-ghost" href="/services">See the services</a>
       </div>
-      <div class="hero-deck" aria-hidden="true">
-        <div class="deck">
-          <div class="deck-top"><span>ProductGurus / how the work runs</span><b>Live</b></div>
-          <div class="deck-flow">
-            <div class="flow-row active" data-phase="0"><span class="flow-dot"></span><span class="flow-name">01 / Discover</span><span class="flow-status">Interviews done</span></div>
-            <div class="flow-row" data-phase="1"><span class="flow-dot"></span><span class="flow-name">02 / Decide</span><span class="flow-status">Build, wait, or no</span></div>
-            <div class="flow-row" data-phase="2"><span class="flow-dot"></span><span class="flow-name">03 / Define</span><span class="flow-status">Brief written</span></div>
-            <div class="flow-row" data-phase="3"><span class="flow-dot"></span><span class="flow-name">04 / Build</span><span class="flow-status">Tested with users</span></div>
-            <div class="flow-row" data-phase="4"><span class="flow-dot"></span><span class="flow-name">05 / Grow</span><span class="flow-status">Found on search</span></div>
-          </div>
-          <div class="deck-foot">Outcome first. <span>Method second.</span></div>
-        </div>
-      </div>
+      <div class="hero-meta" aria-label="ProductGurus proof points"><span>7 products, end to end</span><span>3 platforms in production</span><span>0 compliance misses in production</span><span>Vancouver, BC</span></div>
+    </div>
+    <div class="deck" aria-hidden="true">
+      <div class="deck-top"><span>ProductGurus / how the work runs</span><b>Live</b></div>
+      <div class="deck-row on"><i></i><span>01 / Discover</span><span>Interviews done</span></div>
+      <div class="deck-row"><i></i><span>02 / Decide</span><span>Build, wait, or no</span></div>
+      <div class="deck-row"><i></i><span>03 / Define</span><span>Brief written</span></div>
+      <div class="deck-row"><i></i><span>04 / Build</span><span>Tested with users</span></div>
+      <div class="deck-row"><i></i><span>05 / Grow</span><span>Found on search</span></div>
+      <div class="deck-foot">Outcome first. <b>Method second.</b></div>
     </div>
   </div>
 </header>
 
-<div class="marq" aria-hidden="true">
-  <div class="track">
-    <span><b>ShiftFlow PRO</b><i>◆</i><b>Scrutas</b><i>◆</i><b>Squint</b><i>◆</i><b>PavIQ</b><i>◆</i><b>GridSentinel</b><i>◆</i><b>Dwell</b><i>◆</i>Discovery<i>◆</i>Build<i>◆</i>Validate<i>◆</i>Ship<i>◆</i></span>
-    <span><b>ShiftFlow PRO</b><i>◆</i><b>Scrutas</b><i>◆</i><b>Squint</b><i>◆</i><b>PavIQ</b><i>◆</i><b>GridSentinel</b><i>◆</i><b>Dwell</b><i>◆</i>Discovery<i>◆</i>Build<i>◆</i>Validate<i>◆</i>Ship<i>◆</i></span>
-  </div>
-</div>
-
 <section>
   <div class="wrap">
-    <div class="kick rv">The evidence</div>
-    <h2 class="big rv">Numbers a skeptic can check</h2>
-    <p class="lead rv">Every figure below traces to a case study you can read, question, and hold against us.</p>
-    <div class="stats">
-      <a href="/work" class="stat rv"><b data-count="7">0</b><span>Products owned end to end</span></a>
-      <a href="/work" class="stat rv"><b data-count="3">0</b><span>Production platforms live</span></a>
-      <a href="/projects/scrutas" class="stat rv"><b data-count="23">0</b><span>Audit modules in Scrutas</span></a>
-      <a href="/projects/shiftflow" class="stat rv"><b data-count="0">0</b><span>Scheduling grievances since ShiftFlow went live</span></a>
+    <div class="sec-head" data-reveal><div class="kick">The evidence</div><h2>Numbers a skeptic can check</h2><p class="lead">Every figure below traces to a case study you can read, question, and hold against us.</p></div>
+    <div class="stats" data-reveal>
+      <a href="/work" class="stat"><b>7</b><span>Products owned end to end</span></a>
+      <a href="/work" class="stat"><b>3</b><span>Production platforms live</span></a>
+      <a href="/projects/scrutas" class="stat"><b>23</b><span>Audit modules in Scrutas</span></a>
+      <a href="/projects/shiftflow" class="stat"><b>0</b><span>Scheduling grievances since ShiftFlow went live</span></a>
     </div>
-    <p class="rv mono" style="margin-top:18px;font-size:.78rem;color:#9a9aa4;">Want proof you can inspect rather than read? <a href="https://github.com/ProductGurusAI/Council-of-AIs" target="_blank" rel="noopener" style="color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35);">One of the seven is open source on GitHub</a>, MIT licensed, with its 47 tests.</p>
+    <p class="mono note" data-reveal>Want proof you can inspect rather than read? <a href="https://github.com/ProductGurusAI/Council-of-AIs" target="_blank" rel="noopener">One of the seven is open source on GitHub</a>, MIT licensed, with its 47 tests.</p>
   </div>
 </section>
 
-
-<section style="padding-top:20px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div class="kick rv">Services</div>
-    <h2 class="big rv">Three ways in, <span class="shine">one pipeline</span></h2>
-    <p class="lead rv">Start where the question is. Research before you spend, a brief before you build, a website before you launch. Typical timelines are on each page; prices are quoted after a 30-minute call.</p>
-    <div class="svc">
-      <div class="svcfam rv">
-        <div class="svchead"><span class="mono">01 · Research</span><h3>Know before you spend</h3></div>
+    <div class="sec-head" data-reveal><div class="kick">Services</div><h2>Three ways in, <span class="hl">one pipeline</span></h2><p class="lead">Start where the question is. Research before you spend, a brief before you build, a website before you launch. Typical timelines are on each page; prices are quoted after a 30-minute call.</p></div>
+    <div class="svc" data-reveal>
+      <div class="svcfam">
+        <div class="head"><div class="kick">01 · Research</div><h3>Know before you spend</h3></div>
         <a href="/services/product-research"><b>Product research</b><span>Customer interviews that tell you what people will pay for.</span></a>
         <a href="/services/feasibility-research"><b>Feasibility research</b><span>Market size, unit economics, and a build, wait, or no call.</span></a>
         <a href="/services/location-research"><b>Location and demography</b><span>Who lives, works, and spends near the address you're considering.</span></a>
         <a href="/services/competitor-benchmarking"><b>Competitor benchmarking</b><span>Where you fit, what to charge, what they dropped and why.</span></a>
       </div>
-      <div class="svcfam rv">
-        <div class="svchead"><span class="mono">02 · Build</span><h3>A brief a developer can quote</h3></div>
+      <div class="svcfam">
+        <div class="head"><div class="kick">02 · Build</div><h3>A brief a developer can quote</h3></div>
         <a href="/services/build-brief"><b>Build brief</b><span>Process maps, user stories with acceptance criteria, a PRD, a vendor pick.</span></a>
         <a href="/services/product-ownership"><b>Product ownership</b><span>Backlog, roadmap, UAT, and a fractional product owner month to month.</span></a>
       </div>
-      <div class="svcfam rv">
-        <div class="svchead"><span class="mono">03 · Presence</span><h3>Get found by the right people</h3></div>
+      <div class="svcfam">
+        <div class="head"><div class="kick">03 · Presence</div><h3>Get found by the right people</h3></div>
         <a href="/services/websites"><b>Websites</b><span>Fast, search-ready service sites and a scored website audit. No e-commerce.</span></a>
         <a href="/services/local-seo"><b>Local SEO</b><span>Google Business Profile, citations, reviews, and a local landing page.</span></a>
       </div>
     </div>
-    <p class="rv mono" style="margin-top:22px;font-size:.78rem;color:#9a9aa4;"><a href="/services" style="color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35);">All services and how the work runs →</a> · <a href="/engagements" style="color:#cfcfd6;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);">Engagement shapes and timelines</a></p>
+    <p class="mono note" data-reveal><a href="/services">All services and how the work runs →</a> &nbsp;·&nbsp; <a href="/engagements">Engagement shapes and timelines</a></p>
   </div>
 </section>
 
-<section style="padding-top:20px;">
+<section>
   <div class="wrap">
-    <div class="kick rv">Selected work</div>
-    <h2 class="big rv">Built, measured, <span class="shine">documented</span></h2>
-    <p class="lead rv">Three of seven. The full set, including the honest unresolved parts, lives on the work page.</p>
-    <div class="bento">
-      <a class="b s4 bhero tilt" href="/projects/shiftflow">
-        <div class="beamb" aria-hidden="true"></div>
-        <img src="assets/work/shiftflow.webp" srcset="assets/work/shiftflow-400.webp 400w, assets/work/shiftflow-560.webp 560w, assets/work/shiftflow-740.webp 740w, assets/work/shiftflow.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 700px" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy">
-        <div class="bt">
-          <span class="tagx">In production · Workforce scheduler</span>
-          <h3>ShiftFlow PRO</h3>
-          <p>Union rules, hour guarantees, and statutory holidays enforced in code before a manager opens the board. Zero grievances since launch.</p>
-          <span class="go">Read case study <i>→</i></span>
-        </div>
-      </a>
-      <a class="b s2 tilt" href="/projects/scrutas">
-        <div class="beamb" aria-hidden="true"></div>
-        <img src="assets/work/scrutas.webp" srcset="assets/work/scrutas-400.webp 400w, assets/work/scrutas-560.webp 560w, assets/work/scrutas-740.webp 740w, assets/work/scrutas.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 370px" width="980" height="547" alt="Scrutas audit dashboard" loading="lazy">
-        <div class="bt">
-          <span class="tagx">In production · Forensic audits</span>
-          <h3>Scrutas</h3>
-          <p>23 audit modules behind a two-stage, consent-based authorization model.</p>
-          <span class="go">Read case study <i>→</i></span>
-        </div>
-      </a>
-      <a class="b s2 tilt" href="/projects/dwell">
-        <div class="beamb" aria-hidden="true"></div>
-        <img src="assets/work/dwell.webp" srcset="assets/work/dwell-400.webp 400w, assets/work/dwell-560.webp 560w, assets/work/dwell-740.webp 740w, assets/work/dwell.webp 980w" sizes="(max-width: 760px) calc(100vw - 40px), 370px" width="980" height="547" alt="Dwell prototype screens" loading="lazy">
-        <div class="bt">
-          <span class="tagx">Validated concept · Rental trust</span>
-          <h3>Dwell</h3>
-          <p>A portable rental reputation for the 1.2M newcomers credit bureaus can't see.</p>
-          <span class="go">Read case study <i>→</i></span>
-        </div>
-      </a>
-      <a class="b s4 tilt" href="/work" style="justify-content:center;align-items:flex-start;background:linear-gradient(140deg,#12130f,#101013);">
-        <div class="beamb" aria-hidden="true"></div>
-        <div class="bt">
-          <span class="tagx">Plus three more</span>
-          <h3>Council of AIs · Squint · PavIQ</h3>
-          <p>An open-source tool in production, a pitch generator with tested pricing, and a hardware concept with a footnoted market size. Screenshots, numbers, and the go or no-go calls included.</p>
-          <span class="go">All seven on the work page <i>→</i></span>
-        </div>
-      </a>
+    <div class="sec-head" data-reveal><div class="kick">Selected work</div><h2>Built, measured, <span class="hl">documented</span></h2><p class="lead">Three of seven. The full set, including the honest unresolved parts, lives on the work page.</p></div>
+    <div class="work" data-reveal>
+      <a class="s4" href="/projects/shiftflow"><img src="/assets/work/shiftflow-740.webp" srcset="/assets/work/shiftflow-560.webp 560w, /assets/work/shiftflow-740.webp 740w" sizes="(max-width: 900px) calc(100vw - 48px), 740px" width="980" height="492" alt="ShiftFlow PRO scheduling interface" loading="lazy"><div class="t"><span class="tag">In production · Workforce scheduler</span><h3>ShiftFlow PRO</h3><p>Union rules, hour guarantees, and statutory holidays enforced in code before a manager opens the board. Zero grievances since launch.</p><span class="go">Read case study →</span></div></a>
+      <a class="s2" href="/projects/scrutas"><img src="/assets/work/scrutas-740.webp" srcset="/assets/work/scrutas-400.webp 400w, /assets/work/scrutas-560.webp 560w" sizes="(max-width: 900px) calc(100vw - 48px), 370px" width="980" height="547" alt="Scrutas audit dashboard" loading="lazy"><div class="t"><span class="tag">In production · Audits</span><h3>Scrutas</h3><p>23 audit modules behind a two-stage authorization model.</p><span class="go">Read case study →</span></div></a>
+      <a class="s2" href="/projects/dwell"><img src="/assets/work/dwell-740.webp" srcset="/assets/work/dwell-400.webp 400w, /assets/work/dwell-560.webp 560w" sizes="(max-width: 900px) calc(100vw - 48px), 370px" width="980" height="547" alt="Dwell prototype screens" loading="lazy"><div class="t"><span class="tag">Validated concept · Rental trust</span><h3>Dwell</h3><p>A portable rental reputation for the 1.2M newcomers credit bureaus can't see.</p><span class="go">Read case study →</span></div></a>
+      <a class="s4" href="/work"><div class="t"><span class="tag">Plus four more</span><h3>Council of AIs · Squint · PavIQ · GridSentinel</h3><p>An open-source tool in production, a pitch generator with tested pricing, and two hardware concepts with footnoted market sizes. Screenshots, numbers, and the go or no-go calls included.</p><span class="go">All seven on the work page →</span></div></a>
     </div>
   </div>
 </section>
 
-<section style="padding-top:20px;">
+<section class="sec-alt">
   <div class="wrap">
-    <div class="kick rv">How the work runs</div>
-    <h2 class="big rv">Outcome first. <span class="shine">Method second.</span></h2>
-    <p class="lead rv">Every engagement starts with the decision you need to make, then uses only the stages that get you there: discover, decide, define, build, grow. You see the evidence before you see the recommendation. <a href="/services" style="color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35);">See the pipeline →</a></p>
-    <div class="fine rv" style="margin-top:28px;">
-      <span class="mono">The fine print, in large type, on purpose</span>
-      <p>ProductGurus is a Vancouver studio for owners and founders who would rather find out than guess. We don't build e-commerce stores and we don't run paid ads. We do run the interviews, size the market, write the brief, build the site, and put our name on the numbers. The seven products on the work page were shipped end to end and double as the proof. Building a product team in Vancouver? <a href="/about#hiring" style="color:#79d0bf;text-decoration:none;border-bottom:1px solid rgba(121,208,191,.4);">Start on the About page.</a></p>
+    <div class="sec-head" data-reveal><div class="kick">How the work runs</div><h2>Outcome first. <span class="hl">Method second.</span></h2><p class="lead">Every engagement starts with the decision you need to make, then uses only the stages that get you there: discover, decide, define, build, grow. You see the evidence before you see the recommendation. <a href="/services">See the pipeline →</a></p></div>
+    <div class="cta-box" data-reveal>
+      <div class="kick">The fine print, in large type, on purpose</div>
+      <p class="lead m0">ProductGurus is a Vancouver studio for owners and founders who would rather find out than guess. We don't build e-commerce stores and we don't run paid ads. We do run the interviews, size the market, write the brief, build the site, and put our name on the numbers. The seven products on the work page were shipped end to end and double as the proof. Building a product team in Vancouver? <a href="/about#hiring">Start on the About page.</a></p>
     </div>
   </div>
 </section>
 
-<section id="endcta">
-  <div class="glow" aria-hidden="true"></div>
-  <div class="wrap" id="start">
-    <h2 class="jak rv">Let's build something<br><span class="shine">worth shipping.</span></h2>
-    <p class="rv">Opening a location, launching a product, or handing a developer a brief? Book a free 30-minute call or send an email. We'll tell you on the call whether we're the right fit and what it would take.</p>
-    <div class="rv" style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap;">
-      <a id="magnet2" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" aria-label="Book a free 30-minute call on Calendly (opens in a new tab)" onclick="gtag('event','book_call',{'location':'home_cta'})" style="display:inline-flex;align-items:center;gap:11px;background:var(--amber);color:#1a1400;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:.9rem;padding:18px 34px;border-radius:999px;text-decoration:none;box-shadow:0 12px 44px rgba(255,180,0,.3);will-change:transform;">Book a 30-minute call <span aria-hidden="true">→</span></a>
-    </div>
-    <p class="rv mono" style="margin-top:22px;font-size:.8rem;color:#b6b6c0;">or email <a href="mailto:productgurus@proton.me" style="color:#FFC321;text-decoration:none;border-bottom:1px solid rgba(255,195,33,.35);">productgurus@proton.me</a> · <a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener" style="color:#cfcfd6;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);">LinkedIn</a></p>
+<section class="endcta" id="start">
+  <div class="wrap">
+    <h2>Let's build something<br>worth shipping.</h2>
+    <p>Opening a location, launching a product, or handing a developer a brief? Book a free 30-minute call or send an email. We'll tell you on the call whether we're the right fit and what it would take.</p>
+    <a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'home_cta'})">Book a 30-minute call →</a>
+    <p class="fine">or email <a href="mailto:productgurus@proton.me">productgurus@proton.me</a> · <a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a></p>
   </div>
 </section>
-
 </main>
 <footer>
-  <div class="wrap frow">
-    <a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-      <img src="assets/logo.svg" alt="ProductGurus logo" width="1233" height="622" style="width:44px;height:22px;object-fit:contain;">
-      <span class="jak" style="font-weight:800;font-size:1rem;color:#f4f4f6;">ProductGurus</span>
-    </a>
-    <div style="display:flex;flex-wrap:wrap;gap:8px 26px;">
-      <a class="flink" href="/services">Services</a><a class="flink" href="/engagements">Engagements</a><a class="flink" href="/work">Work</a><a class="flink" href="/insights">Insights</a><a class="flink" href="/about">About</a><a class="flink" href="mailto:productgurus@proton.me">Email</a><a class="flink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="wrap">
+    <a class="brand brand-sm" href="/"><img src="/assets/logo.svg" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
-    <div class="mono" style="font-size:.72rem;color:#8a8a94;">© 2026 ProductGurus · Built in Vancouver, BC</div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
   </div>
 </footer>
-
 <script>
-(function(){
- var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-
- // scroll progress
- var prog=document.getElementById('prog');
- function onScroll(){
-   var max=document.documentElement.scrollHeight-innerHeight;
-   prog.style.width=(max>0?(scrollY/max)*100:0)+'%';
- }
- addEventListener('scroll',onScroll,{passive:true});onScroll();
-
- // reveal on scroll
- var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
- document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el);});
-
-
- if(reduce){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.dataset.count;});return;}
-
- // The hero workflow makes the studio's method legible before visitors scroll.
- var phases=document.querySelectorAll('.flow-row'),phaseIndex=0,phaseTimer;
- function setPhase(next){
-   phaseIndex=next%phases.length;
-   phases.forEach(function(row,i){row.classList.toggle('active',i===phaseIndex);});
- }
- function startPhases(){if(phases.length&&!phaseTimer)phaseTimer=setInterval(function(){setPhase(phaseIndex+1);},2400);}
- function stopPhases(){if(phaseTimer){clearInterval(phaseTimer);phaseTimer=null;}}
- if(phases.length){startPhases();document.addEventListener('visibilitychange',function(){if(document.hidden)stopPhases();else startPhases();});}
-
- // Hero feels responsive on precise pointers, without adding work to touch screens.
- var hero=document.getElementById('hero'),spot=document.getElementById('spot');
- var finePointer=matchMedia('(hover: hover) and (pointer: fine)').matches;
- if(finePointer){hero.addEventListener('mousemove',function(e){
-   var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
-   spot.style.setProperty('--mx',(x*100)+'%');spot.style.setProperty('--my',(y*100)+'%');
-   document.getElementById('orbit').style.setProperty('--ox',((x-.5)*-18)+'px');
-   document.getElementById('orbit').style.setProperty('--oy',((y-.5)*-14)+'px');
- },{passive:true});}
-
- // magnetic buttons (spring-style settle)
- function magnetize(el,strength){
-   if(!el)return;
-   var raf;
-   el.addEventListener('mousemove',function(e){
-     var r=el.getBoundingClientRect();
-     var x=(e.clientX-r.left-r.width/2)*strength, y=(e.clientY-r.top-r.height/2)*strength;
-     cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){el.style.transform='translate('+x+'px,'+y+'px)';});
-   });
-   el.addEventListener('mouseleave',function(){
-     el.style.transition='transform .55s cubic-bezier(.2,1.4,.3,1)';el.style.transform='translate(0,0)';
-     setTimeout(function(){el.style.transition='box-shadow .3s';},560);
-   });
- }
- if(finePointer){magnetize(document.getElementById('magnet'),.22);magnetize(document.getElementById('magnet2'),.22);}
-
- // stat count-up
- var cio=new IntersectionObserver(function(es){es.forEach(function(e){
-   if(!e.isIntersecting)return;cio.unobserve(e.target);
-   var el=e.target,t=+el.dataset.count,s=performance.now();
-   (function step(n){var p=Math.min(1,(n-s)/1200),ease=1-Math.pow(1-p,3);
-     el.textContent=Math.round(ease*t);if(p<1)requestAnimationFrame(step);})(s);
- })},{threshold:.6});
- document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el)});
-
- if(!finePointer)return;
-
- // 3D tilt on bento cards
- document.querySelectorAll('.tilt').forEach(function(card){
-   var raf;
-   card.addEventListener('mousemove',function(e){
-     var r=card.getBoundingClientRect();
-     var rx=((e.clientY-r.top)/r.height-.5)*-5, ry=((e.clientX-r.left)/r.width-.5)*7;
-     cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){
-       card.style.transform='perspective(900px) rotateX('+rx+'deg) rotateY('+ry+'deg) translateY(-4px)';});
-   });
-   card.addEventListener('mouseleave',function(){
-     card.style.transition='transform .6s cubic-bezier(.2,1.3,.3,1)';
-     card.style.transform='none';
-     setTimeout(function(){card.style.transition='transform .4s cubic-bezier(.2,.8,.2,1)';},600);
-   });
- });
-})();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el);});
 </script>
 </body>
 </html>
