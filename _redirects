@@ -46,3 +46,6 @@
 # 2026-09-13: What we do became the Services hub
 /what-we-do        /services   301
 /what-we-do.html   /services   301
+
+# 2026-09-15: Retail operations vertical replaced by Local businesses
+/industries/retail-operations   /industries/local-businesses   301
