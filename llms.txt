@@ -25,7 +25,7 @@ Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30mi
 - [About](https://productgurus.ai/about): how the studio works, the founder, open to senior product roles in Vancouver
 
 ## Case studies
-- [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): retail workforce scheduler, in production at v2.5, zero scheduling grievances since launch
+- [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): scheduler for unionized hourly workforces, live at v2.5 and in active use, compliance rules enforced in code
 - [Scrutas](https://productgurus.ai/projects/scrutas): internal audit platform, 23 modules, two-stage authorization model
 - [Squint](https://productgurus.ai/projects/squint): website audit to client-ready pitch in under two minutes; pricing tested at $79–$249/month
 - [Council of AIs](https://productgurus.ai/projects/council-of-ais): open-source budget-driven multi-model router, MIT licence, 47 tests

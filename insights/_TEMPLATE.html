@@ -97,21 +97,21 @@
 
   <div class="art-prose art-body" data-reveal>
 <!-- ===== PER-POST BODY ===== -->
-<p>ShiftFlow PRO is, by most descriptions, an AI product. It generates two-week retail rosters with an LLM at its core, designed to work across multiple providers. So the design decision people find most surprising is that the break planner, the feature that decides when every employee steps away from the floor, contains no AI at all. It's deterministic, client-side code, and it will stay that way.</p>
+<p>ShiftFlow PRO is, by most descriptions, an AI product. It generates rosters for unionized hourly teams with an LLM at its core, designed to work across multiple providers. So the design decision people find most surprising is that the break planner, the feature that decides when every employee steps away from the floor, contains no AI at all. It's deterministic, client-side code, and it will stay that way.</p>
 
 <h2>The stakes hiding in a fifteen-minute break</h2>
-<p>A retail break schedule looks trivial until you read a collective agreement. Guaranteed hours differ by employment type. Two employees covering the same role can't be gone at once. An opening manager and a morning auditor have to be on the floor at specific times. Get it wrong and the cost isn't a UX bug. It's a union grievance, with real money and someone's trust attached.</p>
-<p>During discovery, I sat with the store manager who rebuilt this roster from memory every two weeks. What she feared wasn't inefficiency; she'd survived that for years. It was the <em>silent</em> mistake: the schedule that looks fine, gets published, and turns out to have under-scheduled someone with a 40-hour guarantee.</p>
+<p>A break schedule for a unionized team looks trivial until you read the collective agreement. Guaranteed hours differ by employment type. Two employees covering the same role can't be gone at once. An opener and a key holder have to be on the floor at specific times. Get it wrong and the cost isn't a UX bug. It's a contract breach, with real money and someone's trust attached.</p>
+<p>During discovery, I sat with the scheduling manager who rebuilt this roster from memory every pay period. What they feared wasn't inefficiency; they'd survived that for years. It was the <em>silent</em> mistake: the schedule that looks fine, gets published, and turns out to have under-scheduled someone with a guaranteed-hours contract.</p>
 
 <div class="art-pull">That's the test I now apply to every feature: if this goes wrong silently, who pays, and how much? If the answer is a real person, the model doesn't get the job.</div>
 
 <h2>Where the line actually sits</h2>
 <p>Generating a <em>draft</em> schedule is a perfect LLM task. The search space is huge, the constraints are many, and a human reviews every draft before publishing. The failure mode is "manager edits a bad suggestion," which costs minutes. So ShiftFlow happily sends roster generation to Gemini or Claude, forces the output into a strict JSON schema, and asks the model to explain its reasoning next to every decision.</p>
-<p>Compliance is the opposite shape of problem. The rules are few and they're absolute; nothing about them rewards creativity. An LLM doing this work is a probabilistic system performing arithmetic with a liability attached, and its failure mode is invisible until someone files a grievance. So the whole compliance layer (break allocation, coverage-overlap checks, the guaranteed-hours math) runs as plain deterministic code. Same inputs, same output, every time. A model update can't quietly change what a 40-hour guarantee means.</p>
+<p>Compliance is the opposite shape of problem. The rules are few and they're absolute; nothing about them rewards creativity. An LLM doing this work is a probabilistic system performing arithmetic with a liability attached, and its failure mode is invisible until someone finds the breach. So the whole compliance layer (break allocation, coverage-overlap checks, the guaranteed-hours math) runs as plain deterministic code. Same inputs, same output, every time. A model update can't quietly change what a guaranteed-hours band means.</p>
 
 <h2>The rule, portable</h2>
 <p>Every product I've shipped since has the same split somewhere. In <a href="/projects/scrutas">Scrutas</a>, the audit modules that carry legal weight run deterministic checks and the AI writes the explanations. The rule of thumb I ended up with: let the model generate where a wrong answer is cheap and a human reviews it, and use boring code where a wrong answer is expensive and nobody's watching.</p>
-<p>The uncomfortable part is that this decision made the product demo <em>worse</em>. "Everything is AI" is a better pitch than "AI where appropriate." But the store manager doesn't run demos. She publishes schedules, and she hasn't had a guarantee-related grievance since launch. I'd make the same trade again.</p>
+<p>The uncomfortable part is that this decision made the product demo <em>worse</em>. "Everything is AI" is a better pitch than "AI where appropriate." But the scheduling manager doesn't run demos. They publish schedules, and every one is checked against the guarantees before it goes out. I'd make the same trade again.</p>
 <!-- ===== END PER-POST BODY ===== -->
 
   <div class="art-related">
