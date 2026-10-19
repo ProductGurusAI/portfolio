@@ -344,6 +344,11 @@ footer .pg-fbrand{font-size:1rem}
 .art-body img{border:var(--edge);margin:0 0 var(--s-6)}
 .art-body blockquote{margin:0 0 var(--s-6);padding-left:var(--s-5);border-left:4px solid var(--ink);color:var(--text-2)}
 .art-body code{font-family:var(--font-mono);font-size:.9em;background:var(--bg-alt);border:1px solid var(--hair-strong);padding:1px 6px}
+.art-body pre{font-family:var(--font-mono);font-size:.84rem;line-height:1.6;background:var(--ink);color:var(--cream-50);padding:var(--s-4) var(--s-5);border:var(--edge);box-shadow:var(--off) var(--off) 0 var(--amber-500);overflow:auto;margin:0 var(--off) var(--s-6) 0;white-space:pre}
+.art-body pre code{font-size:inherit;background:none;border:0;padding:0;color:inherit}
+.art-body pre,.art-body table{max-width:100%;box-sizing:border-box}
+.art-body pre{width:calc(100% - var(--off))}
+@media (max-width:700px){.art-body table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.art-body table thead,.art-body table tbody{display:table;width:100%;min-width:560px}}
 .art-body hr{border:0;border-top:var(--edge);margin:var(--s-10) 0}
 .art-pull{background:none;border:0;border-left:4px solid var(--action);padding:var(--s-2) 0 var(--s-2) var(--s-6);margin:var(--s-8) 0;font-family:var(--font-serif);font-style:italic;font-size:1.7rem;line-height:1.3;color:var(--text);box-shadow:none}
 .art-sources{font-size:1rem;line-height:1.6;color:var(--text-2)}

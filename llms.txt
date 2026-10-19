@@ -1,6 +1,6 @@
 # ProductGurus
 
-> A Vancouver research and build studio for small business owners and founders. Product, feasibility, location, and competitor research that ends in a build, wait, or no decision; build briefs and product ownership when the answer is build; websites and local SEO when it's time to be found. Seven of our own products taken from research to release. No e-commerce stores, no paid ads. Prices quoted after a 30-minute call.
+> A Vancouver product research and build studio for founders and operators. Product, feasibility and competitor research that ends in a build, wait, or no decision; build briefs and product ownership when the answer is build. Local businesses get the same research for a location, a website or a Google listing. Eight of our own products taken through research, five of them to release. No e-commerce stores, no paid ads. Prices quoted after a 30-minute call.
 
 Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30min
 
@@ -27,6 +27,8 @@ Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30mi
 ## Case studies
 - [ShiftFlow PRO](https://productgurus.ai/projects/shiftflow): scheduler for unionized hourly workforces, live at v2.5 and in active use, compliance rules enforced in code
 - [Scrutas](https://productgurus.ai/projects/scrutas): internal audit platform, 23 modules, two-stage authorization model
+- [Matchstick](https://productgurus.ai/projects/matchstick): Chrome extension (MV3, v1.3.0) that scores a resume against each requirement in a job posting with quoted evidence verified in code, then writes a cover letter that only claims what the resume supports; no servers, user's own Gemini key; 26-case golden test set
+- [Matchstick privacy policy](https://productgurus.ai/matchstick/privacy): what the extension stores locally, what goes to the AI provider, what it never does
 - [Squint](https://productgurus.ai/projects/squint): website audit to client-ready pitch in under two minutes; pricing tested at $79–$249/month
 - [Council of AIs](https://productgurus.ai/projects/council-of-ais): open-source budget-driven multi-model router, MIT licence, 47 tests
 - [Dwell](https://productgurus.ai/projects/dwell): renter trust score for Canadian newcomers; 9 interviews, discovery in progress
@@ -34,6 +36,7 @@ Contact: productgurus@proton.me · https://calendly.com/productgurus-proton/30mi
 - [GridSentinel](https://productgurus.ai/projects/gridsentinel): battery-free grid-edge outage sensor, validated concept, about CAD $95 per node
 
 ## Insights
+- [The page that never hit the cache: a Next.js lab you can run](https://productgurus.ai/insights/the-page-that-never-hit-the-cache): reproducible Next.js 15 caching lab; cookies() and no-store make a route dynamic; three fixes measured, each alone insufficient
 - [Copy the Homework: Using a Competitor's Decisions as Free Discovery](https://productgurus.ai/insights/copy-the-homework-competitor-decisions-as-discovery)
 - [Product Discovery Interview Questions: The Script We Actually Use](https://productgurus.ai/insights/product-discovery-interview-questions)
 - [Prototype vs MVP: Which One Should You Build First?](https://productgurus.ai/insights/prototype-vs-mvp-which-first)

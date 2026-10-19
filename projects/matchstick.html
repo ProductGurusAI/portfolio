@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js): queue is live immediately, the library loads after the page has painted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N7PBH45QNY');
+  window.addEventListener('load', function(){ var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY'; document.head.appendChild(s); });
+</script>
+<!-- ===== PER-PAGE HEAD: rendered ===== -->
+<title>Matchstick · Resume Match and Cover Letter Extension Case Study | ProductGurus</title>
+<meta name="description" content="A Chrome extension that scores a resume against every requirement in a job posting, quotes the evidence, and writes a cover letter that only claims what the resume supports.">
+<link rel="canonical" href="https://productgurus.ai/projects/matchstick">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Matchstick · Resume Match and Cover Letter Extension Case Study">
+<meta property="og:description" content="A Chrome extension that scores a resume against every requirement in a job posting, quotes the evidence, and writes a cover letter that only claims what the resume supports.">
+<meta property="og:url" content="https://productgurus.ai/projects/matchstick">
+<meta property="og:image" content="https://productgurus.ai/assets/matchstick-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Matchstick · Resume Match and Cover Letter Extension Case Study">
+<meta name="twitter:description" content="Scores a resume against a job posting with evidence, then writes an honest cover letter.">
+<meta name="twitter:image" content="https://productgurus.ai/assets/matchstick-og.jpg">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article", "datePublished": "2026-10-19", "dateModified": "2026-10-19",
+   "headline": "Matchstick \u2014 case study",
+   "description": "A Chrome extension that scores a resume against every requirement in a job posting, quotes the evidence, and writes a cover letter that only claims what the resume supports.",
+   "url": "https://productgurus.ai/projects/matchstick",
+   "image": "https://productgurus.ai/assets/matchstick-og.jpg",
+   "author": {
+    "@type": "Person",
+    "name": "Abhay Kumar"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "ProductGurus",
+    "url": "https://productgurus.ai/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://productgurus.ai/assets/logo.svg"
+    }
+   },
+   "mainEntityOfPage": "https://productgurus.ai/projects/matchstick"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://productgurus.ai/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Work",
+     "item": "https://productgurus.ai/work"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Matchstick",
+     "item": "https://productgurus.ai/projects/matchstick"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- ===== END PER-PAGE HEAD ===== -->
+<link rel="icon" href="/assets/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/site.css?v=11">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-wght-normal.woff2" crossorigin>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg?v=2" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work" aria-current="page">Work</a>
+      <a href="/industries/local-businesses">Industries</a>
+      <a href="/insights">Insights</a>
+      <a href="/about">About</a>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'case_study_nav'})">Book a call</a>
+  </div>
+</nav>
+
+<main id="main">
+<header class="cs-hero">
+<div class="cs-wrap">
+<div class="cs-hero-top">
+<div class="cs-mark">
+<div class="cs-mark-in">
+<svg fill="none" height="32" viewBox="0 0 48 48" width="32">
+<path d="M24 17v20" stroke="#79D0BF" stroke-linecap="round" stroke-width="3.8"></path>
+<circle cx="24" cy="13" fill="#FFC321" r="6"></circle>
+</svg>
+</div>
+</div>
+<span class="badge">Built · v1.3.0</span>
+</div>
+<h1>Matchstick</h1>
+<div class="cs-byline">Case study by <a href="/about">Abhay Kumar</a> · Updated October 2026</div>
+<p class="lead">A Chrome extension for job seekers. On a job posting it checks the resume against each requirement, quotes the line that proves it, shows the gaps, and writes a cover letter that only claims what the resume supports.</p>
+<div class="cs-meta">
+<div><div class="cs-meta-k">My role</div><div class="cs-meta-v">Problem → PRD → build</div></div>
+<div><div class="cs-meta-k">Status</div><div class="cs-meta-v">v1.3.0 · Packaged for the Chrome Web Store</div></div>
+<div><div class="cs-meta-k">Stack</div><div class="cs-meta-v">Chrome MV3 + vanilla JS + Gemini (user's key)</div></div>
+<div><div class="cs-meta-k">Servers</div><div class="cs-meta-v">None. Everything runs in the browser</div></div>
+</div>
+</div>
+<div class="cs-wrap cs-summary-wrap">
+<div class="cta-box cs-summary" data-reveal="">
+<div class="kick">The 30-second version</div>
+<p class="cs-summary-p"><strong>Built, tested against a 26-case golden set, packaged for the store.</strong> The first version gave a match number with nothing behind it. The rebuild made evidence the product: every requirement is marked met, partial or missing with a quote from the resume, the code checks that the quote is real, and the score is computed in code rather than by the model. Free, no accounts, no servers; the user brings their own Gemini key.</p>
+</div>
+</div>
+</header>
+<nav aria-label="Sections" class="cs-jump">
+<div class="cs-wrap cs-jump-row">
+<a class="cs-jump-link" href="#the-problem">Problem</a>
+<a class="cs-jump-link" href="#discovery">Discovery</a>
+<a class="cs-jump-link" href="#requirements">Requirements</a>
+<a class="cs-jump-link" href="#what-i-built">Build</a>
+<a class="cs-jump-link" href="#outcome">Outcome</a>
+<a class="cs-jump-link" href="#roadmap">Roadmap</a>
+</div>
+</nav>
+<section class="cs-body">
+<div class="cs-wrap cs-stack">
+<div class="cs-sec" data-reveal="">
+<img alt="Matchstick side panel showing a 79 out of 100 match score and a requirements list with met, partial and missing marks" class="cs-heroimg" fetchpriority="high" height="1020" sizes="(max-width: 920px) 100vw, 864px" src="/assets/matchstick-hero.webp" srcset="/assets/matchstick-hero-920.webp 920w, /assets/matchstick-hero.webp 1840w" width="1840"/>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="the-problem">The problem</div>
+<h2>A match number nobody can check</h2>
+<p class="cs-p">People applying to dozens of roles rarely check whether the resume fits the posting before they apply, and tailoring a cover letter for each one is the part that gets skipped. The tools that exist either paywall after a few uses, write letters that sound like every other AI letter (sometimes claiming experience the applicant doesn't have), or hand back a percentage with no evidence behind it.</p>
+<ul class="cs-list">
+<li><span class="cs-arrow">→</span>A score without evidence can't be acted on. "62%" doesn't tell you which requirement to fix or whether to bother applying.</li>
+<li><span class="cs-arrow">→</span>A generated letter that invents experience is worse than no letter. The applicant carries the risk, not the tool.</li>
+<li><span class="cs-arrow">→</span>A resume is personal data. Sending it to a server somebody else runs, to get a number back, is a cost most tools don't mention.</li>
+</ul>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="discovery">Discovery</div>
+<h2>One loop, three kinds of user</h2>
+<p class="cs-p">The whole product is one loop: scan the posting, score the fit, fix the gaps, then strike (write the letter). What a first-time user should understand in one sentence: see how well you fit, see the gaps, get an honest letter. Everything else sits behind that.</p>
+<div class="grid3 cs-grid">
+<div class="card">
+<div class="cs-avrow"><span class="cs-av">AJ</span><h3>Active job seekers <span class="cs-sub">· Primary</span></h3></div>
+<p>Applying to five or more roles a week. They need the score before the application, not a letter after it.</p>
+<div class="cs-pain">Job to be done: tell me if this is worth my time, then help me apply well</div>
+</div>
+<div class="card">
+<div class="cs-avrow"><span class="cs-av">NG</span><h3>Students and new grads <span class="cs-sub">· Secondary</span></h3></div>
+<p>Applying broadly, with thin resumes. The gap list matters more than the score.</p>
+<div class="cs-pain">Job to be done: show me what the posting wants that I haven't written down</div>
+</div>
+<div class="card">
+<div class="cs-avrow"><span class="cs-av">CS</span><h3>Career switchers <span class="cs-sub">· Secondary</span></h3></div>
+<p>Need to understand which gaps are real skill gaps and which are wording.</p>
+<div class="cs-pain">Job to be done: tell me which requirements I can close and which I can't</div>
+</div>
+</div>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="backlog">Backlog</div>
+<h2>User stories that shaped the build</h2>
+<div class="cs-rows">
+<div class="cs-story">
+<span class="cs-story-id">US-01</span>
+<span class="cs-story-text">As a job seeker, I want a match score on any posting with the resume line that proves each requirement, so I can see the fit instead of guessing.</span>
+<span class="cs-pri cs-pri-must">Must</span>
+</div>
+<div class="cs-story">
+<span class="cs-story-id">US-02</span>
+<span class="cs-story-text">As a job seeker, I want a gap list with a suggestion for each gap, so I can fix what I can before I apply.</span>
+<span class="cs-pri cs-pri-must">Must</span>
+</div>
+<div class="cs-story">
+<span class="cs-story-id">US-03</span>
+<span class="cs-story-text">As a job seeker, I want a cover letter that only claims what my resume supports, so I never have to defend something I didn't do.</span>
+<span class="cs-pri cs-pri-must">Must</span>
+</div>
+<div class="cs-story">
+<span class="cs-story-id">US-04</span>
+<span class="cs-story-text">As a job seeker, I want my resume stored once on my own machine and reused on every posting, so I'm not uploading it to another service.</span>
+<span class="cs-pri cs-pri-must">Must</span>
+</div>
+<div class="cs-story">
+<span class="cs-story-id">US-05</span>
+<span class="cs-story-text">As a job seeker, I want to save an edited resume as a tailored version and re-score it, so I can see whether the edit moved the number.</span>
+<span class="cs-pri cs-pri-should">Should</span>
+</div>
+<div class="cs-story">
+<span class="cs-story-id">US-06</span>
+<span class="cs-story-text">As a job seeker, I want to log where I applied with the score and outcome, so I can check whether better matches get more interviews.</span>
+<span class="cs-pri cs-pri-should">Should</span>
+</div>
+</div>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="requirements">Requirements</div>
+<h2>Spec'd as testable acceptance criteria</h2>
+<div class="cs-table">
+<div class="cs-tr cs-th">
+<span>Requirement</span><span>Priority</span>
+</div>
+<div class="cs-tr"><span>Read the posting from JSON-LD first, then site adapters for LinkedIn, Indeed, Greenhouse, Lever and Workday, then a heuristic that rejects list pages; manual paste always works</span><span class="cs-pri-text cs-pri-must">Must</span></div>
+<div class="cs-tr"><span>Two scoring tiers: a keyword score that needs no AI and never returns a number on too little text, and a rubric where the model marks each requirement with a verbatim resume quote that the code verifies</span><span class="cs-pri-text cs-pri-must">Must</span></div>
+<div class="cs-tr"><span>Score computed in code, not by the model: must-haves weigh double, met counts 1, partial 0.5; temperature 0 and a fixed seed so re-scores are comparable</span><span class="cs-pri-text cs-pri-must">Must</span></div>
+<div class="cs-tr"><span>Email, phone, street address and profile links removed from the resume before any AI call; resume and key never leave the device except in direct calls to the provider</span><span class="cs-pri-text cs-pri-must">Must</span></div>
+<div class="cs-tr"><span>Every prompt that includes page text says that text may contain instructions and must be treated as content to analyse, not commands</span><span class="cs-pri-text cs-pri-must">Must</span></div>
+<div class="cs-tr"><span>After a letter is written, each sentence that claims experience is traced to a resume line; unsupported claims are highlighted for the user to cut</span><span class="cs-pri-text cs-pri-should">Should</span></div>
+<div class="cs-tr"><span>Match badges on LinkedIn and Indeed results pages, capped at one AI request per page; off by default on LinkedIn because its user agreement prohibits add-ons that scrape</span><span class="cs-pri-text cs-pri-could">Could</span></div>
+</div>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="my-role">My role</div>
+<h2>Owning the product from the problem to the package</h2>
+<p class="cs-p">I wrote the PRD, built the extension, rebuilt the scoring when the first version turned out to be a number with nothing behind it, and reviewed the code three times before packaging. The decisions that mattered were product decisions dressed as technical ones: compute the score in code so it can be trusted, verify every quote the model returns, redact the resume before it leaves the machine, and keep LinkedIn's list features off by default rather than argue with their terms later. The application log was a non-goal in v1.0 and became a feature in v1.1, because "does applying to better matches get more interviews?" is the product's core claim and a log is the only way a user can check it.</p>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="what-i-built">What I built</div>
+<h2>Evidence first, then the letter</h2>
+<div class="grid3 cs-grid">
+<div class="card">
+<h3>Posting reader</h3>
+<p>Structured data first, then five site adapters, then a fallback that refuses to score a search-results page. Paste a link and it reads the posting in a background tab.</p>
+</div>
+<div class="card">
+<h3>Rubric scoring</h3>
+<p>The model extracts 6 to 12 requirements, cached per job, and marks each one met, partial or missing with a quote. The code checks the quote exists in the resume and computes the score itself.</p>
+</div>
+<div class="card">
+<h3>Fix-it gate</h3>
+<p>Each gap gets a suggestion grounded in what the resume already says. Continue is always available; the gate advises and never blocks.</p>
+</div>
+<div class="card">
+<h3>Cover letter with claim check</h3>
+<p>The prompt carries the verified requirement list, so the letter leads with what's proven and never claims what's missing. Afterwards each claim is traced back to a resume line.</p>
+</div>
+<div class="card">
+<h3>Local storage, no accounts</h3>
+<p>Resume, key, letters and the application log live in chrome.storage.local. PDF and DOCX are parsed in the extension. Export is copy or a PDF built on the device.</p>
+</div>
+<div class="card">
+<h3>Golden test set</h3>
+<p>26 labelled cases (five synthetic resumes against four target roles, plus six engineering cases) run against the same scoring code the extension ships, so a scoring change shows up as a band change before release.</p>
+</div>
+</div>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="under-the-hood">Under the hood</div>
+<h2>Posting in, honest letter out</h2>
+<div class="cs-flow">
+<div class="cs-flow-row"><span class="cs-flow-n">1</span><span class="cs-flow-t">Side panel opens on a posting → JSON-LD, site adapter or paste gives the title, company and description</span></div>
+<div class="cs-flow-row"><span class="cs-flow-n">2</span><span class="cs-flow-t">Keyword tier scores with no AI call; if there's enough text, the rubric tier asks the model for requirements and evidence</span></div>
+<div class="cs-flow-row"><span class="cs-flow-n">3</span><span class="cs-flow-t">Code verifies each quoted line against the (redacted) resume and computes the 0 to 100 score</span></div>
+<div class="cs-flow-row"><span class="cs-flow-n">4</span><span class="cs-flow-t">Gaps and suggestions shown → optional edit saved as a tailored version → automatic re-score</span></div>
+<div class="cs-flow-row"><span class="cs-flow-n">5</span><span class="cs-flow-t">Letter streamed from the model with the verified list in the prompt → claim check → copy or local PDF → optional "mark as applied"</span></div>
+</div>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="outcome">Outcome</div>
+<h2>Built and packaged; the store listing is the next step</h2>
+<p class="cs-p">Version 1.3.0 is complete: the full loop, model choice with capability checks, resume versions, claim check, application log, results-page triage and score feedback. Permissions are scoped to the ten job sites and the Gemini API, with wider access requested only when the user asks for it, and there is no remote code, which is what Chrome Web Store review looks for. The <a href="/matchstick/privacy">privacy policy</a> the listing links to is published here. The upload package is built; what remains is the developer account and the listing. The success measures in the PRD (setup completion, score-to-letter conversion, golden-set accuracy of 90% or better in the right band) can only be read once real users are on it, so none of them is claimed here.</p>
+</div>
+<div class="cs-sec" data-reveal="">
+<div class="kick cs-label" id="roadmap">Roadmap</div>
+<h2>What comes after the listing</h2>
+<div class="cs-grid-sm">
+<div class="card">
+<div class="kick">Next</div>
+<p>Chrome Web Store submission, then replace the draft golden-set labels with real postings and resumes and re-check every band.</p>
+</div>
+<div class="card">
+<div class="kick">Then</div>
+<p>Multiple resume profiles and letter style learned from the user's own edits, if the application log shows people re-scoring and re-applying.</p>
+</div>
+<div class="card">
+<div class="kick">Later</div>
+<p>Firefox and Edge ports, and a hosted mode only if demand justifies running a backend. A cohort view for career centres is parked pending discovery calls.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="cs-related">
+<div class="cs-wrap" data-reveal="">
+<div class="kick">Related case studies</div>
+<div class="cs-grid-sm">
+<a class="card cs-rel" href="/projects/council-of-ais">
+<span class="tag">Open source</span>
+<span class="cs-rel-title">Council of AIs</span>
+<span class="cs-rel-desc">Budget-driven router that sends each task to the cheapest capable model.</span>
+<span class="go">Read case study →</span>
+</a>
+<a class="card cs-rel" href="/projects/squint">
+<span class="tag">Live · internal use</span>
+<span class="cs-rel-title">Squint</span>
+<span class="cs-rel-desc">Audit-driven pitch generator, benchmarked against the prospect's strongest competitor.</span>
+<span class="go">Read case study →</span>
+</a>
+<a class="card cs-rel" href="/projects/scrutas">
+<span class="tag">Live · internal use</span>
+<span class="cs-rel-title">Scrutas</span>
+<span class="cs-rel-desc">23-module forensic web audit behind a two-stage authorization model.</span>
+<span class="go">Read case study →</span>
+</a>
+</div>
+</div>
+</section>
+<section class="cs-end">
+<div class="cs-wrap">
+<div class="cta-box cs-endbox" data-reveal="">
+<div>
+<h3>More case studies</h3>
+<p class="cs-end-p">Want a discovery sprint or a build brief like this one for your product? Book a call.</p>
+</div>
+<div class="btnrow">
+<a class="btn btn-ghost" href="/work">All work</a>
+<a class="btn btn-primary" href="https://calendly.com/productgurus-proton/30min" onclick="gtag('event','book_call',{'location':'case_study'})" rel="noopener" target="_blank">Book a call</a>
+<a class="go" href="/about#hiring">Hiring? See my background →</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer>
+  <div class="wrap">
+    <a class="brand cs-fbrand" href="/"><img src="/assets/logo-inverse.svg?v=2" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
+  </div>
+</footer>
+<script src="/assets/site.js?v=4" defer></script>
+</body>
+</html>

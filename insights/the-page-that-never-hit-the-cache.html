@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js): queue is live immediately, the library loads after the page has painted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-N7PBH45QNY');
+  window.addEventListener('load', function(){ var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=G-N7PBH45QNY'; document.head.appendChild(s); });
+</script>
+<!-- ===== PER-POST: title, description, canonical slug, og:image, dates ===== -->
+<title>The Page That Never Hit the Cache: A Next.js Lab You Can Run | ProductGurus</title>
+<meta name="description" content="A static page that quietly became dynamic. Rebuilt in a reproducible Next.js 15 lab with the three fixes, and why each one alone does nothing.">
+<link rel="canonical" href="https://productgurus.ai/insights/the-page-that-never-hit-the-cache">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Page That Never Hit the Cache: A Next.js Lab You Can Run">
+<meta property="og:description" content="A static page that quietly became dynamic. Rebuilt in a reproducible Next.js 15 lab with the three fixes, and why each one alone does nothing.">
+<meta property="og:url" content="https://productgurus.ai/insights/the-page-that-never-hit-the-cache">
+<meta property="og:image" content="https://productgurus.ai/assets/og/the-page-that-never-hit-the-cache.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Page That Never Hit the Cache: A Next.js Lab You Can Run">
+<meta name="twitter:description" content="A static page that quietly became dynamic, rebuilt as a reproducible Next.js lab.">
+<meta name="twitter:image" content="https://productgurus.ai/assets/og/the-page-that-never-hit-the-cache.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "The page that never hit the cache: a Next.js lab you can run",
+      "description": "A static page that quietly became dynamic. Rebuilt in a reproducible Next.js 15 lab with the three fixes, and why each one alone does nothing.",
+      "url": "https://productgurus.ai/insights/the-page-that-never-hit-the-cache",
+      "image": "https://productgurus.ai/assets/og/the-page-that-never-hit-the-cache.jpg",
+      "datePublished": "2026-10-19",
+      "dateModified": "2026-10-19",
+      "author": {"@type": "Person", "name": "Abhay Kumar", "url": "https://productgurus.ai/about", "jobTitle": "Product Manager", "sameAs": ["https://www.linkedin.com/in/abhay-kumar-vancouver/"]},
+      "publisher": {"@type": "Organization", "name": "ProductGurus", "url": "https://productgurus.ai/", "logo": {"@type": "ImageObject", "url": "https://productgurus.ai/assets/logo.svg"}},
+      "mainEntityOfPage": "https://productgurus.ai/insights/the-page-that-never-hit-the-cache"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://productgurus.ai/"},
+        {"@type": "ListItem", "position": 2, "name": "Insights", "item": "https://productgurus.ai/insights"},
+        {"@type": "ListItem", "position": 3, "name": "The page that never hit the cache: a Next.js lab you can run", "item": "https://productgurus.ai/insights/the-page-that-never-hit-the-cache"}
+      ]
+    }
+  ]
+}
+</script>
+<!-- ===== END PER-POST ===== -->
+<link rel="icon" href="/assets/favicon.ico?v=3" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=3">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/site.css?v=11">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-wght-normal.woff2" crossorigin>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<nav class="nav" aria-label="Primary navigation">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.svg?v=2" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="navlinks">
+      <a href="/services">Services</a>
+      <a href="/work">Work</a>
+      <a href="/industries/local-businesses">Industries</a>
+      <a href="/insights" aria-current="page">Insights</a>
+      <a href="/about">About</a>
+    </div>
+    <a class="btn btn-ghost btn-sm" href="https://calendly.com/productgurus-proton/30min" target="_blank" rel="noopener" onclick="gtag('event','book_call',{'location':'nav'})">Book a call</a>
+  </div>
+</nav>
+
+<main id="main">
+<article class="art">
+  <header class="art-hero">
+    <div class="art-prose">
+      <p data-reveal class="art-back"><a class="backlink" href="/insights">← All insights</a></p>
+      <!-- PER-POST: tag / date / read time -->
+      <div data-reveal class="art-meta">LAB · OCTOBER 19, 2026 · 6 MIN READ</div>
+      <h1 data-reveal>The page that never hit the cache: <span class="hl">a Next.js lab you can run</span></h1>
+      <div data-reveal class="art-byline">By Abhay Kumar · Founder, ProductGurus</div>
+      <div data-reveal class="art-share" aria-label="Share this article">
+        <span class="art-share-l">Share</span>
+        <button type="button" class="share-btn" data-share="copy">Copy link</button>
+        <a class="share-btn" data-share="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fproductgurus.ai%2Finsights%2Fthe-page-that-never-hit-the-cache" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-btn" data-share="x" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fproductgurus.ai%2Finsights%2Fthe-page-that-never-hit-the-cache&text=The%20Page%20That%20Never%20Hit%20the%20Cache" target="_blank" rel="noopener">X</a>
+        <a class="share-btn" data-share="email" href="mailto:?subject=The%20Page%20That%20Never%20Hit%20the%20Cache&body=https%3A%2F%2Fproductgurus.ai%2Finsights%2Fthe-page-that-never-hit-the-cache">Email</a>
+      </div>
+    <p data-reveal class="art-dek">A marketing page that should have been cached was rendered on the server for every visitor. I rebuilt the failure in a lab with pinned versions, measured it, and applied the three fixes one at a time. Two of the three, on their own, change nothing.</p>
+    </div>
+  </header>
+
+  <div class="art-prose art-body" data-reveal>
+<!-- ===== PER-POST BODY ===== -->
+<p>A page that should be served from the cache, and isn't, looks fine. It loads. It renders. Nobody files a bug. The only sign is that every visitor waits for the CMS, every time, and the hosting bill scales with traffic instead of staying flat. I've watched this happen on a production site and I can't write about that one. So I rebuilt the failure in a lab you can run in ten minutes, with the version numbers pinned, and I want to show you the three fixes and why any one of them alone does nothing.</p>
+
+<h2>The setup</h2>
+<p>Next.js 15.5.4, App Router, one page that fetches its content from a headless CMS. The CMS is a 20-line Node server with 400 ms of artificial latency and a timestamp in the body, so a cache hit is visible to the eye: if the timestamp changes between two requests, the CMS was called again. A page also reads a consent cookie, which is the kind of harmless-looking line that causes the whole problem.</p>
+<pre><code>// cms.js: a stand-in for the headless CMS
+const http = require('http'); let calls = 0;
+http.createServer((req, res) =&gt; { calls++; setTimeout(() =&gt; {
+  res.setHeader('content-type', 'application/json');
+  res.end(JSON.stringify({ title: 'Store locator',
+    generatedAt: new Date().toISOString(), cmsCalls: calls }));
+}, 400); }).listen(4000);</code></pre>
+
+<h2>Before: the page everyone ships first</h2>
+<pre><code>// app/before/page.js
+import { cookies } from 'next/headers';
+export default async function Page() {
+  const jar = await cookies();
+  const consent = jar.get('consent')?.value ?? 'none';
+  const res = await fetch('http://localhost:4000/page', { cache: 'no-store' });
+  const data = await res.json();
+  return &lt;main&gt;&lt;h1&gt;{data.title}&lt;/h1&gt;
+    &lt;p&gt;CMS generated at {data.generatedAt}&lt;/p&gt;&lt;p&gt;consent: {consent}&lt;/p&gt;&lt;/main&gt;;
+}</code></pre>
+<p>Two things are wrong and each is enough on its own. The <code>cookies()</code> call tells Next.js the page depends on the request, so the route becomes dynamic and is rendered on the server for every visitor. The <code>cache: 'no-store'</code> on the fetch tells Next.js never to keep the CMS response, so every render pays the 400 ms again. The build output says so, if you know where to look: a <code>ƒ</code> next to the route means dynamic, a <code>○</code> means static.</p>
+<pre><code>Route (app)          Revalidate  Expire
+├ ƒ /before
+├ ƒ /half-a
+├ ƒ /half-b
+├ ○ /after                   5m      1y</code></pre>
+
+<h2>The two half-fixes that look like fixes</h2>
+<p>This is the part that costs teams weeks. Someone removes the cookie read. Someone else, in a different ticket, adds a revalidate window to the fetch. Both changes get merged, both look right in review, and the page is still rendered on every request. I built both halves as separate routes so you can see each one fail.</p>
+<p><strong>Half A</strong> removes <code>cookies()</code> but keeps <code>cache: 'no-store'</code>. The route is still dynamic, and the timestamp still changes on every request. Nothing improved.</p>
+<p><strong>Half B</strong> keeps <code>cookies()</code> but caches the fetch with <code>next: { revalidate: 300 }</code>. The timestamp stops changing, because the data cache now holds the CMS response, and the server render drops from about 415 ms to about 12 ms. That feels like a win. But the route is still dynamic, and the response still carries <code>Cache-Control: private, no-cache, no-store</code>, which means no CDN or edge cache in front of it will ever store the page. Every visitor still reaches your server. You've moved the cost, not removed it.</p>
+
+<h2>After: all three, together</h2>
+<pre><code>// app/after/page.js
+export default async function Page() {
+  const res = await fetch('http://localhost:4000/page', { next: { revalidate: 300 } });
+  const data = await res.json();
+  return &lt;main&gt;&lt;h1&gt;{data.title}&lt;/h1&gt;
+    &lt;p&gt;CMS generated at {data.generatedAt}&lt;/p&gt;&lt;ConsentBadge /&gt;&lt;/main&gt;;
+}
+// The cookie-dependent part moves to the client and reads
+// document.cookie after hydration. The server never sees it.
+function ConsentBadge() {
+  return &lt;p id="consent" suppressHydrationWarning&gt;consent: (read on the client)&lt;/p&gt;;
+}</code></pre>
+<p>Fix one: no request-time APIs (<code>cookies()</code>, <code>headers()</code>, <code>searchParams</code>) anywhere in the page tree. Fix two: the CMS fetch gets a revalidate window instead of <code>no-store</code>. Fix three: whatever needed the cookie moves to a client component, so the personalised bit happens in the browser and the HTML stays the same for everyone. Now the route is static with a five-minute revalidate, the response says <code>s-maxage=300, stale-while-revalidate</code>, and a CDN will serve it without touching your server.</p>
+
+<h2>What the numbers looked like</h2>
+<p>Five requests per route against the production build on one machine, measured with curl. The CMS counter is the number of times the mock CMS was called across the run.</p>
+<table>
+<thead><tr><th>Route</th><th>Build</th><th>Response time</th><th>Cache-Control</th><th>CMS called per request</th></tr></thead>
+<tbody>
+<tr><td>/before</td><td>ƒ dynamic</td><td>~415 ms</td><td>private, no-store</td><td>Yes</td></tr>
+<tr><td>/half-a (cookie removed)</td><td>ƒ dynamic</td><td>~415 ms</td><td>private, no-store</td><td>Yes</td></tr>
+<tr><td>/half-b (fetch cached)</td><td>ƒ dynamic</td><td>~12 ms</td><td>private, no-store</td><td>No, but the server renders every time</td></tr>
+<tr><td>/after (all three)</td><td>○ static, 5m</td><td>~4 ms</td><td>s-maxage=300, stale-while-revalidate</td><td>No</td></tr>
+</tbody>
+</table>
+<p>The response times are from a laptop-class container with no network in the way, so treat them as ratios rather than absolutes. The ratio is the point: the before page is a hundred times slower than the after page, and the half-fix that looks fastest still leaves the CDN out of the picture.</p>
+
+<div class="art-pull">A cache miss is a product decision that nobody made. The cookie read was somebody's consent banner. The no-store was somebody's "make sure it's fresh." Each was reasonable. Together they turned a brochure page into a server request per visitor.</div>
+
+<h2>How to check your own site in two minutes</h2>
+<p>Run <code>next build</code> and read the route table. Any page that should be the same for everyone and shows <code>ƒ</code> is a candidate. Then request the live page with <code>curl -D - -o /dev/null https://yoursite/page</code> and read two headers. <code>Cache-Control</code> starting with <code>private, no-cache, no-store</code> means nothing in front of your server will keep it. On Vercel you'll also see <code>x-vercel-cache</code>, where <code>DYNAMIC</code> means every request reached a function and <code>HIT</code> means the edge served it. On a self-hosted build, <code>x-nextjs-cache: HIT</code> tells you the data cache or full route cache was used.</p>
+<p>If a page you expected to be static shows dynamic, search the page and every layout above it for <code>cookies(</code>, <code>headers(</code>, <code>searchParams</code>, <code>no-store</code> and <code>dynamic = 'force-dynamic'</code>. One of them is there, often in a layout written months earlier, and often by a different team than the one writing the page.</p>
+
+<h2>Why a product manager should care</h2>
+<p>This isn't a performance nicety. The cost of a dynamic page is a function of traffic, and the cost of a cached page is close to zero past the first visitor. When a marketing page goes dynamic by accident, the hosting bill and the CMS bill both start tracking visits, and the page gets slower during exactly the campaigns that matter. The fix is three lines, but finding it needs someone who reads build output and response headers as product signals, not just engineering ones. That's the job I think a technical product manager is for.</p>
+
+<h2>Run it yourself</h2>
+<p>Six files, no accounts, no hosting. <code>npm install next@15.5.4 react@19.1.1 react-dom@19.1.1</code>, create the pages above under <code>app/</code>, start <code>node cms.js</code> on port 4000, then <code>npx next build &amp;&amp; npx next start</code>. The CMS has to be running during the build because the static pages fetch at build time; that's the same reason a real CMS outage can break a deploy. Curl each route five times and watch the timestamp.</p>
+
+<h2>Sources and further reading</h2>
+<ul class="art-sources"><li><a href="https://nextjs.org/docs/app/building-your-application/caching" target="_blank" rel="noopener">Next.js docs: Caching</a>. The four caches (request memoization, data cache, full route cache, router cache) and what opts a route out of each.</li><li><a href="https://nextjs.org/docs/app/api-reference/functions/cookies" target="_blank" rel="noopener">Next.js docs: cookies()</a>. The note that reading cookies makes a route dynamic.</li><li><a href="https://vercel.com/docs/edge-network/caching" target="_blank" rel="noopener">Vercel docs: Edge caching and the x-vercel-cache header</a>. What HIT, MISS, STALE and DYNAMIC mean.</li></ul>
+<!-- ===== END PER-POST BODY ===== -->
+
+  <aside class="art-author" aria-label="About the author">
+    <img class="art-author-img" src="/assets/abhay-headshot-320.jpg" alt="Abhay Kumar" width="72" height="72" loading="lazy">
+    <div class="art-author-body">
+      <div class="art-meta">WRITTEN BY</div>
+      <div class="art-author-name">Abhay Kumar</div>
+      <p>Product manager in Vancouver, BC. Six-plus years across retail tech and SaaS, working the seam between business analysis and product: interviews, requirements, specs, and shipping what they describe. Runs ProductGurus, where eight products have gone through research, five of them to release. Every claim in this article traces to a case study on this site.</p>
+      <div class="art-author-links"><a class="backlink" href="/about">About Abhay →</a><a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn →</a></div>
+    </div>
+  </aside>
+
+  <div class="art-related">
+    <!-- PER-POST: related case study link -->
+    <a class="backlink" href="/services/product-ownership">Need someone who reads build output as a product signal? →</a>
+    <a class="backlink" href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">Discuss on LinkedIn →</a>
+  </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo-inverse.svg?v=2" alt="ProductGurus logo" width="1233" height="622">ProductGurus</a>
+    <div class="flinks">
+      <a href="/services">Services</a><a href="/engagements">Engagements</a><a href="/work">Work</a><a href="/insights">Insights</a><a href="/about">About</a><a href="mailto:productgurus@proton.me">Email</a><a href="https://www.linkedin.com/in/abhay-kumar-vancouver/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="copy">© 2026 ProductGurus · Vancouver, BC</div>
+  </div>
+</footer>
+<script src="/assets/site.js?v=4" defer></script>
+</body>
+</html>
